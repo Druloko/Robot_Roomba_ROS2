@@ -2,6 +2,8 @@
 
 Este proyecto utiliza los archivos `Dockerfile`, `docker-compose.yml` y `entrypoint.sh` para crear un entorno Docker completo y funcional, diseñado para el desarrollo, simulación y despliegue de aplicaciones **ROS 2**. A continuación, se describen las principales características, configuraciones y beneficios del proyecto.
 
+https://hub.docker.com/druloko/ros_roomba
+
 ---
 
 ## **Características Principales**
