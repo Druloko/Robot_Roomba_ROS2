@@ -63,7 +63,7 @@ Esta fase representa el núcleo del sistema, sirviendo como pilar para las fases
 
 ## **Próximos Pasos**
 - Migrar el canal de comunicación a **WiFi** utilizando **TCP/IP**.
-- Iniciar la Fase 2: **Nodo ROS2**, Crear nodo ROS2 para el control de la base movil.
+- **Nodo ROS2**, Crear nodo ROS2 para el control de la base movil.
 
 ---
 
