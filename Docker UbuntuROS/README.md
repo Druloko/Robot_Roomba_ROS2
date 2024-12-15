@@ -5,7 +5,6 @@ Este proyecto utiliza los archivos `Dockerfile`, `docker-compose.yml` y `entrypo
 
 Esta imagen está disponible en DockerHub y puede ser utilizada con el siguiente comando:
 
-```bash
 docker pull druloko/ros_roomba:latest
 
 ---
