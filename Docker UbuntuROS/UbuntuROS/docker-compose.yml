@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mi-servicio:
+    image: ros2_roomba_ver_0_1  # Reemplaza esto con el nombre de tu imagen
+    networks:
+      red-lan:
+        ipv4_address: 192.168.0.110
+
+networks:
+  red-lan:
+    driver: macvlan  # Usa el driver macvlan
+    driver_opts:
+      parent: eth0  # Reemplaza 'eth0' con el nombre de tu interfaz de red física
+    ipam:
+      config:
+        - subnet: 192.168.0.0/24  # Asegúrate de que esto coincida con tu configuración de red local

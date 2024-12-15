@@ -14,6 +14,7 @@ Esta fase representa el núcleo del sistema, sirviendo como pilar para las fases
 ## **Objetivos Específicos**
 1. **Comunicación Inicial**:
    - Establecer una conexión confiable mediante **puerto serial**, utilizando un cable físico para la comunicación entre el controlador externo y el robot.
+   ![GUI Robot Roomba](resources/Puerto_serie_Roomba.jpg)
    - Preparar la transición futura hacia comunicación inalámbrica mediante **WiFi** y protocolos **TCP/IP**.
 
 2. **Lectura de Sensores**:
