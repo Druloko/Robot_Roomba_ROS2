@@ -41,6 +41,8 @@ Esta fase representa el núcleo del sistema, sirviendo como pilar para las fases
 ---
 
 ## **Resultados Finales Esperados**
+![GUI Robot Roomba](resources/GUI.png | width=300)
+
 1. Comunicación estable entre el robot y el controlador externo.
 2. Lectura precisa de datos en tiempo real desde los sensores del robot.
 3. Control completo de los actuadores, asegurando la capacidad de mover el robot y manejar sus componentes integrados.
