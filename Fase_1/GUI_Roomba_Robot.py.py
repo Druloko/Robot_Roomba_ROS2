@@ -7,6 +7,7 @@ import Modulos.lib_irobot as lib_irobot
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
+#com = "/dev/ttyUSB0"
 serial_com = "COM10"
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
