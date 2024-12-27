@@ -3,8 +3,8 @@ from irobot.openinterface.constants import MODES
 import time
 
 # instantiate robot
-def connect_robot(com):
-    return (Create2(com))
+def connect_robot(serial_com):
+    return (Create2(serial_com, baud_rate=115200))
 
 #Inicialización y configuración
 def iniciar_robot(robot):

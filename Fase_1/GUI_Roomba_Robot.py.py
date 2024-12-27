@@ -7,7 +7,7 @@ import Modulos.lib_irobot as lib_irobot
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-com = "COM5"
+serial_com = "COM10"
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
@@ -117,7 +117,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-robot = lib_irobot.connect_robot(com)
+robot = lib_irobot.connect_robot(serial_com)
 lib_irobot.iniciar_robot(robot)
 
 # Traducciones para los sensores
