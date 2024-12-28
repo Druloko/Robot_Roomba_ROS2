@@ -3,16 +3,29 @@ from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 import Modulos.irobot.lib_irobot as lib_irobot
-import time
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-com = "/dev/ttyUSB0"
+serial_com = "COM10"
+#serial_com = "/dev/pts/2"
+
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
+# Bandera global para detener las actualizaciones si la aplicación se cierra
+aplicacion_activa = True
+
+# Configuración del robot
+host = "192.168.0.191"  # IP del Jetson Nano
+user = "jetson"      # Usuario del Jetson Nano
+password = "N!colas735LA"  # Contraseña del Jetson Nano
+
+def despertar_robot():
+    lib_irobot.despertar_robot(host, user, password)
+
+# Función para actualizar los datos de la interfaz gráfica
 def actualizar_datos():
     global tarea_after, aplicacion_activa
 
@@ -134,7 +147,8 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-robot = lib_irobot.connect_robot(com)
+despertar_robot()
+robot = lib_irobot.connect_robot(serial_com)
 lib_irobot.iniciar_robot(robot)
 
 # Traducciones para los sensores
