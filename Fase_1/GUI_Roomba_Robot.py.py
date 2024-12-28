@@ -2,39 +2,19 @@ import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
-import Modulos.lib_irobot as lib_irobot
+import Modulos.irobot.lib_irobot as lib_irobot
 import Jetson.GPIO as GPIO
 import time
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-com = "/dev/ttyUSB0"
+#com = "/dev/ttyUSB0"
+com = "COM11"
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
-def despertar_robot():
-    """Genera un pulso en el GPIO para despertar el robot."""
-    PIN = 37  # Cambia por el número del pin que usas para el pulso
-    try:
-        # Configurar el GPIO
-        GPIO.setmode(GPIO.BOARD)  # Usamos la numeración BOARD
-        GPIO.setup(PIN, GPIO.OUT, initial=GPIO.HIGH)
-
-        # Generar el pulso
-        print("Despertando el robot con un pulso...")
-        GPIO.output(PIN, GPIO.LOW)  # Activa el nivel bajo (conecta a GND)
-        time.sleep(0.5)            # Mantiene el estado bajo durante 0,5 segundos
-        GPIO.output(PIN, GPIO.HIGH)  # Vuelve al estado alto
-        print("Robot despertado con éxito.")
-    
-    except Exception as e:
-        print(f"Error al generar el pulso para despertar al roomba: {e}")
-    
-    finally:
-        # Limpia la configuración del GPIO
-        GPIO.cleanup()
 
 def actualizar_datos():
     global tarea_after
@@ -141,7 +121,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-despertar_robot()
+lib_irobot.despertar_robot()
 robot = lib_irobot.connect_robot(com)
 lib_irobot.iniciar_robot(robot)
 
