@@ -5,7 +5,13 @@ import time
 
 # instantiate robot
 def connect_robot(serial_com):
-    return (Create2(serial_com, baud_rate=115200))
+    try:
+        return Create2(serial_com, baud_rate=115200)
+    except serial.SerialException as e:
+        raise Exception(f"No se pudo abrir el puerto {serial_com}. Error: {e}")
+    except UnicodeDecodeError:
+        print(f"Advertencia: No se pudo decodificar mensaje inicial del robot.")
+        return Create2(serial_com, baud_rate=115200)
 
 def despertar_robot(host, user, password):
     try:
