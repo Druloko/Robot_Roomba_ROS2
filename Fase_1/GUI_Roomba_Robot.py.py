@@ -14,6 +14,14 @@ com = "COM11"
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
+# Configuración del robot
+host = "192.168.0.191"  # IP del Jetson Nano
+user = "jetson"      # Usuario del Jetson Nano
+password = "N!colas735LA"  # Contraseña del Jetson Nano
+
+# Ejecutar el script remoto
+ejecutar_script_remoto(host, user, password, ruta_script)
+
 
 def actualizar_datos():
     global tarea_after
@@ -120,7 +128,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-lib_irobot.despertar_robot()
+lib_irobot.despertar_robot(host, user, password)
 robot = lib_irobot.connect_robot(com)
 lib_irobot.iniciar_robot(robot)
 
