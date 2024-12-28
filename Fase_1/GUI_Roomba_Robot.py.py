@@ -2,15 +2,18 @@ import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
-import Modulos.lib_irobot as lib_irobot
+import Modulos.irobot.lib_irobot as lib_irobot
+import Jetson.GPIO as GPIO
+import time
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-com = "COM11"
+com = "/dev/ttyUSB0"
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
+
 
 def actualizar_datos():
     global tarea_after
@@ -117,6 +120,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
+lib_irobot.despertar_robot()
 robot = lib_irobot.connect_robot(com)
 lib_irobot.iniciar_robot(robot)
 
@@ -211,6 +215,7 @@ frame_acciones = ttk.LabelFrame(root, text="Acciones Automáticas", padding=(10,
 frame_acciones.grid(row=5, column=0, columnspan=2, padx=10, pady=5, sticky="nsew")
 ttk.Button(frame_acciones, text="Patrulla", command=patrulla).pack(pady=5)
 ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).pack(pady=5)
+ttk.Button(frame_acciones, text="Despertar Robot", command=despertar_robot).pack(pady=5)
 
 # Configurar expansión de columnas y filas
 root.grid_rowconfigure(0, weight=1)
