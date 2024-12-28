@@ -19,9 +19,8 @@ host = "192.168.0.191"  # IP del Jetson Nano
 user = "jetson"      # Usuario del Jetson Nano
 password = "N!colas735LA"  # Contraseña del Jetson Nano
 
-# Ejecutar el script remoto
-ejecutar_script_remoto(host, user, password, ruta_script)
-
+def despertar_robot():
+    lib_irobot.despertar_robot(host, user, password)
 
 def actualizar_datos():
     global tarea_after
@@ -128,7 +127,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-lib_irobot.despertar_robot(host, user, password)
+despertar_robot()
 robot = lib_irobot.connect_robot(com)
 lib_irobot.iniciar_robot(robot)
 
@@ -221,9 +220,9 @@ ttk.Button(frame_controles, text="▼", command=mover_atras).grid(row=2, column=
 # Frame para acciones automáticas
 frame_acciones = ttk.LabelFrame(root, text="Acciones Automáticas", padding=(10, 5))
 frame_acciones.grid(row=5, column=0, columnspan=2, padx=10, pady=5, sticky="nsew")
-ttk.Button(frame_acciones, text="Patrulla", command=patrulla).pack(pady=5)
-ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).pack(pady=5)
-ttk.Button(frame_acciones, text="Despertar Robot", command=despertar_robot).pack(pady=5)
+ttk.Button(frame_acciones, text="Patrulla", command=patrulla).grid(row=0, column=0, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).grid(row=0, column=1, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Despertar Robot", command=despertar_robot).grid(row=0, column=2, padx=5, pady=5)
 
 # Configurar expansión de columnas y filas
 root.grid_rowconfigure(0, weight=1)

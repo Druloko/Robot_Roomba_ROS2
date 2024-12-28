@@ -22,15 +22,6 @@ def despertar_robot(host, user, password):
         print(f"Ejecutando script: {comando}")
         stdin, stdout, stderr = cliente.exec_command(comando)
 
-        # Leer y mostrar la salida del script
-        salida = stdout.read().decode('utf-8')
-        error = stderr.read().decode('utf-8')
-
-        if salida:
-            print(f"Salida del script:\n{salida}")
-        if error:
-            print(f"Error del script:\n{error}")
-
     except Exception as e:
         print(f"Error al conectarse o ejecutar el script: {e}")
 
