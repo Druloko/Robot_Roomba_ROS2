@@ -2,21 +2,17 @@ import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
-import Modulos.lib_irobot as lib_irobot
+import Modulos.irobot.lib_irobot as lib_irobot
+import time
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-#serial_com = "COM10"
-serial_com = "/dev/pts/2"
+com = "/dev/ttyUSB0"
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
-# Bandera global para detener las actualizaciones si la aplicación se cierra
-aplicacion_activa = True
-
-# Función para actualizar los datos de la interfaz gráfica
 def actualizar_datos():
     global tarea_after, aplicacion_activa
 
@@ -138,7 +134,7 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-robot = lib_irobot.connect_robot(serial_com)
+robot = lib_irobot.connect_robot(com)
 lib_irobot.iniciar_robot(robot)
 
 # Traducciones para los sensores
@@ -230,8 +226,9 @@ ttk.Button(frame_controles, text="▼", command=mover_atras).grid(row=2, column=
 # Frame para acciones automáticas
 frame_acciones = ttk.LabelFrame(root, text="Acciones Automáticas", padding=(10, 5))
 frame_acciones.grid(row=5, column=0, columnspan=2, padx=10, pady=5, sticky="nsew")
-ttk.Button(frame_acciones, text="Patrulla", command=patrulla).pack(pady=5)
-ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).pack(pady=5)
+ttk.Button(frame_acciones, text="Patrulla", command=patrulla).grid(row=0, column=0, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).grid(row=0, column=1, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Despertar Robot", command=despertar_robot).grid(row=0, column=2, padx=5, pady=5)
 
 # Configurar expansión de columnas y filas
 root.grid_rowconfigure(0, weight=1)

@@ -1,12 +1,35 @@
 from irobot.robots.create2 import Create2
 from irobot.openinterface.constants import MODES
+import paramiko
 import time
 
 # instantiate robot
 def connect_robot(serial_com):
     return (Create2(serial_com, baud_rate=115200))
 
-#Inicialización y configuración
+def despertar_robot(host, user, password):
+    try:
+        # Crear cliente SSH
+        cliente = paramiko.SSHClient()
+        cliente.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # Aceptar claves automáticamente
+
+        # Conectar al robot
+        print(f"Conectando a {host}...")
+        cliente.connect(hostname=host, username=user, password=password)
+
+        # Ejecutar el script remoto
+        comando = f"python3 {"/home/jetson/Robot_Roomba_ROS2/Fase_1/Modulos/irobot/pin_ON.py"}"  # Ruta del script remoto
+        print(f"Ejecutando script: {comando}")
+        stdin, stdout, stderr = cliente.exec_command(comando)
+
+    except Exception as e:
+        print(f"Error al conectarse o ejecutar el script: {e}")
+
+    finally:
+        # Cerrar la conexión
+        cliente.close()
+        print("Conexión SSH cerrada.")
+
 def iniciar_robot(robot):
     """Configura el robot en modo FULL para habilitar todas las funciones."""
     robot.start()
