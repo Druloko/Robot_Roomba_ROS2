@@ -1,0 +1,101 @@
+
+sudo socat -d -d PTY,link=/dev/roomba,raw TCP:192.168.0.191:5000
+
+source install/setup.bash 
+colcon build --packages-select roomba_control
+
+#Para cargar este archivo al ejecutar el nodo, utiliza la línea de comandos de ROS 2:
+    ros2 run <nombre_paquete> roomba_node --ros-args --params-file roomba_params.yaml
+    ros2 run roomba_control roomba_node --ros-args --params-file src/roomba_control/config/roomba_params.yaml
+
+#Consulta los parámetros actuales:
+    ros2 param list /roomba_node
+    ros2 param get /roomba_node port
+
+#Cambia un parámetro dinámicamente:
+    ros2 param set /roomba_node sensor_update_rate 2.0
+
+
+
+1. Parámetros Básicos
+    port: El puerto serie donde está conectado el Roomba.
+        Tipo: string
+        Ejemplo: "COM3" o "/dev/ttyUSB0"
+
+    sensor_update_rate: Frecuencia (en segundos) con la que se publican los datos de los sensores.
+        Tipo: float
+        Ejemplo: 1.0 (una vez por segundo)
+
+    odom_update_rate: Frecuencia (en segundos) con la que se publican los datos de odometría.
+        Tipo: float
+        Ejemplo: 0.1 (10 veces por segundo)
+
+
+2. Parámetros para Configuración del Movimiento
+    max_linear_speed: Velocidad máxima lineal del robot (en m/s).
+        Tipo: float
+        Ejemplo: 0.5 (máximo 0.5 m/s)
+
+    max_angular_speed: Velocidad máxima angular del robot (en rad/s).
+        Tipo: float
+        Ejemplo: 1.5 (máximo 1.5 rad/s)
+
+    speed_multiplier: Factor de escala para ajustar las velocidades enviadas al Roomba.
+        Tipo: float
+        Ejemplo: 1.0 (sin cambios), 0.5 (mitad de la velocidad)
+
+    spin_multiplier: Factor de escala para ajustar la velocidad angular al girar.
+        Tipo: float
+        Ejemplo: 1.0 (sin cambios), 0.75 (75% de la velocidad)
+
+3. Parámetros de Sensores
+    battery_threshold: Nivel de batería mínima para emitir una advertencia.
+        Tipo: float
+        Ejemplo: 20.0 (20%)
+
+    enable_cliff_detection: Habilitar/deshabilitar la detección de precipicio.
+        Tipo: bool
+        Ejemplo: true (habilitado)
+
+    enable_bump_detection: Habilitar/deshabilitar la detección de colisiones.
+        Tipo: bool
+        Ejemplo: true (habilitado)
+
+4. Parámetros de Comportamiento
+    cleaning_mode: Modo de limpieza por defecto del robot.
+        Tipo: string
+        Ejemplo: "auto", "spot", "dock"
+
+    return_to_dock_on_low_battery: Si el robot debe buscar automáticamente la base de carga cuando la batería es baja.
+        Tipo: bool
+        Ejemplo: true
+
+5. Parámetros para Publicadores y Temas
+    odom_frame_id: Frame de referencia para la odometría.
+        Tipo: string
+        Ejemplo: "odom"
+
+    base_frame_id: Frame base del robot.
+        Tipo: string
+        Ejemplo: "base_link"
+
+    sensor_topic: Nombre del tema donde se publican los datos de los sensores.
+        Tipo: string
+        Ejemplo: "roomba/sensors"
+
+    odom_topic: Nombre del tema donde se publica la odometría.
+        Tipo: string
+        Ejemplo: "roomba/odom"
+
+6. Parámetros Avanzados
+    logging_level: Nivel de registro (debug, info, warn, error).
+        Tipo: string
+        Ejemplo: "info"
+        
+    timeout_cmd_vel: Tiempo máximo sin recibir comandos en cmd_vel antes de detener el robot.
+        Tipo: float
+        Ejemplo: 2.0 (2 segundos)
+
+    enable_logging_sensors: Habilitar/deshabilitar el registro detallado de sensores.
+        Tipo: bool
+        Ejemplo: false (no registra sensores)

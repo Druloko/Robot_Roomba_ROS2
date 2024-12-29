@@ -2,74 +2,104 @@ import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
-import Modulos.lib_irobot as lib_irobot
+import Modulos.irobot.lib_irobot as lib_irobot
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
-com = "COM5"
+serial_com = "COM10"
+#serial_com = "/dev/pts/2"
+
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
+# Bandera global para detener las actualizaciones si la aplicación se cierra
+aplicacion_activa = True
+
+# Configuración del robot
+host = "192.168.0.191"  # IP del Jetson Nano
+user = "jetson"      # Usuario del Jetson Nano
+password = "N!colas735LA"  # Contraseña del Jetson Nano
+
+def despertar_robot():
+    lib_irobot.despertar_robot(host, user, password)
+
+# Función para actualizar los datos de la interfaz gráfica
 def actualizar_datos():
-    global tarea_after
+    global tarea_after, aplicacion_activa
 
-    # Actualizamos los datos de los sensores
-    sensores_basicos = lib_irobot.leer_sensores_basicos(robot)
-    estado_bateria = lib_irobot.leer_estado_bateria(robot)
-    proximidad = lib_irobot.leer_proximidad(robot)
-    odometria = lib_irobot.leer_estado_movimiento(robot)
+    if not aplicacion_activa:
+        return  # Si la aplicación no está activa, detén cualquier actualización
 
-    # Actualizar etiquetas de sensores básicos
-    for sensor, estado in sensores_basicos.items():
-        sensores_basicos_labels[sensor].config(text=f"{traducciones_sensores_basicos[sensor]}: {'Sí' if estado else 'No'}")
-    
-    # Actualizar etiquetas de batería
-    for propiedad, valor in estado_bateria.items():
-        bateria_labels[propiedad].config(text=f"{traducciones_bateria[propiedad]}: {valor}")
-    
-    # Actualizar etiquetas de odometría
-    distancia_label.config(text=f"Distancia recorrida: {odometria['distance']} mm")
-    angulo_label.config(text=f"Ángulo girado: {odometria['angle']}°")
-    encoders_label.config(text=f"Encoder Izq: {odometria['left_encoder_counts']}, Der: {odometria['right_encoder_counts']}")
+    try:
+        # Actualizamos los datos de los sensores
+        sensores_basicos = lib_irobot.leer_sensores_basicos(robot)
+        estado_bateria = lib_irobot.leer_estado_bateria(robot)
+        proximidad = lib_irobot.leer_proximidad(robot)
+        odometria = lib_irobot.leer_estado_movimiento(robot)
 
-    # Actualizar gráfico de proximidad
-    labels = [traducciones_proximidad[sensor] for sensor in proximidad.keys()]
-    values = list(proximidad.values())
-    ax.clear()  # Limpia el gráfico actual
-    ax.bar(labels, values, color='skyblue')  # Redibuja el gráfico
-    ax.set_title("Sensores de Proximidad")
-    ax.set_xlabel("Sensores")
-    ax.set_ylabel("Valor")
-    ax.tick_params(axis='x', rotation=45)
-    canvas.draw()  # Actualiza el gráfico en la interfaz gráfica
+        # Actualizar etiquetas de sensores básicos
+        for sensor, estado in sensores_basicos.items():
+            sensores_basicos_labels[sensor].config(text=f"{traducciones_sensores_basicos[sensor]}: {'Sí' if estado else 'No'}")
 
-    # Programar la próxima actualización
-    tarea_after = root.after(1000, actualizar_datos)
+        # Actualizar etiquetas de batería
+        for propiedad, valor in estado_bateria.items():
+            bateria_labels[propiedad].config(text=f"{traducciones_bateria[propiedad]}: {valor}")
 
+        # Actualizar etiquetas de odometría
+        distancia_label.config(text=f"Distancia recorrida: {odometria['distance']} mm")
+        angulo_label.config(text=f"Ángulo girado: {odometria['angle']}°")
+        encoders_label.config(text=f"Encoder Izq: {odometria['left_encoder_counts']}, Der: {odometria['right_encoder_counts']}")
+
+        # Actualizar gráfico de proximidad
+        labels = [traducciones_proximidad[sensor] for sensor in proximidad.keys()]
+        values = list(proximidad.values())
+        ax.clear()
+        ax.bar(labels, values, color='skyblue')
+        ax.set_title("Sensores de Proximidad")
+        ax.set_xlabel("Sensores")
+        ax.set_ylabel("Valor")
+        ax.tick_params(axis='x', rotation=45)
+        canvas.draw()
+
+        # Programar la próxima actualización
+        tarea_after = root.after(1000, actualizar_datos)
+    except Exception as e:
+        print(f"Error al actualizar datos: {e}")
+
+# Función para cerrar la aplicación
 def cerrar_aplicacion():
-    """Detiene el robot, cierra las tareas pendientes y cierra la ventana de forma segura."""
-    global tarea_after
+    global tarea_after, aplicacion_activa
+
+    # Cambiar bandera para detener `actualizar_datos`
+    aplicacion_activa = False
 
     # Cancelar la tarea programada si existe
     if tarea_after:
         try:
             root.after_cancel(tarea_after)
+            print("Tarea programada cancelada.")
         except Exception as e:
             print(f"Error al cancelar la tarea programada: {e}")
         finally:
             tarea_after = None
 
-    # Detener el robot y cerrar la aplicación
+    # Detener el robot y cerrar comunicación
     try:
         lib_irobot.detener_robot(robot)
-        print("Robot detenido. Cerrando la aplicación...")
+        lib_irobot.cerrar_comunicacion(robot)
+        print("Robot detenido y comunicación cerrada.")
     except Exception as e:
-        print(f"Error al detener el robot: {e}")
-    
-    root.quit()
-    root.destroy()
+        print(f"Error al detener el robot o cerrar la comunicación: {e}")
+
+    # Cerrar la ventana
+    try:
+        root.quit()
+        root.destroy()
+        print("Aplicación cerrada correctamente.")
+    except Exception as e:
+        print(f"Error al cerrar la ventana: {e}")
 
 # Funciones para los controles de movimiento
 def mover_adelante():
@@ -101,7 +131,7 @@ def aumentar_velocidad():
 
 def disminuir_velocidad():
     global velocidad_actual
-    velocidad_actual = max(50, velocidad_actual - 50)  # Velocidad mínima de 50 mm/s
+    velocidad_actual = max(50, velocidad_actual - 50)
     velocidad_label.config(text=f"Velocidad actual: {velocidad_actual} mm/s")
     print(f"Velocidad reducida a {velocidad_actual} mm/s")
 
@@ -117,7 +147,8 @@ def buscar_base():
     lib_irobot.buscar_base(robot)
 
 # Inicialización del robot
-robot = lib_irobot.connect_robot(com)
+despertar_robot()
+robot = lib_irobot.connect_robot(serial_com)
 lib_irobot.iniciar_robot(robot)
 
 # Traducciones para los sensores
@@ -209,8 +240,9 @@ ttk.Button(frame_controles, text="▼", command=mover_atras).grid(row=2, column=
 # Frame para acciones automáticas
 frame_acciones = ttk.LabelFrame(root, text="Acciones Automáticas", padding=(10, 5))
 frame_acciones.grid(row=5, column=0, columnspan=2, padx=10, pady=5, sticky="nsew")
-ttk.Button(frame_acciones, text="Patrulla", command=patrulla).pack(pady=5)
-ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).pack(pady=5)
+ttk.Button(frame_acciones, text="Patrulla", command=patrulla).grid(row=0, column=0, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Buscar Base", command=buscar_base).grid(row=0, column=1, padx=5, pady=5)
+ttk.Button(frame_acciones, text="Despertar Robot", command=despertar_robot).grid(row=0, column=2, padx=5, pady=5)
 
 # Configurar expansión de columnas y filas
 root.grid_rowconfigure(0, weight=1)
@@ -221,6 +253,9 @@ root.grid_rowconfigure(4, weight=1)
 root.grid_rowconfigure(5, weight=1)
 root.grid_columnconfigure(0, weight=1)
 root.grid_columnconfigure(1, weight=1)
+
+# Vincular cierre seguro
+root.protocol("WM_DELETE_WINDOW", cerrar_aplicacion)
 
 # Iniciar actualización de datos
 actualizar_datos()
