@@ -31,7 +31,8 @@ class MonitorRobot:
 
     def conectar_robot(self):
         try:
-            self.serial_com = "COM10"  # Configura tu puerto COM
+            #self.serial_com = "COM10"  # Configura tu puerto COM
+            self.serial_com = "/dev/roomba" 
             self.robot = lib_irobot.connect_robot(self.serial_com)
             lib_irobot.iniciar_robot(self.robot)
             self.robot_conectado = True

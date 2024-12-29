@@ -1,5 +1,12 @@
+
+sudo socat -d -d PTY,link=/dev/roomba,raw TCP:192.168.0.191:5000
+
+source install/setup.bash 
+colcon build --packages-select roomba_control
+
 #Para cargar este archivo al ejecutar el nodo, utiliza la línea de comandos de ROS 2:
     ros2 run <nombre_paquete> roomba_node --ros-args --params-file roomba_params.yaml
+    ros2 run roomba_control roomba_node --ros-args --params-file src/roomba_control/config/roomba_params.yaml
 
 #Consulta los parámetros actuales:
     ros2 param list /roomba_node

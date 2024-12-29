@@ -9,3 +9,5 @@ if __name__ == '__main__':
             print(f"Respuesta recibida: {response}")
         finally:
             client.close()
+
+#sudo socat PTY,link=/dev/roomba,raw TCP:192.168.0.191:5000

@@ -24,7 +24,7 @@ def despertar_robot(host, user, password):
         cliente.connect(hostname=host, username=user, password=password)
 
         # Ejecutar el script remoto
-        comando = f"python3 {"/home/jetson/Robot_Roomba_ROS2/Fase_1/Modulos/irobot/pin_ON.py"}"  # Ruta del script remoto
+        comando = f"python3 {'/home/jetson/Robot_Roomba_ROS2/Fase_1/Modulos/irobot/pin_ON.py'}"  # Ruta del script remoto
         print(f"Ejecutando script: {comando}")
         stdin, stdout, stderr = cliente.exec_command(comando)
 
