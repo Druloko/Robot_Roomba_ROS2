@@ -1,0 +1,35 @@
+Panels:
+  - Class: rviz_common/DisplaysPanel
+    Name: Displays
+    Properties:
+      NameFilter: ''
+      Tree View:
+        Expanded:
+          - /Global Options
+        Selected: /Global Options
+  - Class: rviz_common/ViewsPanel
+    Name: Views
+    Properties:
+      Current View: Orbit
+      Views:
+        - Class: rviz_default_plugins/Orbit
+          Name: Orbit
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Enabled: true
+      Name: Grid
+      Reference Frame: odom
+      Cell Count: 50
+      Cell Size: 1.0
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+      Show Axes: true
+      Show Names: true
+    - Class: rviz_default_plugins/Odometry
+      Enabled: true
+      Name: Odometry
+      Topic: /roomba/odom
+Global Options:
+  Fixed Frame: odom

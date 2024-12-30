@@ -19,15 +19,6 @@ class RoombaNode(Node):
         self.declare_parameter('sensor_update_rate', 1.0)
         self.declare_parameter('odom_update_rate', 0.1)
 
-        # Variables de posición inicial y orientación
-        self.x = 0.0  # Posición inicial en X
-        self.y = 0.0  # Posición inicial en Y
-        self.theta = 0.0  # Orientación inicial (en radianes)
-
-        # Variables de odometría iniciales
-        self.last_distance = 0.0
-        self.last_angle = 0.0
-
         # Leer los valores de los parámetros
         self.port = self.get_parameter('port').get_parameter_value().string_value
         self.sensor_update_rate = self.get_parameter('sensor_update_rate').get_parameter_value().double_value
@@ -89,26 +80,20 @@ class RoombaNode(Node):
     def publish_odometry(self):
         """Publicar datos de odometría."""
         try:
-            # Obtener datos del robot
-            distance = self.robot.distance  # Distancia acumulativa del robot
-            angle = self.robot.angle  # Ángulo acumulativo del robot
-            self.get_logger().info(f"Robot Data - Distance: {distance}, Angle: {angle}")
+            distance = self.robot.distance
+            angle = self.robot.angle
 
-            # Calcular deltas (cambios) en distancia y ángulo
-            delta_distance = distance - self.last_distance
-            delta_angle = angle - self.last_angle
+            delta_distance = distance - getattr(self, 'last_distance', 0.0)
+            delta_angle = angle - getattr(self, 'last_angle', 0.0)
 
-            # Actualizar valores acumulativos
             self.last_distance = distance
             self.last_angle = angle
 
-            # Calcular cambio en orientación
             delta_theta = delta_angle * (pi / 180.0)
-            self.theta += delta_theta * 10 # Actualizar orientación acumulativa
+            self.theta = getattr(self, 'theta', 0.0) + delta_theta
 
-            # Calcular nueva posición en base a la orientación
-            self.x += (delta_distance * cos(self.theta)/100)
-            self.y += (delta_distance * sin(self.theta)/100)
+            self.x = getattr(self, 'x', 0.0) + delta_distance * cos(self.theta)
+            self.y = getattr(self, 'y', 0.0) + delta_distance * sin(self.theta)
 
             # Crear mensaje de odometría
             odom_msg = Odometry()
@@ -116,7 +101,6 @@ class RoombaNode(Node):
             odom_msg.header.frame_id = "odom"
             odom_msg.child_frame_id = "base_link"
 
-            # Convertir orientación a cuaternión
             quaternion = self.quaternion_from_euler(0, 0, self.theta)
             odom_msg.pose.pose.position.x = self.x
             odom_msg.pose.pose.position.y = self.y
@@ -125,7 +109,7 @@ class RoombaNode(Node):
             # Publicar odometría
             self.odom_pub.publish(odom_msg)
 
-            # Publicar transformación para TF
+            # Publicar transformación
             t = TransformStamped()
             t.header.stamp = self.get_clock().now().to_msg()
             t.header.frame_id = "odom"
@@ -136,12 +120,8 @@ class RoombaNode(Node):
             t.transform.rotation = quaternion
 
             self.tf_broadcaster.sendTransform(t)
-
-            self.get_logger().info(f"Odometry published: x={self.x}, y={self.y}, theta={self.theta}")
-
         except Exception as e:
             self.get_logger().error(f"Error publicando odometría: {e}")
-
 
     def quaternion_from_euler(self, roll, pitch, yaw):
         """Convertir ángulos de Euler a un cuaternión."""
@@ -156,8 +136,6 @@ class RoombaNode(Node):
         try:
             linear_speed = msg.linear.x
             angular_speed = msg.angular.z
-            self.get_logger().info(f"cmd_vel Suscripto: linear_speed={linear_speed}, angular_speed={angular_speed}")
-
 
             if angular_speed != 0:
                 if angular_speed > 0:

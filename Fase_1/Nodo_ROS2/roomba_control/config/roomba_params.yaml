@@ -1,0 +1,34 @@
+roomba_node:
+  ros__parameters:
+    # Configuración del Hardware
+    port: "/dev/ttyUSB0"
+
+    # Configuración de Frecuencia de Publicación
+    sensor_update_rate: 0.5  # Frecuencia de publicación de sensores en segundos
+    odom_update_rate: 0.2  # Frecuencia de publicación de odometría en segundos
+
+    # Configuración de Movimiento
+    max_linear_speed: 0.4  # Velocidad lineal máxima en m/s
+    max_angular_speed: 1.0  # Velocidad angular máxima en rad/s
+    speed_multiplier: 1.0  # Factor de escala para la velocidad lineal
+    spin_multiplier: 0.8  # Factor de escala para la velocidad angular
+
+    # Configuración de Sensores
+    battery_threshold: 15.0  # Nivel de batería mínima para advertencia
+    enable_cliff_detection: true  # Habilitar detección de precipicio
+    enable_bump_detection: true  # Habilitar detección de colisiones
+
+    # Configuración de Comportamiento
+    cleaning_mode: "auto"  # Modo de limpieza por defecto
+    return_to_dock_on_low_battery: true  # Buscar base de carga automáticamente con batería baja
+
+    # Configuración Avanzada
+    timeout_cmd_vel: 2.0  # Tiempo máximo sin recibir comandos antes de detener el robot (segundos)
+    logging_level: "info"  # Nivel de registro (debug, info, warn, error)
+    enable_logging_sensors: true  # Habilitar registro de datos de sensores
+
+    # Configuración de Temas y Frames
+    odom_frame_id: "odom"  # Frame de referencia para odometría
+    base_frame_id: "base_link"  # Frame base del robot
+    sensor_topic: "roomba/sensors"  # Tema para publicar datos de sensores
+    odom_topic: "roomba/odom"  # Tema para publicar datos de odometría
