@@ -51,19 +51,36 @@ Esta fase representa el núcleo del sistema, sirviendo como pilar para las fases
 
 ---
 
-## **Estado Actual**
-- El desarrollo de la **Fase 1** está **completo**.
-- Se ha implementado una aplicación en Python que:
-  - Establece comunicación confiable con el robot a través de un puerto serial.
-  - Lee y procesa datos de los sensores, incluyendo detección de colisiones, estado de la batería y medición de distancias.
-  - Controla los actuadores del robot, como motores de ruedas y cepillos.
-- Esta aplicación constituye la base principal del proyecto y habilita la transición hacia fases más complejas como mapeo y navegación autónoma.
+Avances en la Fase 1
+Estado Actual
+Se ha implementado una aplicación en Python que:
 
----
+Establece comunicación confiable con el robot a través de un puerto serial.
+Lee y procesa datos de los sensores, incluyendo detección de colisiones, estado de la batería y medición de distancias.
+Controla los actuadores del robot, como motores de ruedas y cepillos.
+Se ha creado un Nodo en ROS 2 que:
 
-## **Próximos Pasos**
-- Migrar el canal de comunicación a **WiFi** utilizando **TCP/IP**.
-- **Nodo ROS2**, Crear nodo ROS2 para el control de la base movil.
+Publica los valores de los sensores del robot, incluyendo odometría y detección de obstáculos.
+Permite el control del robot mediante el topic cmd_vel.
+Simulación Virtual:
+
+Se ha desarrollado un modelo virtual del robot para visualizarlo en RViz.
+Existe un archivo launch que inicia RViz con el modelo del robot virtual y simula su movimiento según los datos de la odometría.
+
+## **Resultados Finales RViz**
+![GUI Robot Roomba](resources/RViz.png)
+
+Próximos Pasos
+Crear un nuevo Nodo ROS 2 que:
+
+Visualice gráficamente los datos de los sensores, como colisiones, nivel de batería y distancias.
+Integre una interfaz visual similar a la implementada en la primera aplicación en Python.
+Mejorar la simulación en RViz para:
+
+Incluir simulación de sensores en tiempo real.
+Añadir representación visual de los datos de los sensores directamente en RViz.
+Documentar las configuraciones de hardware y software necesarias para replicar el proyecto.
+
 
 ---
 
