@@ -1,0 +1,22 @@
+[2.245s] Invoking command in '/mnt/c/Users/Druloko/Documents/ros2_dev_ws/src/roomba_control': PYTHONPATH=/mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roomba_control build --build-base /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build install --record /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/install.log --install-scripts $base/lib/roomba_control --single-version-externally-managed install_data
+[3.115s] running egg_info
+[3.122s] writing ../../build/roomba_control/roomba_control.egg-info/PKG-INFO
+[3.131s] writing dependency_links to ../../build/roomba_control/roomba_control.egg-info/dependency_links.txt
+[3.139s] writing entry points to ../../build/roomba_control/roomba_control.egg-info/entry_points.txt
+[3.145s] writing requirements to ../../build/roomba_control/roomba_control.egg-info/requires.txt
+[3.149s] writing top-level names to ../../build/roomba_control/roomba_control.egg-info/top_level.txt
+[3.255s] reading manifest file '../../build/roomba_control/roomba_control.egg-info/SOURCES.txt'
+[3.335s] writing manifest file '../../build/roomba_control/roomba_control.egg-info/SOURCES.txt'
+[3.338s] running build
+[3.340s] running build_py
+[3.373s] running install
+[3.379s] running install_lib
+[3.596s] running install_data
+[3.641s] copying launch/roomba_viz.launch.py -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/roomba_control/launch
+[3.673s] running install_egg_info
+[3.686s] removing '/mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control-0.0.1-py3.8.egg-info' (and everything under it)
+[3.754s] Copying ../../build/roomba_control/roomba_control.egg-info to /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control-0.0.1-py3.8.egg-info
+[4.024s] running install_scripts
+[4.092s] Installing roomba_node script to /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/roomba_control
+[4.109s] writing list of installed files to '/mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/install.log'
+[4.141s] Invoked command in '/mnt/c/Users/Druloko/Documents/ros2_dev_ws/src/roomba_control' returned '0': PYTHONPATH=/mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roomba_control build --build-base /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build install --record /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/install.log --install-scripts $base/lib/roomba_control --single-version-externally-managed install_data

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/roomba_control/roomba_control.egg-info
+writing ../../build/roomba_control/roomba_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/roomba_control/roomba_control.egg-info/dependency_links.txt
+writing entry points to ../../build/roomba_control/roomba_control.egg-info/entry_points.txt
+writing requirements to ../../build/roomba_control/roomba_control.egg-info/requires.txt
+writing top-level names to ../../build/roomba_control/roomba_control.egg-info/top_level.txt
+writing manifest file '../../build/roomba_control/roomba_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/roomba_control/roomba_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/roomba_control/roomba_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib/roomba_control
+copying roomba_control/roomba_node.py.py -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib/roomba_control
+copying roomba_control/__init__.py -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib/roomba_control
+running install
+running install_lib
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control
+copying /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib/roomba_control/roomba_node.py.py -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control
+copying /mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/build/lib/roomba_control/__init__.py -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control
+byte-compiling /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control/roomba_node.py.py to roomba_node.py.cpython-38.pyc
+byte-compiling /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/ament_index
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/ament_index/resource_index
+creating /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/ament_index/resource_index/packages
+copying resource/roomba_control -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/share/roomba_control
+running install_egg_info
+Copying ../../build/roomba_control/roomba_control.egg-info to /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/python3.8/site-packages/roomba_control-0.0.1-py3.8.egg-info
+running install_scripts
+Installing roomba_node script to /mnt/c/Users/Druloko/Documents/ros2_dev_ws/install/roomba_control/lib/roomba_control
+writing list of installed files to '/mnt/c/Users/Druloko/Documents/ros2_dev_ws/build/roomba_control/install.log'
