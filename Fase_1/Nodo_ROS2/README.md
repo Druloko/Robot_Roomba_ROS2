@@ -100,7 +100,6 @@ roomba_control/
 ├── roomba_control/
 │   ├── __init__.py
 │   ├── roomba_node.py         # Nodo principal para control y sensores
-│   └── keyboard_controller.py # Nodo opcional para control por teclado
 ├── package.xml                # Configuración del paquete ROS 2
 ├── setup.py                   # Script de instalación
 ├── README.md                  # Este archivo
@@ -132,6 +131,20 @@ Guárdalo en `config/params.yaml` y ejecútalo con:
 ```bash
 ros2 run roomba_control roomba_node --ros-args --params-file config/params.yaml
 ```
+
+## Control de Versiones
+
+v0.0.0
+
+Nodo simple para controlar el robot.
+
+Sin parámetros configurables.
+
+v0.0.1
+
+Nodo con soporte para parámetros dinámicos.
+
+Permite configurar velocidades máximas, detección de sensores y otros ajustes.
 
 ## Contribuciones
 
