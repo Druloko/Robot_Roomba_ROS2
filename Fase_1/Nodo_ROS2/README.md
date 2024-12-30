@@ -100,7 +100,6 @@ roomba_control/
 ├── roomba_control/
 │   ├── __init__.py
 │   ├── roomba_node.py         # Nodo principal para control y sensores
-│   └── keyboard_controller.py # Nodo opcional para control por teclado
 ├── package.xml                # Configuración del paquete ROS 2
 ├── setup.py                   # Script de instalación
 ├── README.md                  # Este archivo
