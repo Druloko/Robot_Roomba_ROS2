@@ -66,7 +66,9 @@ Se ha desarrollado un Nodo ROS 2 que permite:
 ### **Aplicación para Visualización de Sensores**
 - Una aplicacion desarrollada en Python permite visualizar en tiempo real los valores de los sensores del robot, tenemos dos versiones.
 
-  ![GUI Robot Roomba](resources/GUI.jpg)
+  ![GUI Robot Roomba](resources/GUI.png)
+
+  ![GUI Robot Roomba](resources/GUI.png)
 
 - Una aplicación web desarrollada en Python permite visualizar en tiempo real los valores de los sensores del robot, incluyendo:
   - Nivel de batería.
