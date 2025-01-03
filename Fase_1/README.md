@@ -61,7 +61,9 @@ Se ha desarrollado un Nodo ROS 2 que permite:
 - Controlar el robot mediante el tópico `cmd_vel`.
 - Configuración de parámetros dinámicos para ajustar aspectos como la tasa de publicación, velocidades máximas y tiempo de espera para comandos.
 
-**[Imagen del Nodo ROS 2 en funcionamiento]**
+![GUI Robot Roomba](resources/ROS2_Nodos.png)
+
+![GUI Robot Roomba](resources/parametros.png)
 
 ### **Aplicación para Visualización de Sensores**
 - Una aplicacion desarrollada en Python permite visualizar en tiempo real los valores de los sensores del robot, tenemos dos versiones.
@@ -115,8 +117,7 @@ Ejemplo de configuración:
 
 ## **Próximos Pasos**
 
-3. **Capacidades Inteligentes**:
-   - Desarrollar funcionalidades avanzadas como reconocimiento de voz e integración con IoT.
+1. **Fase 2**:
 
 ---
 
