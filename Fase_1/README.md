@@ -123,3 +123,4 @@ Ejemplo de configuración:
 
 ¡Gracias por tu interés en este proyecto! 🚀\
 Contribuciones y sugerencias son bienvenidas.
+
