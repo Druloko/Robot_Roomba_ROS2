@@ -1,3 +1,0 @@
-[console_scripts]
-roomba_node = roomba_control.Roomba_Ros2_Node:main
-
