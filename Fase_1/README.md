@@ -115,12 +115,6 @@ Ejemplo de configuración:
 
 ---
 
-## **Próximos Pasos**
-
-1. **Fase 2**:
-
----
-
 ¡Gracias por tu interés en este proyecto! 🚀\
 Contribuciones y sugerencias son bienvenidas.
 
