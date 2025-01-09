@@ -4,8 +4,19 @@ import paramiko
 import time
 
 # instantiate robot
+<<<<<<< HEAD
 def connect_robot(com):
     return (Create2(com))
+=======
+def connect_robot(serial_com):
+    try:
+        return Create2(serial_com, baud_rate=115200)
+    except serial.SerialException as e:
+        raise Exception(f"No se pudo abrir el puerto {serial_com}. Error: {e}")
+    except UnicodeDecodeError:
+        print(f"Advertencia: No se pudo decodificar mensaje inicial del robot.")
+        return Create2(serial_com, baud_rate=115200)
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca
 
 def despertar_robot(host, user, password):
     try:
@@ -18,7 +29,11 @@ def despertar_robot(host, user, password):
         cliente.connect(hostname=host, username=user, password=password)
 
         # Ejecutar el script remoto
+<<<<<<< HEAD
         comando = f"python3 {"/home/jetson/Robot_Roomba_ROS2/Fase_1/Modulos/irobot/pin_ON.py"}"  # Ruta del script remoto
+=======
+        comando = f"python3 {'/home/jetson/Robot_Roomba_ROS2/Fase_1/Modulos/irobot/pin_ON.py'}"  # Ruta del script remoto
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca
         print(f"Ejecutando script: {comando}")
         stdin, stdout, stderr = cliente.exec_command(comando)
 

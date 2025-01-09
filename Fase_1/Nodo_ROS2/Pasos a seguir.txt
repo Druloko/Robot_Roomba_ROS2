@@ -1,0 +1,15 @@
+7. Ejecutar el Nodo
+Para ejecutar el nodo y cargar el archivo de configuración YAML:
+ros2 run roomba_control roomba_node --ros-args --params-file src/roomba_control/config/roomba_params.yaml
+
+8. Verificar Parámetros
+Puedes listar y modificar los parámetros del nodo con los siguientes comandos:
+
+Listar parámetros:
+ros2 param list /roomba_node
+
+Consultar un parámetro específico:
+ros2 param get /roomba_node max_linear_speed
+
+Modificar un parámetro dinámicamente:
+ros2 param set /roomba_node max_linear_speed 0.6
