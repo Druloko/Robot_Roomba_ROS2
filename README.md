@@ -158,17 +158,9 @@ El sistema está compuesto por los siguientes nodos:
 
 ---
 
-## **Contribuciones**
-- **Reporte de Errores**: Abre un [issue](https://github.com/tu-repositorio/issues).
-- **Sugerencias y Mejoras**: Envía un pull request.
-
----
-
-## **Licencia**
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
----
-
 ¡Gracias por tu interés en este proyecto! 🚀\
 Contribuciones y sugerencias son bienvenidas.
 
+## **Contribuciones**
+- **Reporte de Errores**: Abre un [issue](https://github.com/tu-repositorio/issues).
+- **Sugerencias y Mejoras**: Envía un pull request.
