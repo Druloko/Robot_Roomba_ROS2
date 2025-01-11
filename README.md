@@ -169,4 +169,6 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para má
 
 ---
 
-Este archivo `README.md` proporciona una introducción completa al proyecto, adecuada para publicarlo en GitHub. ¿Quieres incluir algo adicional como un esquema gráfico o más detalles sobre la instalación? 😊
+¡Gracias por tu interés en este proyecto! 🚀\
+Contribuciones y sugerencias son bienvenidas.
+
