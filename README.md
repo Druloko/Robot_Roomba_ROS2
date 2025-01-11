@@ -1,59 +1,172 @@
-# Proyecto: Robot Autónomo con ROS2
+# **Robot Asistente Doméstico Basado en iRobot Create 2**
 
-Este repositorio contiene el desarrollo de un proyecto robótico basado en el sistema operativo **ROS2**. El objetivo principal es implementar un sistema de navegación autónoma e interacción inteligente utilizando un robot Roomba como base robótica.
+## **Descripción General**
 
-## Fases del Proyecto
+Este proyecto tiene como objetivo transformar un robot de limpieza **iRobot Create 2** en un robot asistente doméstico autónomo utilizando **ROS 2**. El sistema está diseñado para realizar tareas avanzadas como:
+- **Navegación autónoma.**
+- **Mapeo del entorno mediante un sensor LIDAR.**
+- **Reconocimiento de estancias y desplazamiento eficiente entre ellas.**
+- **Gestión avanzada de tareas y recursos.**
 
-### **Fase 1: Control Básico del Robot Roomba**
-En esta fase inicial, se integrará y controlará el robot Roomba utilizando la librería [iRobot](http://blog.lemoneerlabs.com/), que proporciona acceso a los sensores y actuadores de la plataforma. Esto incluye:
-- Lectura de sensores del robot, como detección de obstáculos, estado de batería y encoders.
-- Control de actuadores como ruedas, cepillos y motores de vacío.
-
-**Objetivo:** Garantizar el control total del hardware base del robot, sirviendo como punto de partida para las fases más avanzadas.
-
----
-
-### **Fase 2: Mapeo del Entorno**
-Se añadirá un sensor **LiDAR** y una cámara **Kinect** al robot para realizar mapeo y percepción del entorno:
-- **LiDAR:** Proporcionará datos precisos de distancias para construir un mapa 2D del espacio utilizando algoritmos de mapeo SLAM (Simultaneous Localization and Mapping) en ROS2.
-- **Kinect:** Permitirá la creación de mapas 3D del entorno mediante técnicas de visión por computadora.
-
-**Objetivo:** Construir mapas del entorno que definan zonas navegables para el robot, con capacidad de segmentación y definición de áreas específicas.
+El diseño del sistema utiliza una arquitectura modular donde cada nodo tiene una responsabilidad específica. Esto asegura escalabilidad, mantenibilidad y robustez. Además, se incluye un **Nodo Maestro** para la supervisión general y un **Nodo de Interfaz** para la interacción con el usuario.
 
 ---
 
-### **Fase 3: Navegación Autónoma**
-Con el mapa generado en la fase anterior, se habilitará la capacidad del robot para moverse autónomamente:
-- Implementación de un sistema de navegación basado en ROS2 Navigation Stack.
-- Asignación de objetivos dinámicos dentro del mapa, permitiendo al robot desplazarse por zonas previamente definidas.
+## **Arquitectura del Sistema**
 
-**Objetivo:** Proveer al robot de autonomía para navegar de forma eficiente y segura dentro de entornos conocidos.
+El sistema está compuesto por los siguientes nodos:
 
----
-
-### **Fase 4: Interacción Inteligente mediante IA**
-En esta fase, se integrará un sistema de inteligencia artificial para mejorar la interacción del robot con los usuarios:
-- **Reconocimiento facial:** Utilizando algoritmos de visión por computadora, el robot podrá identificar usuarios y asociarlos con perfiles personalizados.
-- **Procesamiento de lenguaje natural:** Implementación de un modelo de IA que permita al robot responder preguntas, dar instrucciones y personalizar la conversación según el usuario identificado.
-
-**Objetivo:** Lograr que el robot interactúe de manera natural e intuitiva, personalizando su comportamiento según las preferencias del usuario.
-
----
-
-## Tecnologías y Herramientas
-- **ROS2**: Sistema operativo para robots que gestionará la comunicación entre nodos y la integración de los distintos componentes.
-- **iRobot Library**: Control directo del hardware del robot Roomba.
-- **LiDAR y Kinect**: Sensores principales para percepción del entorno.
-- **SLAM y Navigation Stack**: Algoritmos para mapeo y navegación autónoma.
-- **Python y C++**: Lenguajes de programación para el desarrollo de los nodos de ROS2.
-- **IA y Visión por Computadora**: Tecnologías de reconocimiento facial y procesamiento de lenguaje natural.
+### **1. Nodo Maestro (`master_node`)**
+- **Funciones**:
+  - Coordina la interacción entre los nodos.
+  - Gestiona la conexión con el robot.
+  - Supervisa el estado global del sistema.
+- **Interfaces**:
+  - **Servicios**:
+    - `/master/connect`: Establece la conexión con el robot.
+    - `/master/wake_up_robot`: Ejecuta un script remoto para despertar el robot.
+    - `/master/system_status`: Devuelve el estado general del sistema.
+  - **Tópicos**:
+    - `/master/connection_status`: Publica el estado de la conexión.
+    - `/master/system_status`: Publica el estado del sistema.
 
 ---
 
-## Estado Actual
-Actualmente, el proyecto se encuentra en la **Fase 1**, enfocándose en establecer comunicación con el robot Roomba y asegurar un control robusto del hardware base.
+### **2. Nodo de Comunicación Serial (`communication_node`)**
+- **Funciones**:
+  - Gestiona el acceso exclusivo al puerto serie.
+  - Publica datos del robot y recibe comandos de otros nodos.
+- **Interfaces**:
+  - **Tópicos**:
+    - **Publica**:
+      - `/roomba/sensors/raw_data`: Datos en bruto de los sensores.
+    - **Suscribe**:
+      - `/roomba/cmd_vel`: Comandos de velocidad lineal y angular.
+      - `/roomba/cleaning_motors`: Comandos para motores de limpieza.
+      - `/roomba/brush_motors`: Comandos para cepillos laterales.
 
 ---
 
-## Contribuciones
-Contribuciones y sugerencias son bienvenidas para mejorar y extender el alcance del proyecto. ¡Gracias por tu interés en este emocionante desarrollo robótico! 🚀
+### **3. Nodo de Sensores (`sensor_node`)**
+- **Funciones**:
+  - Procesa y publica datos de los sensores del robot.
+  - Maneja información como nivel de batería, proximidad y luz IR.
+- **Interfaces**:
+  - **Tópicos**:
+    - **Publica**:
+      - `/roomba/sensors/battery`: Nivel de batería.
+      - `/roomba/sensors/cliff_*`: Sensores de proximidad.
+      - `/roomba/sensors/ir_base`: Señal infrarroja para localizar la base.
+
+---
+
+### **4. Nodo de Control de Movimiento (`motion_control_node`)**
+- **Funciones**:
+  - Controla los motores de navegación y limpieza.
+  - Recibe y ejecuta comandos de velocidad.
+- **Interfaces**:
+  - **Tópicos**:
+    - **Suscribe**:
+      - `/roomba/cmd_vel`: Comandos de movimiento.
+      - `/roomba/cleaning_motors`: Control de motores de limpieza.
+      - `/roomba/brush_motors`: Control de cepillos laterales.
+
+---
+
+### **5. Nodo de Odometría (`odometry_node`)**
+- **Funciones**:
+  - Calcula y publica la posición y orientación del robot.
+  - Genera transformaciones necesarias para la navegación.
+- **Interfaces**:
+  - **Tópicos**:
+    - `/roomba/odom`: Publica datos de odometría.
+
+---
+
+### **6. Nodo de Gestión de Carga (`charging_node`)**
+- **Funciones**:
+  - Supervisa el nivel de batería.
+  - Gestiona el retorno automático a la base.
+- **Interfaces**:
+  - **Servicios**:
+    - `/roomba/go_to_dock`: Ordena el retorno a la base de carga.
+  - **Tópicos**:
+    - `/charging/battery_status`: Publica información de la batería (voltaje, corriente, temperatura).
+
+---
+
+### **7. Nodo de Navegación (`navigation_node`)**
+- **Funciones**:
+  - Utiliza el LIDAR para generar mapas y planificar rutas.
+  - Coordina con otros nodos para la navegación autónoma.
+- **Interfaces**:
+  - **Tópicos**:
+    - `/navigation/status`: Estado de la navegación.
+
+---
+
+### **Nuevos Nodos Propuestos**
+1. **Nodo de Interfaz de Usuario (`ui_node`)**:
+   - Proporciona una interfaz para monitorización y control del robot.
+   - Publica mapas y permite comandos de texto/voz.
+
+2. **Nodo Gestor de Tareas (`task_manager_node`)**:
+   - Coordina la ejecución de tareas de alto nivel mediante una cola priorizada.
+
+3. **Nodo de Diagnóstico (`diagnostic_node`)**:
+   - Monitorea y registra eventos del sistema, gestionando fallos.
+
+4. **Nodo de Procesamiento de Voz (`voice_node`)**:
+   - Gestiona comandos por voz y diálogo con el usuario.
+
+5. **Nodo de Visión (`vision_node`)**:
+   - Proporciona percepción avanzada utilizando cámaras RGBD.
+
+---
+
+## **Requisitos del Sistema**
+- **Hardware**:
+  - iRobot Create 2.
+  - Sensor LIDAR (e.g., RPLIDAR, Hokuyo).
+  - Cámara RGBD opcional (e.g., Intel RealSense, Kinect).
+- **Software**:
+  - **ROS 2** (Humble Hawksbill o Foxy).
+  - Herramientas de simulación como Gazebo o RViz.
+
+---
+
+## **Pasos para la Implementación**
+1. **Configuración Inicial**:
+   - Configurar el entorno ROS 2 y el puerto serie del robot.
+   - Verificar la comunicación básica con el robot.
+
+2. **División Modular**:
+   - Migrar funcionalidades del nodo monolítico a los nodos definidos.
+
+3. **Integración de Sensores y Actuadores**:
+   - Publicar datos procesados de sensores.
+   - Controlar motores de navegación y limpieza.
+
+4. **Implementación de Navegación**:
+   - Usar LIDAR y odometría para planificar rutas y evitar obstáculos.
+
+5. **Supervisión y Diagnóstico**:
+   - Implementar el nodo maestro y el nodo de diagnóstico.
+
+6. **Interacción con el Usuario**:
+   - Desarrollar la interfaz web y el procesamiento de comandos por voz.
+
+---
+
+## **Contribuciones**
+- **Reporte de Errores**: Abre un [issue](https://github.com/tu-repositorio/issues).
+- **Sugerencias y Mejoras**: Envía un pull request.
+
+---
+
+## **Licencia**
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+Este archivo `README.md` proporciona una introducción completa al proyecto, adecuada para publicarlo en GitHub. ¿Quieres incluir algo adicional como un esquema gráfico o más detalles sobre la instalación? 😊
