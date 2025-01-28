@@ -3,20 +3,32 @@ from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 import Modulos.irobot.lib_irobot as lib_irobot
+<<<<<<< HEAD:Fase_1/GUI_Roomba_Robot.py.py
+import time
+=======
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca:Fase_1/GUI_Roomba_Robot_v1.1.1.py
 
 # Variable global para rastrear la tarea programada y la velocidad actual
 tarea_after = None
 velocidad_actual = 100  # Velocidad inicial
+<<<<<<< HEAD:Fase_1/GUI_Roomba_Robot.py.py
+#com = "/dev/ttyUSB0"
+com = "COM11"
+=======
 serial_com = "COM10"
 #serial_com = "/dev/pts/2"
 
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca:Fase_1/GUI_Roomba_Robot_v1.1.1.py
 
 # Crear gráfico de proximidad antes de definir `actualizar_datos`
 fig, ax = plt.subplots(figsize=(6, 4))
 
+<<<<<<< HEAD:Fase_1/GUI_Roomba_Robot.py.py
+=======
 # Bandera global para detener las actualizaciones si la aplicación se cierra
 aplicacion_activa = True
 
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca:Fase_1/GUI_Roomba_Robot_v1.1.1.py
 # Configuración del robot
 host = "192.168.0.191"  # IP del Jetson Nano
 user = "jetson"      # Usuario del Jetson Nano
@@ -25,7 +37,10 @@ password = "N!colas735LA"  # Contraseña del Jetson Nano
 def despertar_robot():
     lib_irobot.despertar_robot(host, user, password)
 
+<<<<<<< HEAD:Fase_1/GUI_Roomba_Robot.py.py
+=======
 # Función para actualizar los datos de la interfaz gráfica
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca:Fase_1/GUI_Roomba_Robot_v1.1.1.py
 def actualizar_datos():
     global tarea_after, aplicacion_activa
 
@@ -148,7 +163,11 @@ def buscar_base():
 
 # Inicialización del robot
 despertar_robot()
+<<<<<<< HEAD:Fase_1/GUI_Roomba_Robot.py.py
+robot = lib_irobot.connect_robot(com)
+=======
 robot = lib_irobot.connect_robot(serial_com)
+>>>>>>> 2b4b4d6ceaa7e48fd87d8cb7b3324259ab7a16ca:Fase_1/GUI_Roomba_Robot_v1.1.1.py
 lib_irobot.iniciar_robot(robot)
 
 # Traducciones para los sensores
