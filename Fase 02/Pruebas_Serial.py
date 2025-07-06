@@ -1,5 +1,5 @@
-from irobot.robots.create2 import Create2
-from irobot.openinterface.constants import MODES
+from Librerias.irobot.robots.create2 import Create2
+from Librerias.irobot.openinterface.constants import MODES
 import time
 
 
@@ -7,7 +7,8 @@ print("START")
 # instantiate robot
 
 #robot = Create2("/dev/ttyS100")
-robot = Create2("COM3")
+#robot = Create2("COM3")
+robot = Create2("/tmp/roomba_front")  # Para usar con el simulador
 
 
 def print_sensor_full():

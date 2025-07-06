@@ -9,6 +9,9 @@ class Robot:
         self.connected = False
         self.oi_mode = "FULL"
         self._socat_process = None
+        self._command_count = 0
+        self._last_reconnect_time = None
+        self._connected_since = None
         # Inicializar valores de los sensore
         self._sensors = {
             # Sensores de movimiento
@@ -46,6 +49,12 @@ class Robot:
                 'light_bumper_front_left': {'value': 0, 'enabled': True},
                 'light_bumper_front_right': {'value': 0, 'enabled': True},
                 'dirt_detect': {'value': 0, 'enabled': True},
+                'light_bump_left_signal': {'value': 0, 'enabled': True},
+                'light_bump_front_left_signal': {'value': 0, 'enabled': True},
+                'light_bump_center_left_signal': {'value': 0, 'enabled': True},
+                'light_bump_center_right_signal': {'value': 0, 'enabled': True},
+                'light_bump_front_right_signal': {'value': 0, 'enabled': True},
+                'light_bump_right_signal': {'value': 0, 'enabled': True},
             },
             # Energía
             'power': {
@@ -84,8 +93,8 @@ class Robot:
             },
             'state': {
                 'oi_mode': {'value': 0, 'enabled': True},
-                'stasis.disabled': {'value': False, 'enabled': True},
-                'stasis.toggling': {'value': False, 'enabled': True},
+                'stasis_disabled': {'value': False, 'enabled': True},
+                'stasis_toggling': {'value': False, 'enabled': True},
                 'number_stream_packets': {'value': 0, 'enabled': True},
                 'auto_wake': {'value': False, 'enabled': True},
             },   
@@ -142,17 +151,29 @@ class Robot:
         self._node.get_logger().debug("Sensores leídos correctamente")
         return active_sensors
     # ♻️ Actualización de Sensores
-    def update_sensors(self):
+    def update_sensors(self, categories=None):
         """
         Actualiza solo los valores habilitados desde el robot.
-        Cada sensor se actualiza individualmente. Si uno falla, el resto siguen.
+        Si 'categories' es None, actualiza todo.
+        Si 'categories' es una lista, actualiza solo esas categorías.
         """
         robot = self._robot
+
+        # Si no pasas categorías, actualiza todas
+        categories_to_update = categories if categories else self._sensors.keys()
+
         for category, sensors in self._sensors.items():
+            if category not in categories_to_update:
+                continue
+        if categories:
+            for cat in categories:
+                if cat not in self._sensors:
+                    self._node.get_logger().warn(f"Categoría desconocida '{cat}' en update_sensors(). Ignorando.")
+
             for sensor, data in sensors.items():
                 if isinstance(data, dict) and data.get('enabled', False):
                     try:
-                        # Actualizar valores dependiendo del sensor
+                        # Aquí todo el bloque de actualizaciones que ya tenías
                         if category == 'movement':
                             if sensor == 'distance':
                                 data['value'] = robot.distance
@@ -216,6 +237,18 @@ class Robot:
                                 data['value'] = robot.light_bumper_front_right
                             elif sensor == 'dirt_detect':
                                 data['value'] = robot.dirt_detect
+                            elif sensor == 'light_bump_left_signal':
+                                data['value'] = robot.light_bump_left_signal
+                            elif sensor == 'light_bump_front_left_signal':
+                                data['value'] = robot.light_bump_front_left_signal
+                            elif sensor == 'light_bump_center_left_signal':
+                                data['value'] = robot.light_bump_center_left_signal
+                            elif sensor == 'light_bump_center_right_signal':
+                                data['value'] = robot.light_bump_center_right_signal
+                            elif sensor == 'light_bump_front_right_signal':
+                                data['value'] = robot.light_bump_front_right_signal
+                            elif sensor == 'light_bump_right_signal':
+                                data['value'] = robot.light_bump_right_signal
 
                         elif category == 'power':
                             if sensor == 'voltage':
@@ -283,6 +316,17 @@ class Robot:
                                         self._node.get_logger().error(
                                             f"Error al leer botón '{button}' en 'misc': {btn_err}"
                                         )
+                        elif category == 'state':
+                            if sensor == 'oi_mode':
+                                data['value'] = robot.oi_mode
+                            elif sensor == 'stasis_disabled':
+                                data['value'] = robot.stasis.disabled
+                            elif sensor == 'stasis_toggling':
+                                data['value'] = robot.stasis.toggling
+                            elif sensor == 'number_stream_packets':
+                                data['value'] = robot.number_stream_packets
+                            elif sensor == 'auto_wake':
+                                data['value'] = self._auto_wake
 
                     except Exception as sensor_err:
                         self._node.get_logger().error(
@@ -291,6 +335,13 @@ class Robot:
         self._node.get_logger().debug("Parámetros de sensores actualizados correctamente")
     # 🚗 Movimiento
     def drive_forward(self, speed, duration):
+        if not -500 <= speed <= 500:
+            self._node.get_logger().error("Velocidad fuera de rango (-500 a 500). Comando ignorado.")
+            return
+        if duration <= 0:
+            self._node.get_logger().error("Duración debe ser >0. Comando ignorado.")
+            return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -323,6 +374,16 @@ class Robot:
                     self._node.get_logger().error("No se pudo reconectar.")
                 return
     def spin(self, direction, speed, duration):
+        if direction not in ["left", "right"]:
+            self._node.get_logger().error("Dirección inválida (use 'left' o 'right'). Comando ignorado.")
+            return
+        if not -500 <= speed <= 500:
+            self._node.get_logger().error("Velocidad fuera de rango (-500 a 500). Comando ignorado.")
+            return
+        if duration <= 0:
+            self._node.get_logger().error("Duración debe ser >0. Comando ignorado.")
+            return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -364,6 +425,13 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def drive_backward(self, speed, duration):
+        if not -500 <= speed <= 500:
+            self._node.get_logger().error("Velocidad fuera de rango (-500 a 500). Comando ignorado.")
+            return
+        if duration <= 0:
+            self._node.get_logger().error("Duración debe ser >0. Comando ignorado.")
+            return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -397,6 +465,13 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def drive_manual(self, left_speed, right_speed, duration):
+        if not -500 <= left_speed <= 500 or not -500 <= right_speed <= 500:
+            self._node.get_logger().error("Velocidades fuera de rango (-500 a 500). Comando ignorado.")
+            return
+        if duration <= 0:
+            self._node.get_logger().error("Duración debe ser >0. Comando ignorado.")
+            return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -433,6 +508,7 @@ class Robot:
             return
     # 🧹 Limpieza
     def start_cleaning(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -464,6 +540,7 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def start_max_cleaning(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -495,6 +572,7 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def stop_cleaning(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -527,6 +605,7 @@ class Robot:
             return
     # 🌀 Cepillos y aspiradora
     def set_brushes(self, main_brush=True, side_brush=True, vacuum=True):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -572,6 +651,7 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def stop_brushes(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -608,6 +688,10 @@ class Robot:
             return
     # 🔔 LEDs
     def set_leds(self, color, intensity):
+        if not 0 <= color <= 255 or not 0 <= intensity <= 255:
+            self._node.get_logger().error("Valores de LEDs fuera de rango (0-255). Comando ignorado.")
+            return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -642,6 +726,24 @@ class Robot:
             return
     # 🎵 Música
     def play_song(self, song_number, notes):
+        if not 0 <= song_number <= 3:
+            self._node.get_logger().error("Número de canción fuera de rango (0-3). Comando ignorado.")
+            return
+        if not (0 < len(notes) <= 16):
+            self._node.get_logger().error("Cantidad de notas fuera de rango (1-16). Comando ignorado.")
+            return
+        for i, note in enumerate(notes):
+            if not (isinstance(note, (list, tuple)) and len(note) == 2):
+                self._node.get_logger().error(f"Formato inválido en nota {i}. Comando ignorado.")
+                return
+            pitch, duration = note
+            if not 31 <= pitch <= 127:
+                self._node.get_logger().error(f"Tono de nota {i} fuera de rango (31-127). Comando ignorado.")
+                return
+            if not 0 <= duration <= 255:
+                self._node.get_logger().error(f"Duración de nota {i} fuera de rango (0-255). Comando ignorado.")
+                return
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -677,6 +779,7 @@ class Robot:
                 self._node.get_logger().error("No se pudo reconectar.")
             return
     def stop_song(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -714,6 +817,7 @@ class Robot:
             return
     # ⚓ Docking
     def seek_dock(self):
+        self._command_count +=1
         robot = self._robot
         if robot is None or not self.connected:
             self._node.get_logger().error("Robot no conectado o no inicializado")
@@ -759,6 +863,7 @@ class Robot:
         Returns:
             object: Instancia del robot conectado o None si falla.
         """
+        self._command_count +=1
         self._connection_params = {
             "connection_type": connection_type,
             "address": address,
@@ -807,6 +912,7 @@ class Robot:
                 self.wake(robot)
 
             self._node.get_logger().info("Conexión exitosa al robot.")
+            self._connected_since = time.time()
             self._robot = robot
             self.connected = True
             return robot
@@ -819,6 +925,7 @@ class Robot:
         """
         Reintenta la conexión con los mismos parámetros.
         """
+        self._command_count +=1
         params = self._connection_params
         self._node.get_logger().warn("Intentando reconexión con el robot...")
         self._robot = self.connect_robot(
@@ -830,6 +937,7 @@ class Robot:
         )
         if self._robot:
             self._node.get_logger().info("Reconexión exitosa.")
+            self._last_reconnect_time = time.time()
         else:
             self._node.get_logger().error("Fallo al reconectar.")
         return self._robot
@@ -840,6 +948,7 @@ class Robot:
         - Cierra el puerto serie si existe.
         - Mata el proceso de socat si existe.
         """
+        self._command_count +=1
         if not self.connected:
             self._node.get_logger().warn("El robot ya estaba desconectado.")
             return
@@ -890,12 +999,30 @@ class Robot:
         self._node.get_logger().info("El robot se ha desconectado y se ha puesto en estado seguro.")
     # 🌙 Despertar Robot
     def wake(self):
-        """Despierta el robot."""
-        raise NotImplementedError("Método wake() aún no implementado.")
-        #robot = self._robot
-        #robot.wake() # Desarrolla el método wake 
-        #self._node.get_logger().warn("Método wake() aún no implementado. No cambia el estado de conexión.")
-        #self.connected = True
+        """
+        Despierta el robot manualmente.
+        - Cambia el estado de oi_mode a FULL.
+        - Despierta el robot si está dormido.
+        """
+        self._command_count +=1
+        if not self.connected or self._robot is None:
+            self._node.get_logger().error("Robot no conectado o no inicializado.")
+            return
+
+        if self._robot.is_awake():
+            self._node.get_logger().info("El robot ya está despierto.")
+            return
+
+        try:
+            self._robot.wake()
+            oi_mode = self.oi_mode
+            self._robot.oi_mode = MODES.FULL
+            self.connected = True
+            self._node.get_logger().info("Robot despertado y modo OI cambiado a FULL.")
+            self._robot.oi_mode = oi_mode
+        except Exception as e:
+            self._node.get_logger().error(f"Error al despertar el robot: {e}")
+            self.connected = False
     # 📊 Estado General del Robot
     def get_status(self, include_sensors=False):
         """
@@ -907,6 +1034,7 @@ class Robot:
         Returns:
             dict con la información.
         """
+        self._command_count +=1
         status = {
             "connected": self.connected,
             "oi_mode": self.oi_mode,
@@ -923,6 +1051,12 @@ class Robot:
             except Exception as e:
                 self._node.get_logger().error(f"Error al obtener los sensores: {e}")
                 status["sensors"] = "Error al obtener datos"
+
+        status["metrics"] = {
+            "command_count": self._command_count,
+            "last_reconnect_time": self._last_reconnect_time,
+            "connected_since": self._connected_since,
+        }
 
         self._node.get_logger().debug(f"Estado del robot: {status}")
 
