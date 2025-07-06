@@ -7,7 +7,7 @@ from roomba_msgs.msg import Movement, Security, Power, Misc, State  # Mensajes p
 from roomba_msgs.srv import Connect, Priority, Reconfigure
 import threading
 import queue
-from lib_irobot import connect_robot, leer_sensores_basicos, leer_estado_bateria, leer_estado_movimiento, leer_proximidad, mover_adelante, girar, moverse_manual, activar_motor, detener_motor, encender_led, reproducir_musica
+from Librerias.irobot.lib_irobot import connect_robot, leer_sensores_basicos, leer_estado_bateria, leer_estado_movimiento, leer_proximidad, mover_adelante, girar, moverse_manual, activar_motor, detener_motor, encender_led, reproducir_musica
 
 class CommunicationNode(Node):
     def __init__(self):
