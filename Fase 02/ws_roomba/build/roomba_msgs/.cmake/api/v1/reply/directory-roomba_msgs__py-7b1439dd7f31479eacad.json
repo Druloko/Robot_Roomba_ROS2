@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "roomba_msgs__py",
+		"source" : "/home/druloko/ws_roomba/build/roomba_msgs/roomba_msgs__py"
+	}
+}

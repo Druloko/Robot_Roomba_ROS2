@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roomba_msgs/msg/Misc.msg
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Datos misceláneos que publica publish_misc_data()")
+    struct Misc {
+      boolean is_song_playing;
+
+      uint8 song_number;
+
+      @verbatim (language="comment", text=
+        "botones")
+      boolean button_clean;
+
+      boolean button_clock;
+
+      boolean button_day;
+
+      boolean button_dock;
+
+      boolean button_hour;
+
+      boolean button_minute;
+
+      boolean button_schedule;
+
+      boolean button_spot;
+    };
+  };
+};

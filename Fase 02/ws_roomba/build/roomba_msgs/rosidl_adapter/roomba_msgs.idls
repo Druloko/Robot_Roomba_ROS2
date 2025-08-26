@@ -1,0 +1,8 @@
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:msg/Movement.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:msg/Security.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:msg/Power.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:msg/Misc.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:msg/State.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:srv/Connect.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:srv/Priority.idl
+/home/druloko/ws_roomba/build/roomba_msgs/rosidl_adapter/roomba_msgs:srv/Reconfigure.idl

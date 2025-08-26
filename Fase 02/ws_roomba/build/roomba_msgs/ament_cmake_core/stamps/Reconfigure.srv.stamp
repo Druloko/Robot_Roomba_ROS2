@@ -1,0 +1,7 @@
+# Usado por reconfigure_callback()
+
+string parameter
+string value
+---
+bool   success
+string message

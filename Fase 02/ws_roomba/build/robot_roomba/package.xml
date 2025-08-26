@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>robot_roomba</name>
+  <version>0.0.0</version>
+  <description>Roomba robot interface package</description>
+  <maintainer email="mirandaalmendro@gmail.com">Pedro Manuel Miranda Almendro</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- Dependencias ROS2 -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>roomba_msgs</depend>
+
+  <!-- Dependencias de sistema (serial para iRobot OI) -->
+  <exec_depend>python3-serial</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

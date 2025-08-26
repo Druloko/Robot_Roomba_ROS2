@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from roomba_msgs/srv/Connect.srv
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Usado por connect_callback()")
+    struct Connect_Request {
+      string port;
+
+      string mode;
+    };
+    struct Connect_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

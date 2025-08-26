@@ -1,0 +1,213 @@
+[0.312s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'roomba_msgs', 'robot_roomba']
+[0.312s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=['roomba_msgs', 'robot_roomba'], packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ed0131ead50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ed01306f260>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ed01306f260>>)
+[0.399s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.400s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/druloko/ws_roomba'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extension 'ignore_ament_install'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extensions ['colcon_pkg']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extension 'colcon_pkg'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extensions ['colcon_meta']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extension 'colcon_meta'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extensions ['ros']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_roomba) by extension 'ros'
+[0.456s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_roomba' with type 'ros.ament_python' and name 'robot_roomba'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roomba_msgs) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roomba_msgs' with type 'ros.ament_cmake' and name 'roomba_msgs'
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/druloko/ws_roomba/install
+[0.508s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 338 installed packages in /opt/ros/rolling
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_args' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_target' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'roomba_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.568s] DEBUG:colcon.colcon_core.verb:Building package 'roomba_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/druloko/ws_roomba/build/roomba_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/druloko/ws_roomba/install/roomba_msgs', 'merge_install': False, 'path': '/home/druloko/ws_roomba/src/roomba_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_target' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_clean_cache' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_clean_first' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'cmake_force_configure' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'ament_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'catkin_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'robot_roomba' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.569s] DEBUG:colcon.colcon_core.verb:Building package 'robot_roomba' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/druloko/ws_roomba/build/robot_roomba', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/druloko/ws_roomba/install/robot_roomba', 'merge_install': False, 'path': '/home/druloko/ws_roomba/src/robot_roomba', 'symlink_install': False, 'test_result_base': None}
+[0.569s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.570s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.571s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/druloko/ws_roomba/src/roomba_msgs' with build type 'ament_cmake'
+[0.571s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/druloko/ws_roomba/src/roomba_msgs'
+[0.581s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.581s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.581s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/druloko/ws_roomba/build/roomba_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake /home/druloko/ws_roomba/src/roomba_msgs -DCMAKE_INSTALL_PREFIX=/home/druloko/ws_roomba/install/roomba_msgs
+[6.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/druloko/ws_roomba/build/roomba_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake /home/druloko/ws_roomba/src/roomba_msgs -DCMAKE_INSTALL_PREFIX=/home/druloko/ws_roomba/install/roomba_msgs
+[6.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/druloko/ws_roomba/build/roomba_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake --build /home/druloko/ws_roomba/build/roomba_msgs -- -j8 -l8
+[17.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/druloko/ws_roomba/build/roomba_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake --build /home/druloko/ws_roomba/build/roomba_msgs -- -j8 -l8
+[17.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/druloko/ws_roomba/build/roomba_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake --install /home/druloko/ws_roomba/build/roomba_msgs
+[17.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roomba_msgs)
+[17.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/druloko/ws_roomba/build/roomba_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling /usr/bin/cmake --install /home/druloko/ws_roomba/build/roomba_msgs
+[17.732s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs' for CMake module files
+[17.733s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs' for CMake config files
+[17.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'cmake_prefix_path')
+[17.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.ps1'
+[17.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.dsv'
+[17.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.sh'
+[17.738s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib'
+[17.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'ld_library_path_lib')
+[17.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.ps1'
+[17.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.dsv'
+[17.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.sh'
+[17.740s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/bin'
+[17.740s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib/pkgconfig/roomba_msgs.pc'
+[17.740s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages'
+[17.740s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'pythonpath')
+[17.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.ps1'
+[17.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.dsv'
+[17.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.sh'
+[17.742s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/bin'
+[17.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.ps1'
+[17.743s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.dsv'
+[17.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.sh'
+[17.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.bash'
+[17.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.zsh'
+[17.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/druloko/ws_roomba/install/roomba_msgs/share/colcon-core/packages/roomba_msgs)
+[17.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roomba_msgs)
+[17.750s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs' for CMake module files
+[17.751s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs' for CMake config files
+[17.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'cmake_prefix_path')
+[17.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.ps1'
+[17.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.dsv'
+[17.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/cmake_prefix_path.sh'
+[17.754s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib'
+[17.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'ld_library_path_lib')
+[17.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.ps1'
+[17.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.dsv'
+[17.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/ld_library_path_lib.sh'
+[17.756s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/bin'
+[17.756s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib/pkgconfig/roomba_msgs.pc'
+[17.757s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages'
+[17.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_msgs', 'pythonpath')
+[17.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.ps1'
+[17.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.dsv'
+[17.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/hook/pythonpath.sh'
+[17.759s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/roomba_msgs/bin'
+[17.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.ps1'
+[17.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.dsv'
+[17.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.sh'
+[17.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.bash'
+[17.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.zsh'
+[17.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/druloko/ws_roomba/install/roomba_msgs/share/colcon-core/packages/roomba_msgs)
+[17.763s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/druloko/ws_roomba/src/robot_roomba' with build type 'ament_python'
+[17.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_roomba', 'ament_prefix_path')
+[17.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/ament_prefix_path.ps1'
+[17.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/ament_prefix_path.dsv'
+[17.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/ament_prefix_path.sh'
+[17.767s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.767s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.220s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/druloko/ws_roomba/src/robot_roomba'
+[18.220s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.220s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/druloko/ws_roomba/build/robot_roomba': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build
+[20.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/druloko/ws_roomba/build/robot_roomba' returned '0': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build
+[20.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/druloko/ws_roomba/src/robot_roomba': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data --force
+[20.965s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba' for CMake module files
+[20.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/druloko/ws_roomba/src/robot_roomba' returned '0': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data --force
+[20.966s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba' for CMake config files
+[20.969s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba/lib'
+[20.969s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba/bin'
+[20.970s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba/lib/pkgconfig/robot_roomba.pc'
+[20.970s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages'
+[20.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_roomba', 'pythonpath')
+[20.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/pythonpath.ps1'
+[20.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/pythonpath.dsv'
+[20.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/hook/pythonpath.sh'
+[20.972s] Level 1:colcon.colcon_core.environment:checking '/home/druloko/ws_roomba/install/robot_roomba/bin'
+[20.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_roomba)
+[20.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/package.ps1'
+[20.973s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/package.dsv'
+[20.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/package.sh'
+[20.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/package.bash'
+[20.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/package.zsh'
+[20.975s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/druloko/ws_roomba/install/robot_roomba/share/colcon-core/packages/robot_roomba)
+[20.976s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.976s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.976s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.977s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.024s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[21.024s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.024s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.024s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.030s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[21.030s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.031s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/druloko/ws_roomba/install/local_setup.ps1'
+[21.032s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/druloko/ws_roomba/install/_local_setup_util_ps1.py'
+[21.033s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/druloko/ws_roomba/install/setup.ps1'
+[21.035s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/druloko/ws_roomba/install/local_setup.sh'
+[21.036s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/druloko/ws_roomba/install/_local_setup_util_sh.py'
+[21.036s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/druloko/ws_roomba/install/setup.sh'
+[21.038s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/druloko/ws_roomba/install/local_setup.bash'
+[21.038s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/druloko/ws_roomba/install/setup.bash'
+[21.040s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/druloko/ws_roomba/install/local_setup.zsh'
+[21.040s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/druloko/ws_roomba/install/setup.zsh'

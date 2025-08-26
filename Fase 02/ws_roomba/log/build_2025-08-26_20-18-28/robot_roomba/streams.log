@@ -1,0 +1,98 @@
+[1.703s] Invoking command in '/home/druloko/ws_roomba/build/robot_roomba': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build
+[2.150s] running develop
+[2.387s] Removing /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot-roomba.egg-link (link to .)
+[2.433s] Invoked command in '/home/druloko/ws_roomba/build/robot_roomba' returned '0': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build
+[2.436s] Invoking command in '/home/druloko/ws_roomba/src/robot_roomba': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data --force
+[2.789s] running egg_info
+[2.814s] writing ../../build/robot_roomba/robot_roomba.egg-info/PKG-INFO
+[2.814s] writing dependency_links to ../../build/robot_roomba/robot_roomba.egg-info/dependency_links.txt
+[2.815s] writing entry points to ../../build/robot_roomba/robot_roomba.egg-info/entry_points.txt
+[2.815s] writing requirements to ../../build/robot_roomba/robot_roomba.egg-info/requires.txt
+[2.815s] writing top-level names to ../../build/robot_roomba/robot_roomba.egg-info/top_level.txt
+[2.864s] reading manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'
+[2.866s] writing manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'
+[2.866s] running build
+[2.867s] running build_py
+[2.867s] creating /home/druloko/ws_roomba/build/robot_roomba/build
+[2.867s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib
+[2.868s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba
+[2.868s] copying robot_roomba/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba
+[2.868s] copying robot_roomba/communication_node.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba
+[2.869s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot
+[2.870s] copying robot_roomba/irobot/setup.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot
+[2.871s] copying robot_roomba/irobot/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot
+[2.871s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba
+[2.871s] copying robot_roomba/roomba/test_robot.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba
+[2.872s] copying robot_roomba/roomba/lib_robot_roomba.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba
+[2.873s] copying robot_roomba/roomba/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba
+[2.874s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots
+[2.874s] copying robot_roomba/irobot/robots/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots
+[2.875s] copying robot_roomba/irobot/robots/create2.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots
+[2.876s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface
+[2.876s] copying robot_roomba/irobot/openinterface/commands.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface
+[2.876s] copying robot_roomba/irobot/openinterface/response_parsers.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface
+[2.877s] copying robot_roomba/irobot/openinterface/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface
+[2.878s] copying robot_roomba/irobot/openinterface/constants.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface
+[2.878s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests
+[2.879s] copying robot_roomba/irobot/tests/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests
+[2.880s] copying robot_roomba/irobot/tests/create2_test.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests
+[2.881s] copying robot_roomba/irobot/tests/commands_test.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests
+[2.881s] creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces
+[2.882s] copying robot_roomba/irobot/console_interfaces/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces
+[2.882s] copying robot_roomba/irobot/console_interfaces/create2.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces
+[2.883s] running install
+[2.890s] running install_lib
+[2.913s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba
+[2.914s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot
+[2.914s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots
+[2.915s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots
+[2.915s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots/create2.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots
+[2.915s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/setup.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot
+[2.915s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface
+[2.916s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/commands.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface
+[2.916s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/response_parsers.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface
+[2.917s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface
+[2.917s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/constants.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface
+[2.917s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests
+[2.917s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests
+[2.918s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/create2_test.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests
+[2.918s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/commands_test.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests
+[2.918s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces
+[2.918s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces
+[2.918s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces/create2.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces
+[2.919s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot
+[2.919s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba
+[2.919s] creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba
+[2.920s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/test_robot.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba
+[2.920s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/lib_robot_roomba.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba
+[2.920s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba
+[2.921s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/communication_node.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba
+[2.921s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots/__init__.py to __init__.cpython-312.pyc
+[2.922s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots/create2.py to create2.cpython-312.pyc
+[2.928s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/setup.py to setup.cpython-312.pyc
+[2.929s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/commands.py to commands.cpython-312.pyc
+[2.931s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/response_parsers.py to response_parsers.cpython-312.pyc
+[2.940s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/__init__.py to __init__.cpython-312.pyc
+[2.940s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/constants.py to constants.cpython-312.pyc
+[2.942s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/__init__.py to __init__.cpython-312.pyc
+[2.942s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/create2_test.py to create2_test.cpython-312.pyc
+[2.943s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/commands_test.py to commands_test.cpython-312.pyc
+[2.944s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces/__init__.py to __init__.cpython-312.pyc
+[2.945s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces/create2.py to create2.cpython-312.pyc
+[2.946s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/__init__.py to __init__.cpython-312.pyc
+[2.947s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/__init__.py to __init__.cpython-312.pyc
+[2.947s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/test_robot.py to test_robot.cpython-312.pyc
+[2.948s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/lib_robot_roomba.py to lib_robot_roomba.cpython-312.pyc
+[2.956s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/__init__.py to __init__.cpython-312.pyc
+[2.957s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/communication_node.py to communication_node.cpython-312.pyc
+[2.960s] running install_data
+[2.961s] copying resource/robot_roomba -> /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages
+[2.961s] copying package.xml -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba
+[2.961s] creating /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/launch
+[2.962s] copying launch/communication.launch.py -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/launch
+[2.963s] running install_egg_info
+[2.988s] Copying ../../build/robot_roomba/robot_roomba.egg-info to /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba-0.0.0-py3.12.egg-info
+[2.990s] running install_scripts
+[3.153s] Installing communication_node script to /home/druloko/ws_roomba/install/robot_roomba/lib/robot_roomba
+[3.154s] writing list of installed files to '/home/druloko/ws_roomba/build/robot_roomba/install.log'
+[3.200s] Invoked command in '/home/druloko/ws_roomba/src/robot_roomba' returned '0': AMENT_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/druloko/ws_roomba/install/roomba_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/druloko/ws_roomba/install/roomba_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data --force

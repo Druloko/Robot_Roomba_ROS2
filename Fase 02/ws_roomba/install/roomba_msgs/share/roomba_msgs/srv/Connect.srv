@@ -1,0 +1,7 @@
+# Usado por connect_callback()
+
+string port
+string mode
+---
+bool   success
+string message

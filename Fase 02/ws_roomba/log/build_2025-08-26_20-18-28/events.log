@@ -1,0 +1,791 @@
+[0.000000] (-) TimerEvent: {}
+[0.000452] (roomba_msgs) JobQueued: {'identifier': 'roomba_msgs', 'dependencies': OrderedDict()}
+[0.000566] (robot_roomba) JobQueued: {'identifier': 'robot_roomba', 'dependencies': OrderedDict({'roomba_msgs': '/home/druloko/ws_roomba/install/roomba_msgs'})}
+[0.000618] (roomba_msgs) JobStarted: {'identifier': 'roomba_msgs'}
+[0.019755] (roomba_msgs) JobProgress: {'identifier': 'roomba_msgs', 'progress': 'cmake'}
+[0.021740] (roomba_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/druloko/ws_roomba/src/roomba_msgs', '-DCMAKE_INSTALL_PREFIX=/home/druloko/ws_roomba/install/roomba_msgs'], 'cwd': '/home/druloko/ws_roomba/build/roomba_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/rolling/share', 'USER': 'druloko', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/druloko', 'OLDPWD': '/home/druloko/ws_roomba/src', 'TERM_PROGRAM_VERSION': '1.99.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4993f45-0a21-4cc0-abac-740fb243c774.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/druloko/ws_roomba/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'druloko', 'NAME': 'PC', 'WSL_INTEROP': '/run/WSL/350_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/druloko/.local/bin:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python313/Scripts/:/mnt/c/Program Files/Python313/:/mnt/c/Program Files/Eclipse Adoptium/jre-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WireGuard/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/druloko/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e2888d3203.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/druloko/ws_roomba/build/roomba_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/druloko/ws_roomba/build/robot_roomba:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.098631] (-) TimerEvent: {}
+[0.199011] (-) TimerEvent: {}
+[0.299421] (-) TimerEvent: {}
+[0.368323] (roomba_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.399569] (-) TimerEvent: {}
+[0.500041] (-) TimerEvent: {}
+[0.600413] (-) TimerEvent: {}
+[0.700794] (-) TimerEvent: {}
+[0.801161] (-) TimerEvent: {}
+[0.901551] (-) TimerEvent: {}
+[0.904582] (roomba_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.001716] (-) TimerEvent: {}
+[1.102130] (-) TimerEvent: {}
+[1.202502] (-) TimerEvent: {}
+[1.252099] (roomba_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.302639] (-) TimerEvent: {}
+[1.403047] (-) TimerEvent: {}
+[1.482068] (roomba_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.491767] (roomba_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.492719] (roomba_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.493742] (roomba_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.503152] (-) TimerEvent: {}
+[1.554073] (roomba_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.603291] (-) TimerEvent: {}
+[1.703681] (-) TimerEvent: {}
+[1.772219] (roomba_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.782811] (roomba_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.783161] (roomba_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.783671] (roomba_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.803811] (-) TimerEvent: {}
+[1.824387] (roomba_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[1.903928] (-) TimerEvent: {}
+[2.004255] (-) TimerEvent: {}
+[2.017700] (roomba_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.104378] (-) TimerEvent: {}
+[2.204805] (-) TimerEvent: {}
+[2.221989] (roomba_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.8.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[2.239559] (roomba_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.304953] (-) TimerEvent: {}
+[2.405383] (-) TimerEvent: {}
+[2.445632] (roomba_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.505525] (-) TimerEvent: {}
+[2.544216] (roomba_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 5.0.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[2.556046] (roomba_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.8.2 (/opt/ros/rolling/share/geometry_msgs/cmake)\n'}
+[2.605705] (-) TimerEvent: {}
+[2.706097] (-) TimerEvent: {}
+[2.806500] (-) TimerEvent: {}
+[2.906879] (-) TimerEvent: {}
+[3.007256] (-) TimerEvent: {}
+[3.107686] (-) TimerEvent: {}
+[3.208078] (-) TimerEvent: {}
+[3.308411] (-) TimerEvent: {}
+[3.408791] (-) TimerEvent: {}
+[3.478056] (roomba_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros_core: 0.15.2 (/opt/ros/rolling/share/ament_cmake_ros_core/cmake)\n'}
+[3.508954] (-) TimerEvent: {}
+[3.609306] (-) TimerEvent: {}
+[3.709687] (-) TimerEvent: {}
+[3.810019] (-) TimerEvent: {}
+[3.910349] (-) TimerEvent: {}
+[3.986819] (roomba_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.010583] (-) TimerEvent: {}
+[4.111077] (-) TimerEvent: {}
+[4.211504] (-) TimerEvent: {}
+[4.311963] (-) TimerEvent: {}
+[4.412374] (-) TimerEvent: {}
+[4.512723] (-) TimerEvent: {}
+[4.613087] (-) TimerEvent: {}
+[4.673843] (roomba_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.713207] (-) TimerEvent: {}
+[4.813536] (-) TimerEvent: {}
+[4.913890] (-) TimerEvent: {}
+[5.014265] (-) TimerEvent: {}
+[5.114741] (-) TimerEvent: {}
+[5.215114] (-) TimerEvent: {}
+[5.313071] (roomba_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.315260] (-) TimerEvent: {}
+[5.383626] (roomba_msgs) StdoutLine: {'line': b'-- Configuring done (5.3s)\n'}
+[5.415463] (-) TimerEvent: {}
+[5.481141] (roomba_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.502791] (roomba_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/druloko/ws_roomba/build/roomba_msgs\n'}
+[5.515592] (-) TimerEvent: {}
+[5.521733] (roomba_msgs) CommandEnded: {'returncode': 0}
+[5.522676] (roomba_msgs) JobProgress: {'identifier': 'roomba_msgs', 'progress': 'build'}
+[5.522708] (roomba_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/druloko/ws_roomba/build/roomba_msgs', '--', '-j8', '-l8'], 'cwd': '/home/druloko/ws_roomba/build/roomba_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/rolling/share', 'USER': 'druloko', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/druloko', 'OLDPWD': '/home/druloko/ws_roomba/src', 'TERM_PROGRAM_VERSION': '1.99.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4993f45-0a21-4cc0-abac-740fb243c774.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/druloko/ws_roomba/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'druloko', 'NAME': 'PC', 'WSL_INTEROP': '/run/WSL/350_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/druloko/.local/bin:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python313/Scripts/:/mnt/c/Program Files/Python313/:/mnt/c/Program Files/Eclipse Adoptium/jre-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WireGuard/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/druloko/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e2888d3203.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/druloko/ws_roomba/build/roomba_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/druloko/ws_roomba/build/robot_roomba:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[5.589920] (roomba_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.601549] (roomba_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_roomba_msgs\n'}
+[5.615698] (-) TimerEvent: {}
+[5.716024] (-) TimerEvent: {}
+[5.816381] (-) TimerEvent: {}
+[5.881076] (roomba_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.881968] (roomba_msgs) StdoutLine: {'line': b'creating roomba_msgs.egg-info\n'}
+[5.902928] (roomba_msgs) StdoutLine: {'line': b'writing roomba_msgs.egg-info/PKG-INFO\n'}
+[5.903452] (roomba_msgs) StdoutLine: {'line': b'writing dependency_links to roomba_msgs.egg-info/dependency_links.txt\n'}
+[5.903599] (roomba_msgs) StdoutLine: {'line': b'writing top-level names to roomba_msgs.egg-info/top_level.txt\n'}
+[5.903693] (roomba_msgs) StdoutLine: {'line': b"writing manifest file 'roomba_msgs.egg-info/SOURCES.txt'\n"}
+[5.916431] (-) TimerEvent: {}
+[5.968665] (roomba_msgs) StdoutLine: {'line': b"reading manifest file 'roomba_msgs.egg-info/SOURCES.txt'\n"}
+[5.969209] (roomba_msgs) StdoutLine: {'line': b"writing manifest file 'roomba_msgs.egg-info/SOURCES.txt'\n"}
+[6.008716] (roomba_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_roomba_msgs_egg\n'}
+[6.016560] (-) TimerEvent: {}
+[6.115096] (roomba_msgs) StdoutLine: {'line': b'[  1%] Built target roomba_msgs__rosidl_generator_type_description\n'}
+[6.116711] (-) TimerEvent: {}
+[6.130084] (roomba_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.143212] (roomba_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.216889] (-) TimerEvent: {}
+[6.317301] (-) TimerEvent: {}
+[6.417663] (-) TimerEvent: {}
+[6.517995] (-) TimerEvent: {}
+[6.618359] (-) TimerEvent: {}
+[6.718698] (-) TimerEvent: {}
+[6.818997] (-) TimerEvent: {}
+[6.919361] (-) TimerEvent: {}
+[7.019746] (-) TimerEvent: {}
+[7.121984] (-) TimerEvent: {}
+[7.212468] (roomba_msgs) StdoutLine: {'line': b'[  2%] Built target roomba_msgs__cpp\n'}
+[7.222076] (-) TimerEvent: {}
+[7.322455] (-) TimerEvent: {}
+[7.419001] (roomba_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__functions.c.o\x1b[0m\n'}
+[7.419718] (roomba_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__type_support.c.o\x1b[0m\n'}
+[7.419930] (roomba_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__description.c.o\x1b[0m\n'}
+[7.420084] (roomba_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__description.c.o\x1b[0m\n'}
+[7.420214] (roomba_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__functions.c.o\x1b[0m\n'}
+[7.420394] (roomba_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__type_support.c.o\x1b[0m\n'}
+[7.424375] (roomba_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__description.c.o\x1b[0m\n'}
+[7.424684] (-) TimerEvent: {}
+[7.424930] (roomba_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__functions.c.o\x1b[0m\n'}
+[7.488403] (roomba_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__type_support.c.o\x1b[0m\n'}
+[7.491786] (roomba_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__description.c.o\x1b[0m\n'}
+[7.505451] (roomba_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__type_support.c.o\x1b[0m\n'}
+[7.505886] (roomba_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__functions.c.o\x1b[0m\n'}
+[7.506063] (roomba_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__description.c.o\x1b[0m\n'}
+[7.527762] (-) TimerEvent: {}
+[7.535352] (roomba_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__type_support.c.o\x1b[0m\n'}
+[7.535697] (roomba_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__description.c.o\x1b[0m\n'}
+[7.535853] (roomba_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__functions.c.o\x1b[0m\n'}
+[7.542039] (roomba_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__functions.c.o\x1b[0m\n'}
+[7.552054] (roomba_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__type_support.c.o\x1b[0m\n'}
+[7.552437] (roomba_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__description.c.o\x1b[0m\n'}
+[7.582340] (roomba_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__functions.c.o\x1b[0m\n'}
+[7.599310] (roomba_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__type_support.c.o\x1b[0m\n'}
+[7.605212] (roomba_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__description.c.o\x1b[0m\n'}
+[7.629876] (-) TimerEvent: {}
+[7.631356] (roomba_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__functions.c.o\x1b[0m\n'}
+[7.632965] (roomba_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__type_support.c.o\x1b[0m\n'}
+[7.725038] (roomba_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking C shared library libroomba_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.728315] (-) TimerEvent: {}
+[7.826735] (roomba_msgs) StdoutLine: {'line': b'[ 26%] Built target roomba_msgs__rosidl_generator_c\n'}
+[7.828422] (-) TimerEvent: {}
+[7.845005] (roomba_msgs) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.845334] (roomba_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.845511] (roomba_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.845708] (roomba_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.845847] (roomba_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.846088] (roomba_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.931757] (-) TimerEvent: {}
+[8.032258] (-) TimerEvent: {}
+[8.132963] (-) TimerEvent: {}
+[8.233464] (-) TimerEvent: {}
+[8.334181] (-) TimerEvent: {}
+[8.434937] (-) TimerEvent: {}
+[8.535989] (-) TimerEvent: {}
+[8.636268] (-) TimerEvent: {}
+[8.739933] (-) TimerEvent: {}
+[8.840341] (-) TimerEvent: {}
+[8.899918] (roomba_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/security__type_support.cpp.o\x1b[0m\n'}
+[8.900222] (roomba_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/power__type_support.cpp.o\x1b[0m\n'}
+[8.900366] (roomba_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/movement__type_support.cpp.o\x1b[0m\n'}
+[8.933707] (roomba_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/movement__type_support.cpp.o\x1b[0m\n'}
+[8.940453] (-) TimerEvent: {}
+[9.017264] (roomba_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/security__type_support.cpp.o\x1b[0m\n'}
+[9.019752] (roomba_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/power__type_support.cpp.o\x1b[0m\n'}
+[9.020914] (roomba_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/misc__type_support.cpp.o\x1b[0m\n'}
+[9.040600] (-) TimerEvent: {}
+[9.109604] (roomba_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/state__type_support.cpp.o\x1b[0m\n'}
+[9.140780] (-) TimerEvent: {}
+[9.193902] (roomba_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/connect__type_support.cpp.o\x1b[0m\n'}
+[9.244200] (-) TimerEvent: {}
+[9.311833] (roomba_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/priority__type_support.cpp.o\x1b[0m\n'}
+[9.344321] (-) TimerEvent: {}
+[9.391745] (roomba_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__type_support.cpp.o\x1b[0m\n'}
+[9.439745] (roomba_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/reconfigure__type_support.cpp.o\x1b[0m\n'}
+[9.444469] (-) TimerEvent: {}
+[9.459817] (roomba_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/movement__type_support.c.o\x1b[0m\n'}
+[9.532260] (roomba_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.542932] (roomba_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/security__type_support.c.o\x1b[0m\n'}
+[9.544608] (-) TimerEvent: {}
+[9.635461] (roomba_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/power__type_support.c.o\x1b[0m\n'}
+[9.644727] (-) TimerEvent: {}
+[9.725566] (roomba_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/misc__type_support.c.o\x1b[0m\n'}
+[9.744860] (-) TimerEvent: {}
+[9.749613] (roomba_msgs) StdoutLine: {'line': b'[ 48%] Built target roomba_msgs__rosidl_typesupport_c\n'}
+[9.750933] (roomba_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__type_support.cpp.o\x1b[0m\n'}
+[9.757544] (roomba_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/state__type_support.c.o\x1b[0m\n'}
+[9.759345] (roomba_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/misc__type_support.cpp.o\x1b[0m\n'}
+[9.778729] (roomba_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__type_support.cpp.o\x1b[0m\n'}
+[9.793625] (roomba_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/state__type_support.cpp.o\x1b[0m\n'}
+[9.831791] (roomba_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/connect__type_support.c.o\x1b[0m\n'}
+[9.844990] (-) TimerEvent: {}
+[9.926510] (roomba_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/movement__type_support.cpp.o\x1b[0m\n'}
+[9.943589] (roomba_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/priority__type_support.c.o\x1b[0m\n'}
+[9.945145] (-) TimerEvent: {}
+[10.040893] (roomba_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/reconfigure__type_support.c.o\x1b[0m\n'}
+[10.045298] (-) TimerEvent: {}
+[10.069810] (roomba_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/movement__type_support_c.cpp.o\x1b[0m\n'}
+[10.112107] (roomba_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__type_support.cpp.o\x1b[0m\n'}
+[10.133669] (roomba_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libroomba_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.145431] (-) TimerEvent: {}
+[10.249532] (-) TimerEvent: {}
+[10.349936] (-) TimerEvent: {}
+[10.379109] (roomba_msgs) StdoutLine: {'line': b'[ 59%] Built target roomba_msgs__rosidl_typesupport_introspection_c\n'}
+[10.409905] (roomba_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/security__type_support.cpp.o\x1b[0m\n'}
+[10.444732] (roomba_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/connect__type_support.cpp.o\x1b[0m\n'}
+[10.451756] (-) TimerEvent: {}
+[10.474589] (roomba_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/security__type_support_c.cpp.o\x1b[0m\n'}
+[10.494957] (roomba_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/power__type_support_c.cpp.o\x1b[0m\n'}
+[10.506552] (roomba_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/power__type_support.cpp.o\x1b[0m\n'}
+[10.555749] (-) TimerEvent: {}
+[10.656155] (-) TimerEvent: {}
+[10.756564] (-) TimerEvent: {}
+[10.856975] (-) TimerEvent: {}
+[10.899798] (roomba_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__type_support.cpp.o\x1b[0m\n'}
+[10.957116] (-) TimerEvent: {}
+[11.057594] (-) TimerEvent: {}
+[11.158072] (-) TimerEvent: {}
+[11.258502] (-) TimerEvent: {}
+[11.261799] (roomba_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__type_support.cpp.o\x1b[0m\n'}
+[11.267858] (roomba_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/misc__type_support_c.cpp.o\x1b[0m\n'}
+[11.358620] (-) TimerEvent: {}
+[11.441200] (roomba_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/priority__type_support.cpp.o\x1b[0m\n'}
+[11.458732] (-) TimerEvent: {}
+[11.559115] (-) TimerEvent: {}
+[11.604812] (roomba_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/reconfigure__type_support.cpp.o\x1b[0m\n'}
+[11.614716] (roomba_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/misc__type_support.cpp.o\x1b[0m\n'}
+[11.647064] (roomba_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__type_support.cpp.o\x1b[0m\n'}
+[11.659239] (-) TimerEvent: {}
+[11.689769] (roomba_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o\x1b[0m\n'}
+[11.712977] (roomba_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/connect__type_support.cpp.o\x1b[0m\n'}
+[11.759351] (-) TimerEvent: {}
+[11.859844] (-) TimerEvent: {}
+[11.960460] (-) TimerEvent: {}
+[12.064667] (-) TimerEvent: {}
+[12.167645] (-) TimerEvent: {}
+[12.272223] (-) TimerEvent: {}
+[12.372958] (-) TimerEvent: {}
+[12.425118] (roomba_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/state__type_support_c.cpp.o\x1b[0m\n'}
+[12.473086] (-) TimerEvent: {}
+[12.525559] (roomba_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/priority__type_support.cpp.o\x1b[0m\n'}
+[12.573242] (-) TimerEvent: {}
+[12.583939] (roomba_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/connect__type_support_c.cpp.o\x1b[0m\n'}
+[12.675769] (-) TimerEvent: {}
+[12.735078] (roomba_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.775977] (-) TimerEvent: {}
+[12.862834] (roomba_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__type_support.cpp.o\x1b[0m\n'}
+[12.876303] (-) TimerEvent: {}
+[12.923048] (roomba_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/reconfigure__type_support.cpp.o\x1b[0m\n'}
+[12.978333] (-) TimerEvent: {}
+[13.000566] (roomba_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/priority__type_support_c.cpp.o\x1b[0m\n'}
+[13.078470] (-) TimerEvent: {}
+[13.107023] (roomba_msgs) StdoutLine: {'line': b'[ 80%] Built target roomba_msgs__rosidl_typesupport_cpp\n'}
+[13.130293] (roomba_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/reconfigure__type_support_c.cpp.o\x1b[0m\n'}
+[13.178591] (-) TimerEvent: {}
+[13.280144] (-) TimerEvent: {}
+[13.380583] (-) TimerEvent: {}
+[13.483759] (-) TimerEvent: {}
+[13.584281] (-) TimerEvent: {}
+[13.684932] (-) TimerEvent: {}
+[13.782115] (roomba_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.785096] (-) TimerEvent: {}
+[13.885538] (-) TimerEvent: {}
+[13.985992] (-) TimerEvent: {}
+[14.006651] (roomba_msgs) StdoutLine: {'line': b'[ 82%] Built target roomba_msgs__rosidl_typesupport_introspection_cpp\n'}
+[14.086084] (-) TimerEvent: {}
+[14.135849] (roomba_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.158231] (roomba_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.186276] (-) TimerEvent: {}
+[14.286706] (-) TimerEvent: {}
+[14.313285] (roomba_msgs) StdoutLine: {'line': b'[ 84%] Built target roomba_msgs__rosidl_typesupport_fastrtps_c\n'}
+[14.330704] (roomba_msgs) StdoutLine: {'line': b'[ 84%] Built target roomba_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[14.359355] (roomba_msgs) StdoutLine: {'line': b'[ 84%] Built target roomba_msgs\n'}
+[14.386858] (-) TimerEvent: {}
+[14.387830] (roomba_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.486950] (-) TimerEvent: {}
+[14.587336] (-) TimerEvent: {}
+[14.688758] (-) TimerEvent: {}
+[14.789924] (-) TimerEvent: {}
+[14.890459] (-) TimerEvent: {}
+[14.991375] (-) TimerEvent: {}
+[15.092876] (-) TimerEvent: {}
+[15.193334] (-) TimerEvent: {}
+[15.294209] (-) TimerEvent: {}
+[15.394670] (-) TimerEvent: {}
+[15.495515] (-) TimerEvent: {}
+[15.595930] (-) TimerEvent: {}
+[15.696678] (-) TimerEvent: {}
+[15.797582] (-) TimerEvent: {}
+[15.898416] (-) TimerEvent: {}
+[15.999032] (-) TimerEvent: {}
+[16.078847] (roomba_msgs) StdoutLine: {'line': b'[ 85%] Built target roomba_msgs__py\n'}
+[16.099252] (-) TimerEvent: {}
+[16.108377] (roomba_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_misc_s.c.o\x1b[0m\n'}
+[16.110262] (roomba_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_movement_s.c.o\x1b[0m\n'}
+[16.110524] (roomba_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_security_s.c.o\x1b[0m\n'}
+[16.110704] (roomba_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_priority_s.c.o\x1b[0m\n'}
+[16.110831] (roomba_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_connect_s.c.o\x1b[0m\n'}
+[16.110953] (roomba_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_reconfigure_s.c.o\x1b[0m\n'}
+[16.111075] (roomba_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_power_s.c.o\x1b[0m\n'}
+[16.111338] (roomba_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_state_s.c.o\x1b[0m\n'}
+[16.199859] (-) TimerEvent: {}
+[16.300271] (-) TimerEvent: {}
+[16.403824] (-) TimerEvent: {}
+[16.504290] (-) TimerEvent: {}
+[16.529784] (roomba_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library libroomba_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.604445] (-) TimerEvent: {}
+[16.637019] (roomba_msgs) StdoutLine: {'line': b'[ 94%] Built target roomba_msgs__rosidl_generator_py\n'}
+[16.665523] (roomba_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.667051] (roomba_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.667511] (roomba_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.704682] (-) TimerEvent: {}
+[16.805670] (-) TimerEvent: {}
+[16.860962] (roomba_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.870983] (roomba_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.874063] (roomba_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.905903] (-) TimerEvent: {}
+[16.949014] (roomba_msgs) StdoutLine: {'line': b'[100%] Built target roomba_msgs_s__rosidl_typesupport_c\n'}
+[16.949312] (roomba_msgs) StdoutLine: {'line': b'[100%] Built target roomba_msgs_s__rosidl_typesupport_introspection_c\n'}
+[16.949406] (roomba_msgs) StdoutLine: {'line': b'[100%] Built target roomba_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[16.965891] (roomba_msgs) CommandEnded: {'returncode': 0}
+[16.966990] (roomba_msgs) JobProgress: {'identifier': 'roomba_msgs', 'progress': 'install'}
+[16.981639] (roomba_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/druloko/ws_roomba/build/roomba_msgs'], 'cwd': '/home/druloko/ws_roomba/build/roomba_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/rolling/share', 'USER': 'druloko', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/druloko', 'OLDPWD': '/home/druloko/ws_roomba/src', 'TERM_PROGRAM_VERSION': '1.99.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4993f45-0a21-4cc0-abac-740fb243c774.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/druloko/ws_roomba/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'druloko', 'NAME': 'PC', 'WSL_INTEROP': '/run/WSL/350_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/druloko/.local/bin:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python313/Scripts/:/mnt/c/Program Files/Python313/:/mnt/c/Program Files/Eclipse Adoptium/jre-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WireGuard/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/druloko/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e2888d3203.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/druloko/ws_roomba/build/roomba_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/druloko/ws_roomba/build/robot_roomba:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[16.991789] (roomba_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.993052] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/rosidl_interfaces/roomba_msgs\n'}
+[16.993693] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.json\n'}
+[16.993991] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.json\n'}
+[16.994112] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.json\n'}
+[16.994990] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.json\n'}
+[16.995292] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.json\n'}
+[16.995553] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.json\n'}
+[16.995917] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.json\n'}
+[16.996160] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.json\n'}
+[16.996476] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[16.997489] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[16.997811] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/connect.h\n'}
+[16.998059] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/reconfigure.h\n'}
+[16.998209] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[16.998463] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.c\n'}
+[16.998641] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__functions.c\n'}
+[16.998781] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.h\n'}
+[16.999086] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__functions.c\n'}
+[16.999439] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__functions.h\n'}
+[16.999999] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__struct.h\n'}
+[17.000208] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.c\n'}
+[17.000418] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.c\n'}
+[17.000614] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.h\n'}
+[17.000930] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__functions.h\n'}
+[17.001346] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__struct.h\n'}
+[17.001483] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__struct.h\n'}
+[17.001557] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__functions.c\n'}
+[17.001627] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.h\n'}
+[17.001709] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__description.c\n'}
+[17.001915] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__functions.h\n'}
+[17.002059] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__description.c\n'}
+[17.002227] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__description.c\n'}
+[17.002424] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/priority.h\n'}
+[17.002634] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.003020] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/state.h\n'}
+[17.003163] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/security.h\n'}
+[17.003328] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.003517] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__struct.h\n'}
+[17.003904] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.c\n'}
+[17.004010] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__functions.h\n'}
+[17.004085] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.h\n'}
+[17.004157] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.c\n'}
+[17.004225] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__struct.h\n'}
+[17.004294] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.h\n'}
+[17.004360] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__functions.c\n'}
+[17.004425] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.h\n'}
+[17.004634] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__description.c\n'}
+[17.004826] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__description.c\n'}
+[17.005148] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.c\n'}
+[17.005418] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__functions.c\n'}
+[17.005616] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__functions.h\n'}
+[17.005824] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__functions.c\n'}
+[17.006021] (-) TimerEvent: {}
+[17.006279] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__functions.h\n'}
+[17.006497] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__struct.h\n'}
+[17.006864] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__struct.h\n'}
+[17.007015] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__struct.h\n'}
+[17.007289] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.h\n'}
+[17.007535] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__description.c\n'}
+[17.007844] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__functions.c\n'}
+[17.007930] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.c\n'}
+[17.008043] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__functions.c\n'}
+[17.008124] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.h\n'}
+[17.008201] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__description.c\n'}
+[17.008270] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.c\n'}
+[17.008340] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__description.c\n'}
+[17.008408] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__functions.h\n'}
+[17.008490] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__functions.h\n'}
+[17.009513] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/movement.h\n'}
+[17.010030] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/misc.h\n'}
+[17.010244] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/power.h\n'}
+[17.010353] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.011122] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/library_path.sh\n'}
+[17.011459] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/library_path.dsv\n'}
+[17.011932] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_c.so\n'}
+[17.013605] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_c.so" to ""\n'}
+[17.014016] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[17.014389] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[17.014731] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[17.014948] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_fastrtps_c.h\n'}
+[17.015208] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_fastrtps_c.h\n'}
+[17.015304] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_fastrtps_c.h\n'}
+[17.015397] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.015483] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.015554] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_fastrtps_c.h\n'}
+[17.015819] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_fastrtps_c.h\n'}
+[17.016043] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_fastrtps_c.h\n'}
+[17.016404] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h\n'}
+[17.016568] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_c.h\n'}
+[17.016763] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.016901] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[17.017292] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.017691] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[17.017982] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[17.018265] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[17.018552] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_introspection_c.h\n'}
+[17.018843] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.c\n'}
+[17.019291] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_introspection_c.h\n'}
+[17.019443] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.c\n'}
+[17.019526] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.c\n'}
+[17.019600] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_introspection_c.h\n'}
+[17.019777] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.019873] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.019946] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.c\n'}
+[17.020016] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.c\n'}
+[17.020121] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_introspection_c.h\n'}
+[17.020224] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_introspection_c.h\n'}
+[17.020582] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.c\n'}
+[17.020682] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h\n'}
+[17.020835] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.c\n'}
+[17.021230] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_introspection_c.h\n'}
+[17.021326] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.c\n'}
+[17.021400] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_introspection_c.h\n'}
+[17.021472] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.021730] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_c.so\n'}
+[17.022102] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.022311] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_c.so\n'}
+[17.023097] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_c.so" to ""\n'}
+[17.023516] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[17.023912] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[17.024176] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/priority.hpp\n'}
+[17.024409] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/connect.hpp\n'}
+[17.024715] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[17.025293] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__struct.hpp\n'}
+[17.025584] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__builder.hpp\n'}
+[17.025979] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.hpp\n'}
+[17.026260] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__traits.hpp\n'}
+[17.026526] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__traits.hpp\n'}
+[17.026844] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.hpp\n'}
+[17.027131] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__builder.hpp\n'}
+[17.027436] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__builder.hpp\n'}
+[17.027530] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__struct.hpp\n'}
+[17.027874] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.hpp\n'}
+[17.028126] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__traits.hpp\n'}
+[17.028453] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__struct.hpp\n'}
+[17.028752] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/reconfigure.hpp\n'}
+[17.029068] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.029371] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/movement.hpp\n'}
+[17.029589] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.029818] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/misc.hpp\n'}
+[17.030023] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/security.hpp\n'}
+[17.030257] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/power.hpp\n'}
+[17.030467] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.030674] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__builder.hpp\n'}
+[17.030895] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__builder.hpp\n'}
+[17.031109] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__traits.hpp\n'}
+[17.031320] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__struct.hpp\n'}
+[17.031504] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__traits.hpp\n'}
+[17.031892] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__struct.hpp\n'}
+[17.032193] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__struct.hpp\n'}
+[17.032288] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__builder.hpp\n'}
+[17.032370] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.hpp\n'}
+[17.032449] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.hpp\n'}
+[17.032526] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__traits.hpp\n'}
+[17.032610] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__struct.hpp\n'}
+[17.032687] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.hpp\n'}
+[17.032945] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__traits.hpp\n'}
+[17.033181] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__builder.hpp\n'}
+[17.033396] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__builder.hpp\n'}
+[17.033641] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__struct.hpp\n'}
+[17.033855] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.hpp\n'}
+[17.034286] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__traits.hpp\n'}
+[17.034413] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.hpp\n'}
+[17.034498] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/state.hpp\n'}
+[17.034611] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[17.034695] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[17.034882] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[17.035093] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/dds_fastrtps\n'}
+[17.035447] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.035570] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.035653] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.035930] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.036166] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.036407] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.036681] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/dds_fastrtps\n'}
+[17.037059] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.037191] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.037275] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.037356] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.037433] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.037592] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.038172] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.038435] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs\n'}
+[17.038610] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv\n'}
+[17.038888] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail\n'}
+[17.039057] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.039159] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.cpp\n'}
+[17.039239] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.cpp\n'}
+[17.040328] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.cpp\n'}
+[17.040921] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.041193] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.041407] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg\n'}
+[17.041722] (roomba_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail\n'}
+[17.042007] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.042217] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.042403] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.cpp\n'}
+[17.042600] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.cpp\n'}
+[17.042729] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.cpp\n'}
+[17.042853] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.042971] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.cpp\n'}
+[17.043348] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.043477] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.cpp\n'}
+[17.043572] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.043648] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[17.044051] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.044185] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_cpp.so\n'}
+[17.044746] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[17.044902] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/pythonpath.sh\n'}
+[17.045203] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/pythonpath.dsv\n'}
+[17.045335] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info\n'}
+[17.046027] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[17.046387] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[17.046618] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[17.047002] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[17.047178] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs\n'}
+[17.047453] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.047620] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[17.047794] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so\n'}
+[17.048391] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.048645] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[17.049036] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.049298] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/__init__.py\n'}
+[17.049679] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv\n'}
+[17.049928] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/__init__.py\n'}
+[17.050146] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure_s.c\n'}
+[17.050510] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect_s.c\n'}
+[17.050820] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority_s.c\n'}
+[17.051100] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority.py\n'}
+[17.051374] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure.py\n'}
+[17.051670] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect.py\n'}
+[17.052103] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg\n'}
+[17.052341] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement.py\n'}
+[17.052627] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc_s.c\n'}
+[17.052814] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security_s.c\n'}
+[17.053036] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state.py\n'}
+[17.053259] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/__init__.py\n'}
+[17.053661] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc.py\n'}
+[17.053810] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state_s.c\n'}
+[17.053894] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power_s.c\n'}
+[17.053992] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security.py\n'}
+[17.054085] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement_s.c\n'}
+[17.054161] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power.py\n'}
+[17.106937] (-) TimerEvent: {}
+[17.125993] (roomba_msgs) StdoutLine: {'line': b"Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs'...\n"}
+[17.126363] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/__init__.py'...\n"}
+[17.126469] (roomba_msgs) StdoutLine: {'line': b"Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg'...\n"}
+[17.126556] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/__init__.py'...\n"}
+[17.126628] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc.py'...\n"}
+[17.126696] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement.py'...\n"}
+[17.126764] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power.py'...\n"}
+[17.126840] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security.py'...\n"}
+[17.126949] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state.py'...\n"}
+[17.127042] (roomba_msgs) StdoutLine: {'line': b"Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv'...\n"}
+[17.127108] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/__init__.py'...\n"}
+[17.127172] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect.py'...\n"}
+[17.127235] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority.py'...\n"}
+[17.127320] (roomba_msgs) StdoutLine: {'line': b"Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure.py'...\n"}
+[17.134239] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.134575] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.134989] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[17.135144] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.135410] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so\n'}
+[17.135672] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[17.135814] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_py.so\n'}
+[17.136196] (roomba_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_py.so" to ""\n'}
+[17.136321] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.idl\n'}
+[17.136638] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.idl\n'}
+[17.136804] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.idl\n'}
+[17.136988] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.idl\n'}
+[17.137268] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.idl\n'}
+[17.137387] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.idl\n'}
+[17.137557] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.idl\n'}
+[17.137722] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.idl\n'}
+[17.137889] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.msg\n'}
+[17.138085] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.msg\n'}
+[17.138282] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.msg\n'}
+[17.138495] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.msg\n'}
+[17.138697] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.msg\n'}
+[17.139031] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.srv\n'}
+[17.139144] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.srv\n'}
+[17.139227] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.srv\n'}
+[17.139486] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/package_run_dependencies/roomba_msgs\n'}
+[17.139847] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/parent_prefix_path/roomba_msgs\n'}
+[17.140061] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/ament_prefix_path.sh\n'}
+[17.140299] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/ament_prefix_path.dsv\n'}
+[17.140553] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/path.sh\n'}
+[17.140997] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/path.dsv\n'}
+[17.141155] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.bash\n'}
+[17.141245] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.sh\n'}
+[17.141455] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.zsh\n'}
+[17.141686] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.dsv\n'}
+[17.142089] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.dsv\n'}
+[17.142357] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/packages/roomba_msgs\n'}
+[17.143125] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cExport.cmake\n'}
+[17.143510] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.143618] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.143817] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.144166] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.144362] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.144574] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cExport.cmake\n'}
+[17.144787] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.144995] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cppExport.cmake\n'}
+[17.145354] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.145470] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.145669] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.146023] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.146258] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[17.146371] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.146770] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_pyExport.cmake\n'}
+[17.147026] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.147247] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[17.147471] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.147891] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.148095] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.148309] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.148519] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.148863] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.148986] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgsConfig.cmake\n'}
+[17.149068] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgsConfig-version.cmake\n'}
+[17.149145] (roomba_msgs) StdoutLine: {'line': b'-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.xml\n'}
+[17.151315] (roomba_msgs) CommandEnded: {'returncode': 0}
+[17.192237] (roomba_msgs) JobEnded: {'identifier': 'roomba_msgs', 'rc': 0}
+[17.194047] (robot_roomba) JobStarted: {'identifier': 'robot_roomba'}
+[17.207140] (-) TimerEvent: {}
+[17.308258] (-) TimerEvent: {}
+[17.408730] (-) TimerEvent: {}
+[17.509253] (-) TimerEvent: {}
+[17.609669] (-) TimerEvent: {}
+[17.710084] (-) TimerEvent: {}
+[17.810581] (-) TimerEvent: {}
+[17.911020] (-) TimerEvent: {}
+[18.011436] (-) TimerEvent: {}
+[18.112109] (-) TimerEvent: {}
+[18.212502] (-) TimerEvent: {}
+[18.313133] (-) TimerEvent: {}
+[18.414613] (-) TimerEvent: {}
+[18.516128] (-) TimerEvent: {}
+[18.617628] (-) TimerEvent: {}
+[18.718978] (-) TimerEvent: {}
+[18.820348] (-) TimerEvent: {}
+[18.895574] (robot_roomba) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/druloko/ws_roomba/build/robot_roomba/build'], 'cwd': '/home/druloko/ws_roomba/build/robot_roomba', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/rolling/share', 'USER': 'druloko', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/druloko/ws_roomba/install/roomba_msgs/lib:/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/druloko', 'OLDPWD': '/home/druloko/ws_roomba/src', 'TERM_PROGRAM_VERSION': '1.99.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4993f45-0a21-4cc0-abac-740fb243c774.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/druloko/ws_roomba/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'druloko', 'NAME': 'PC', 'WSL_INTEROP': '/run/WSL/350_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/druloko/.local/bin:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python313/Scripts/:/mnt/c/Program Files/Python313/:/mnt/c/Program Files/Eclipse Adoptium/jre-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WireGuard/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/druloko/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e2888d3203.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/druloko/ws_roomba/install/roomba_msgs:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/druloko/ws_roomba/build/robot_roomba', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:/home/druloko/ws_roomba/build/robot_roomba:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/druloko/ws_roomba/install/roomba_msgs:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[18.920804] (-) TimerEvent: {}
+[19.022276] (-) TimerEvent: {}
+[19.123941] (-) TimerEvent: {}
+[19.224968] (-) TimerEvent: {}
+[19.325432] (-) TimerEvent: {}
+[19.344188] (robot_roomba) StdoutLine: {'line': b'running develop\n'}
+[19.425585] (-) TimerEvent: {}
+[19.525995] (-) TimerEvent: {}
+[19.580742] (robot_roomba) StdoutLine: {'line': b'Removing /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot-roomba.egg-link (link to .)\n'}
+[19.626199] (robot_roomba) CommandEnded: {'returncode': 0}
+[19.626886] (-) TimerEvent: {}
+[19.629145] (robot_roomba) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_roomba', 'build', '--build-base', '/home/druloko/ws_roomba/build/robot_roomba/build', 'install', '--record', '/home/druloko/ws_roomba/build/robot_roomba/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/druloko/ws_roomba/src/robot_roomba', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/rolling/share', 'USER': 'druloko', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/druloko/ws_roomba/install/roomba_msgs/lib:/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/druloko', 'OLDPWD': '/home/druloko/ws_roomba/src', 'TERM_PROGRAM_VERSION': '1.99.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4993f45-0a21-4cc0-abac-740fb243c774.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/druloko/ws_roomba/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'druloko', 'NAME': 'PC', 'WSL_INTEROP': '/run/WSL/350_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/druloko/.vscode-server/bin/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/druloko/.local/bin:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Python313/Scripts/:/mnt/c/Program Files/Python313/:/mnt/c/Program Files/Eclipse Adoptium/jre-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/WireGuard/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/GitHubDesktop/bin:/snap/bin:/home/druloko/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e2888d3203.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/druloko/ws_roomba/install/roomba_msgs:/home/druloko/ws_roomba/install/robot_roomba:/opt/ros/rolling', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/druloko/ws_roomba/build/robot_roomba', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:/home/druloko/ws_roomba/build/robot_roomba:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/druloko/ws_roomba/install/roomba_msgs:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[19.727128] (-) TimerEvent: {}
+[19.827867] (-) TimerEvent: {}
+[19.928500] (-) TimerEvent: {}
+[19.983034] (robot_roomba) StdoutLine: {'line': b'running egg_info\n'}
+[20.007864] (robot_roomba) StdoutLine: {'line': b'writing ../../build/robot_roomba/robot_roomba.egg-info/PKG-INFO\n'}
+[20.008270] (robot_roomba) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_roomba/robot_roomba.egg-info/dependency_links.txt\n'}
+[20.008501] (robot_roomba) StdoutLine: {'line': b'writing entry points to ../../build/robot_roomba/robot_roomba.egg-info/entry_points.txt\n'}
+[20.008922] (robot_roomba) StdoutLine: {'line': b'writing requirements to ../../build/robot_roomba/robot_roomba.egg-info/requires.txt\n'}
+[20.009369] (robot_roomba) StdoutLine: {'line': b'writing top-level names to ../../build/robot_roomba/robot_roomba.egg-info/top_level.txt\n'}
+[20.028803] (-) TimerEvent: {}
+[20.057053] (robot_roomba) StdoutLine: {'line': b"reading manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'\n"}
+[20.059878] (robot_roomba) StdoutLine: {'line': b"writing manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'\n"}
+[20.060287] (robot_roomba) StdoutLine: {'line': b'running build\n'}
+[20.060525] (robot_roomba) StdoutLine: {'line': b'running build_py\n'}
+[20.060744] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build\n'}
+[20.061215] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib\n'}
+[20.061623] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba\n'}
+[20.062048] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba\n'}
+[20.062291] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/communication_node.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba\n'}
+[20.063313] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot\n'}
+[20.063757] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/setup.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot\n'}
+[20.064509] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot\n'}
+[20.064769] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba\n'}
+[20.065254] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/roomba/test_robot.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba\n'}
+[20.065969] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/roomba/lib_robot_roomba.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba\n'}
+[20.067351] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/roomba/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba\n'}
+[20.067638] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots\n'}
+[20.068226] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/robots/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots\n'}
+[20.068868] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/robots/create2.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots\n'}
+[20.069646] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface\n'}
+[20.069987] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/openinterface/commands.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface\n'}
+[20.070483] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/openinterface/response_parsers.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface\n'}
+[20.071486] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/openinterface/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface\n'}
+[20.071676] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/openinterface/constants.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface\n'}
+[20.072393] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests\n'}
+[20.073053] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/tests/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests\n'}
+[20.074056] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/tests/create2_test.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests\n'}
+[20.074591] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/tests/commands_test.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests\n'}
+[20.075230] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces\n'}
+[20.075727] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/console_interfaces/__init__.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces\n'}
+[20.075948] (robot_roomba) StdoutLine: {'line': b'copying robot_roomba/irobot/console_interfaces/create2.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces\n'}
+[20.077014] (robot_roomba) StdoutLine: {'line': b'running install\n'}
+[20.083543] (robot_roomba) StdoutLine: {'line': b'running install_lib\n'}
+[20.107326] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba\n'}
+[20.107839] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot\n'}
+[20.108279] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots\n'}
+[20.108738] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots\n'}
+[20.109092] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/robots/create2.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots\n'}
+[20.109236] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/setup.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot\n'}
+[20.109444] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface\n'}
+[20.109830] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/commands.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface\n'}
+[20.110184] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/response_parsers.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface\n'}
+[20.110509] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface\n'}
+[20.110770] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/openinterface/constants.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface\n'}
+[20.110891] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests\n'}
+[20.111331] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests\n'}
+[20.111650] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/create2_test.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests\n'}
+[20.111881] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/tests/commands_test.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests\n'}
+[20.112007] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces\n'}
+[20.112193] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces\n'}
+[20.112400] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/console_interfaces/create2.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces\n'}
+[20.112563] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/irobot/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot\n'}
+[20.113217] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba\n'}
+[20.113486] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba\n'}
+[20.113821] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/test_robot.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba\n'}
+[20.114087] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/lib_robot_roomba.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba\n'}
+[20.114334] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/roomba/__init__.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba\n'}
+[20.114714] (robot_roomba) StdoutLine: {'line': b'copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/communication_node.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba\n'}
+[20.115422] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots/__init__.py to __init__.cpython-312.pyc\n'}
+[20.115981] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/robots/create2.py to create2.cpython-312.pyc\n'}
+[20.121845] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/setup.py to setup.cpython-312.pyc\n'}
+[20.122716] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/commands.py to commands.cpython-312.pyc\n'}
+[20.124907] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/response_parsers.py to response_parsers.cpython-312.pyc\n'}
+[20.128993] (-) TimerEvent: {}
+[20.133660] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/__init__.py to __init__.cpython-312.pyc\n'}
+[20.134001] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/openinterface/constants.py to constants.cpython-312.pyc\n'}
+[20.135510] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/__init__.py to __init__.cpython-312.pyc\n'}
+[20.136189] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/create2_test.py to create2_test.cpython-312.pyc\n'}
+[20.137031] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/tests/commands_test.py to commands_test.cpython-312.pyc\n'}
+[20.137823] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces/__init__.py to __init__.cpython-312.pyc\n'}
+[20.138848] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/console_interfaces/create2.py to create2.cpython-312.pyc\n'}
+[20.140265] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/irobot/__init__.py to __init__.cpython-312.pyc\n'}
+[20.140643] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/__init__.py to __init__.cpython-312.pyc\n'}
+[20.141126] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/test_robot.py to test_robot.cpython-312.pyc\n'}
+[20.141972] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/lib_robot_roomba.py to lib_robot_roomba.cpython-312.pyc\n'}
+[20.150361] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/__init__.py to __init__.cpython-312.pyc\n'}
+[20.150757] (robot_roomba) StdoutLine: {'line': b'byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/communication_node.py to communication_node.cpython-312.pyc\n'}
+[20.153827] (robot_roomba) StdoutLine: {'line': b'running install_data\n'}
+[20.154243] (robot_roomba) StdoutLine: {'line': b'copying resource/robot_roomba -> /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages\n'}
+[20.155021] (robot_roomba) StdoutLine: {'line': b'copying package.xml -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba\n'}
+[20.155355] (robot_roomba) StdoutLine: {'line': b'creating /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/launch\n'}
+[20.156270] (robot_roomba) StdoutLine: {'line': b'copying launch/communication.launch.py -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba/launch\n'}
+[20.156969] (robot_roomba) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.182011] (robot_roomba) StdoutLine: {'line': b'Copying ../../build/robot_roomba/robot_roomba.egg-info to /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba-0.0.0-py3.12.egg-info\n'}
+[20.184267] (robot_roomba) StdoutLine: {'line': b'running install_scripts\n'}
+[20.229174] (-) TimerEvent: {}
+[20.329604] (-) TimerEvent: {}
+[20.346787] (robot_roomba) StdoutLine: {'line': b'Installing communication_node script to /home/druloko/ws_roomba/install/robot_roomba/lib/robot_roomba\n'}
+[20.347903] (robot_roomba) StdoutLine: {'line': b"writing list of installed files to '/home/druloko/ws_roomba/build/robot_roomba/install.log'\n"}
+[20.394110] (robot_roomba) CommandEnded: {'returncode': 0}
+[20.404732] (robot_roomba) JobEnded: {'identifier': 'robot_roomba', 'rc': 0}
+[20.406547] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+[console_scripts]
+communication_node = robot_roomba.communication_node:main

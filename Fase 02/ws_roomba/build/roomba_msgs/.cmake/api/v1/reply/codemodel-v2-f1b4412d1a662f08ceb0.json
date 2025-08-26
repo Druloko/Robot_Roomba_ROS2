@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4276d86a3fcd9e7f28a3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "roomba_msgs__py",
+					"jsonFile" : "directory-roomba_msgs__py-7b1439dd7f31479eacad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/druloko/ws_roomba/build/roomba_msgs/roomba_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "roomba_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_roomba_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_roomba_msgs_egg-2067bdd2a9ce719efa97.json",
+					"name" : "ament_cmake_python_build_roomba_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_roomba_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_roomba_msgs-0fb68211d40bbbfa045b.json",
+					"name" : "ament_cmake_python_copy_roomba_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs-c03c49fd943ed5faa6f9.json",
+					"name" : "roomba_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__cpp-3502c0e030acee29ea1b.json",
+					"name" : "roomba_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "roomba_msgs__py::@0431a872a74ec27132cf",
+					"jsonFile" : "target-roomba_msgs__py-dedb3e20c3231b702003.json",
+					"name" : "roomba_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_generator_c-0f6162e8299691811647.json",
+					"name" : "roomba_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_generator_py-398f5f53c587378af5a7.json",
+					"name" : "roomba_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_generator_type_description-4bc7b4b5c1dce33ecc41.json",
+					"name" : "roomba_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_c-8e3d6b1dc8886652f31a.json",
+					"name" : "roomba_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_cpp-b053b5adecfcef1f824f.json",
+					"name" : "roomba_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_fastrtps_c-08f94f99683b0f3faf55.json",
+					"name" : "roomba_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_fastrtps_cpp-f483b57b6f14a9bfdecd.json",
+					"name" : "roomba_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_introspection_c-56d51d99d90c49a60453.json",
+					"name" : "roomba_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs__rosidl_typesupport_introspection_cpp-64e2d1e8b2783c0ff751.json",
+					"name" : "roomba_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs_s__rosidl_typesupport_c-9fa43c8b9f33a488ec07.json",
+					"name" : "roomba_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs_s__rosidl_typesupport_fastrtps_c-59912eee0ce9c053e6b0.json",
+					"name" : "roomba_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs_s__rosidl_typesupport_introspection_c-a0af240d11a28d608177.json",
+					"name" : "roomba_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roomba_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roomba_msgs_uninstall-e38e6e41d325db4167c5.json",
+					"name" : "roomba_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-636d6c0171b5bd199e69.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/druloko/ws_roomba/build/roomba_msgs",
+		"source" : "/home/druloko/ws_roomba/src/roomba_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

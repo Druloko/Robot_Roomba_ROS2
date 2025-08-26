@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "roomba_msgs/srv/Priority_Request",
+      "fields": [
+        {
+          "name": "message_type",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "priority",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "roomba_msgs/srv/Priority_Request",
+      "hash_string": "RIHS01_7556ebb59c7f2a7656e7fcc29713cd746a1caaf53da4ae3eb16a6e20746f52ed"
+    }
+  ]
+}

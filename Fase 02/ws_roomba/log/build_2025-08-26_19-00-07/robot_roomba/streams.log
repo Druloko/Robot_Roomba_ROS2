@@ -1,0 +1,24 @@
+[1.406s] Invoking command in '/home/druloko/ws_roomba/build/robot_roomba': PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build --no-deps symlink_data
+[1.769s] running develop
+[1.985s] running egg_info
+[1.985s] creating robot_roomba.egg-info
+[2.005s] writing robot_roomba.egg-info/PKG-INFO
+[2.005s] writing dependency_links to robot_roomba.egg-info/dependency_links.txt
+[2.006s] writing entry points to robot_roomba.egg-info/entry_points.txt
+[2.006s] writing requirements to robot_roomba.egg-info/requires.txt
+[2.006s] writing top-level names to robot_roomba.egg-info/top_level.txt
+[2.006s] writing manifest file 'robot_roomba.egg-info/SOURCES.txt'
+[2.052s] reading manifest file 'robot_roomba.egg-info/SOURCES.txt'
+[2.053s] writing manifest file 'robot_roomba.egg-info/SOURCES.txt'
+[2.076s] running build_ext
+[2.079s] Creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot-roomba.egg-link (link to .)
+[2.080s] Installing communication_node script to /home/druloko/ws_roomba/install/robot_roomba/lib/robot_roomba
+[2.080s] 
+[2.080s] Installed /home/druloko/ws_roomba/build/robot_roomba
+[2.081s] running symlink_data
+[2.081s] creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index
+[2.081s] creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index
+[2.081s] creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages
+[2.082s] symbolically linking /home/druloko/ws_roomba/build/robot_roomba/resource/robot_roomba -> /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages
+[2.082s] symbolically linking /home/druloko/ws_roomba/build/robot_roomba/package.xml -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba
+[2.124s] Invoked command in '/home/druloko/ws_roomba/build/robot_roomba' returned '0': PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/druloko/ws_roomba/build/robot_roomba/build --no-deps symlink_data

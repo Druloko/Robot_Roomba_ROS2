@@ -1,0 +1,13 @@
+{
+  "package_name": "roomba_msgs",
+  "non_idl_tuples": [
+    "/home/druloko/ws_roomba/src/roomba_msgs:msg/Movement.msg",
+    "/home/druloko/ws_roomba/src/roomba_msgs:msg/Security.msg",
+    "/home/druloko/ws_roomba/src/roomba_msgs:msg/Power.msg",
+    "/home/druloko/ws_roomba/src/roomba_msgs:msg/Misc.msg",
+    "/home/druloko/ws_roomba/src/roomba_msgs:msg/State.msg",
+    "/home/druloko/ws_roomba/src/roomba_msgs:srv/Connect.srv",
+    "/home/druloko/ws_roomba/src/roomba_msgs:srv/Priority.srv",
+    "/home/druloko/ws_roomba/src/roomba_msgs:srv/Reconfigure.srv"
+  ]
+}

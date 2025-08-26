@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from roomba_msgs/srv/Priority.srv
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Usado por priority_callback()")
+    struct Priority_Request {
+      string message_type;
+
+      uint8 priority;
+    };
+    struct Priority_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

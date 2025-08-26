@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roomba_msgs/msg/Security.msg
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Datos de seguridad que publica publish_security_data()")
+    struct Security {
+      boolean bump_left;
+
+      boolean bump_right;
+
+      boolean wheel_drop_left;
+
+      boolean wheel_drop_right;
+
+      @verbatim (language="comment", text=
+        "pared, virtual wall")
+      boolean wall;
+
+      boolean virtual_wall;
+
+      @verbatim (language="comment", text=
+        "cliffs (tu código usa 0/1; los modelamos como bool)")
+      boolean cliff_left;
+
+      boolean cliff_right;
+
+      boolean cliff_front_left;
+
+      boolean cliff_front_right;
+
+      @verbatim (language="comment", text=
+        "señales (unsigned short en OI)")
+      uint16 cliff_left_signal;
+
+      uint16 cliff_right_signal;
+
+      uint16 cliff_front_left_signal;
+
+      uint16 cliff_front_right_signal;
+
+      uint16 wall_signal;
+
+      @verbatim (language="comment", text=
+        "light bumpers (tu código usa 0/1 → bool)")
+      boolean light_bumper_left;
+
+      boolean light_bumper_right;
+
+      boolean light_bumper_center_left;
+
+      boolean light_bumper_center_right;
+
+      boolean light_bumper_front_left;
+
+      boolean light_bumper_front_right;
+
+      @verbatim (language="comment", text=
+        "suciedad")
+      uint8 dirt_detect;
+    };
+  };
+};

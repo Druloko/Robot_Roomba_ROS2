@@ -1,0 +1,7 @@
+# Usado por priority_callback()
+
+string message_type
+uint8  priority
+---
+bool   success
+string message

@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "roomba_msgs/srv/Connect_Request",
+      "fields": [
+        {
+          "name": "port",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "mode",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "roomba_msgs/srv/Connect_Request",
+      "hash_string": "RIHS01_a43f3430a99a7878cbf44afe0420444e76d369b0282ba3e476a8e6a57b1fec58"
+    }
+  ]
+}

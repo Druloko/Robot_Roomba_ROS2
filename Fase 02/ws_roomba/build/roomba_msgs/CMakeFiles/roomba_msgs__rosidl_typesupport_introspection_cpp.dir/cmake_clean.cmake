@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__type_support.cpp.o.d"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__type_support.cpp.o"
+  "CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__type_support.cpp.o.d"
+  "libroomba_msgs__rosidl_typesupport_introspection_cpp.pdb"
+  "libroomba_msgs__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating robot_roomba.egg-info
+writing robot_roomba.egg-info/PKG-INFO
+writing dependency_links to robot_roomba.egg-info/dependency_links.txt
+writing entry points to robot_roomba.egg-info/entry_points.txt
+writing requirements to robot_roomba.egg-info/requires.txt
+writing top-level names to robot_roomba.egg-info/top_level.txt
+writing manifest file 'robot_roomba.egg-info/SOURCES.txt'
+reading manifest file 'robot_roomba.egg-info/SOURCES.txt'
+writing manifest file 'robot_roomba.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot-roomba.egg-link (link to .)
+Installing communication_node script to /home/druloko/ws_roomba/install/robot_roomba/lib/robot_roomba
+
+Installed /home/druloko/ws_roomba/build/robot_roomba
+running symlink_data
+creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index
+creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index
+creating /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages
+symbolically linking /home/druloko/ws_roomba/build/robot_roomba/resource/robot_roomba -> /home/druloko/ws_roomba/install/robot_roomba/share/ament_index/resource_index/packages
+symbolically linking /home/druloko/ws_roomba/build/robot_roomba/package.xml -> /home/druloko/ws_roomba/install/robot_roomba/share/robot_roomba

@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roomba_msgs/msg/Movement.msg
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Medidas y consigna de movimiento (según OI)" "\n"
+      "Robot.read_sensors() rellena estos campos desde Create2.distance/angle/encoders/velocidades" "\n"
+      "distance/angle vienen de short_response (int16), encoders también (int16)." "\n"
+      "requested_* también son int16 del OI.")
+    struct Movement {
+      float distance;
+
+      float angle;
+
+      int32 left_encoder_counts;
+
+      int32 right_encoder_counts;
+
+      int16 requested_left_velocity;
+
+      int16 requested_right_velocity;
+
+      int16 requested_radius;
+
+      int16 requested_velocity;
+    };
+  };
+};

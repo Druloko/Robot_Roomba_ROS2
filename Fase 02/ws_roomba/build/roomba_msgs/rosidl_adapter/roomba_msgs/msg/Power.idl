@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roomba_msgs/msg/Power.msg
+// generated code does not contain a copyright notice
+
+
+module roomba_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Datos de energía que publica publish_power_data()")
+    struct Power {
+      float voltage;
+
+      float current;
+
+      float temperature;
+
+      float charge;
+
+      float capacity;
+
+      boolean home_base;
+
+      boolean internal_charger;
+
+      uint8 ir_char_omni;
+
+      uint8 ir_char_left;
+
+      uint8 ir_char_right;
+
+      boolean left_wheel_overcurrent;
+
+      boolean right_wheel_overcurrent;
+
+      boolean main_brush_overcurrent;
+
+      boolean side_brush_overcurrent;
+
+      int32 left_motor_current;
+
+      int32 right_motor_current;
+
+      int32 main_brush_motor_current;
+
+      int32 side_brush_motor_current;
+    };
+  };
+};
