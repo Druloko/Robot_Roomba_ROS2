@@ -10,7 +10,7 @@ from roomba_msgs.srv import Connect, Priority, Reconfigure
 import json
 import threading
 import queue
-from Librerias.roomba.lib_robot_roomba import Robot
+from robot_roomba.roomba.lib_robot_roomba import Robot
 
 class CommunicationNode(Node):
     def __init__(self):
