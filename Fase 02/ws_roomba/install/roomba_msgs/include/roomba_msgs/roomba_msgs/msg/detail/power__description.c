@@ -11,10 +11,10 @@ roomba_msgs__msg__Power__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xc9, 0xaf, 0xf5, 0x33, 0xe6, 0xb0, 0xb3, 0x71,
-      0x97, 0xa3, 0x2d, 0x29, 0x9f, 0xb2, 0x13, 0xaa,
-      0x50, 0xa6, 0xbf, 0x39, 0xd1, 0x0a, 0x3c, 0x3d,
-      0x11, 0xfd, 0x46, 0x01, 0x70, 0xbf, 0x91, 0xce,
+      0x5a, 0x93, 0xb9, 0xa5, 0x8e, 0x83, 0x04, 0xf8,
+      0xf5, 0x96, 0xbe, 0x65, 0xfa, 0x52, 0x94, 0x0d,
+      0xa9, 0xeb, 0x74, 0xe8, 0xf0, 0x56, 0x1e, 0xdb,
+      0x5f, 0xf9, 0x52, 0xd8, 0x66, 0x8b, 0x44, 0xc7,
     }};
   return &hash;
 }
@@ -194,7 +194,7 @@ static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Power__FIELDS
   {
     {roomba_msgs__msg__Power__FIELD_NAME__left_motor_current, 18, 18},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -204,7 +204,7 @@ static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Power__FIELDS
   {
     {roomba_msgs__msg__Power__FIELD_NAME__right_motor_current, 19, 19},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -214,7 +214,7 @@ static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Power__FIELDS
   {
     {roomba_msgs__msg__Power__FIELD_NAME__main_brush_motor_current, 24, 24},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -224,7 +224,7 @@ static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Power__FIELDS
   {
     {roomba_msgs__msg__Power__FIELD_NAME__side_brush_motor_current, 24, 24},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -273,10 +273,10 @@ static char toplevel_type_raw_source[] =
   "bool   main_brush_overcurrent\n"
   "bool   side_brush_overcurrent\n"
   "\n"
-  "int32  left_motor_current\n"
-  "int32  right_motor_current\n"
-  "int32  main_brush_motor_current\n"
-  "int32  side_brush_motor_current";
+  "int16  left_motor_current\n"
+  "int16  right_motor_current\n"
+  "int16  main_brush_motor_current\n"
+  "int16  side_brush_motor_current";
 
 static char msg_encoding[] = "msg";
 

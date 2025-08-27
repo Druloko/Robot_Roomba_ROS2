@@ -1,0 +1,5 @@
+  File "/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/roomba/lib_robot_roomba.py", line 312
+    elif sensor == 'voltage':
+    ^^^^
+SyntaxError: invalid syntax
+

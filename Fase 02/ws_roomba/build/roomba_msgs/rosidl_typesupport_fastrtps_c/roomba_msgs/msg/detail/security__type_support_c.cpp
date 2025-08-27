@@ -153,6 +153,36 @@ bool cdr_serialize_roomba_msgs__msg__Security(
     cdr << (ros_message->light_bumper_front_right ? true : false);
   }
 
+  // Field name: light_bump_left_signal
+  {
+    cdr << ros_message->light_bump_left_signal;
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    cdr << ros_message->light_bump_right_signal;
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    cdr << ros_message->light_bump_center_left_signal;
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    cdr << ros_message->light_bump_center_right_signal;
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    cdr << ros_message->light_bump_front_left_signal;
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    cdr << ros_message->light_bump_front_right_signal;
+  }
+
   // Field name: dirt_detect
   {
     cdr << ros_message->dirt_detect;
@@ -301,6 +331,36 @@ bool cdr_deserialize_roomba_msgs__msg__Security(
     uint8_t tmp;
     cdr >> tmp;
     ros_message->light_bumper_front_right = tmp ? true : false;
+  }
+
+  // Field name: light_bump_left_signal
+  {
+    cdr >> ros_message->light_bump_left_signal;
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    cdr >> ros_message->light_bump_right_signal;
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    cdr >> ros_message->light_bump_center_left_signal;
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    cdr >> ros_message->light_bump_center_right_signal;
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    cdr >> ros_message->light_bump_front_left_signal;
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    cdr >> ros_message->light_bump_front_right_signal;
   }
 
   // Field name: dirt_detect
@@ -469,6 +529,48 @@ size_t get_serialized_size_roomba_msgs__msg__Security(
   // Field name: light_bumper_front_right
   {
     size_t item_size = sizeof(ros_message->light_bumper_front_right);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_right_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_center_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_center_right_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_front_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_front_right_signal);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -654,6 +756,54 @@ size_t max_serialized_size_roomba_msgs__msg__Security(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: light_bump_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
   // Field name: dirt_detect
   {
     size_t array_size = 1;
@@ -785,6 +935,36 @@ bool cdr_serialize_key_roomba_msgs__msg__Security(
   // Field name: light_bumper_front_right
   {
     cdr << (ros_message->light_bumper_front_right ? true : false);
+  }
+
+  // Field name: light_bump_left_signal
+  {
+    cdr << ros_message->light_bump_left_signal;
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    cdr << ros_message->light_bump_right_signal;
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    cdr << ros_message->light_bump_center_left_signal;
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    cdr << ros_message->light_bump_center_right_signal;
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    cdr << ros_message->light_bump_front_left_signal;
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    cdr << ros_message->light_bump_front_right_signal;
   }
 
   // Field name: dirt_detect
@@ -953,6 +1133,48 @@ size_t get_serialized_size_key_roomba_msgs__msg__Security(
   // Field name: light_bumper_front_right
   {
     size_t item_size = sizeof(ros_message->light_bumper_front_right);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_right_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_center_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_center_right_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_front_left_signal);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    size_t item_size = sizeof(ros_message->light_bump_front_right_signal);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1134,6 +1356,54 @@ size_t max_serialized_size_key_roomba_msgs__msg__Security(
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Field name: light_bump_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_center_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_center_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_front_left_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Field name: light_bump_front_right_signal
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
   // Field name: dirt_detect

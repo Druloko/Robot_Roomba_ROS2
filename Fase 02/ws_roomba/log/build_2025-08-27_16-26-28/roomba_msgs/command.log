@@ -1,0 +1,4 @@
+Invoking command in '/home/druloko/ws_roomba/build/roomba_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /home/druloko/ws_roomba/build/roomba_msgs -- -j8 -l8
+Invoked command in '/home/druloko/ws_roomba/build/roomba_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /home/druloko/ws_roomba/build/roomba_msgs -- -j8 -l8
+Invoking command in '/home/druloko/ws_roomba/build/roomba_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /home/druloko/ws_roomba/build/roomba_msgs
+Invoked command in '/home/druloko/ws_roomba/build/roomba_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /home/druloko/ws_roomba/build/roomba_msgs

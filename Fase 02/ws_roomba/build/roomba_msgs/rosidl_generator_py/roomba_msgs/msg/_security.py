@@ -83,6 +83,12 @@ class Security(metaclass=Metaclass_Security):
         '_light_bumper_center_right',
         '_light_bumper_front_left',
         '_light_bumper_front_right',
+        '_light_bump_left_signal',
+        '_light_bump_right_signal',
+        '_light_bump_center_left_signal',
+        '_light_bump_center_right_signal',
+        '_light_bump_front_left_signal',
+        '_light_bump_front_right_signal',
         '_dirt_detect',
         '_check_fields',
     ]
@@ -109,6 +115,12 @@ class Security(metaclass=Metaclass_Security):
         'light_bumper_center_right': 'boolean',
         'light_bumper_front_left': 'boolean',
         'light_bumper_front_right': 'boolean',
+        'light_bump_left_signal': 'uint16',
+        'light_bump_right_signal': 'uint16',
+        'light_bump_center_left_signal': 'uint16',
+        'light_bump_center_right_signal': 'uint16',
+        'light_bump_front_left_signal': 'uint16',
+        'light_bump_front_right_signal': 'uint16',
         'dirt_detect': 'uint8',
     }
 
@@ -136,6 +148,12 @@ class Security(metaclass=Metaclass_Security):
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
@@ -169,6 +187,12 @@ class Security(metaclass=Metaclass_Security):
         self.light_bumper_center_right = kwargs.get('light_bumper_center_right', bool())
         self.light_bumper_front_left = kwargs.get('light_bumper_front_left', bool())
         self.light_bumper_front_right = kwargs.get('light_bumper_front_right', bool())
+        self.light_bump_left_signal = kwargs.get('light_bump_left_signal', int())
+        self.light_bump_right_signal = kwargs.get('light_bump_right_signal', int())
+        self.light_bump_center_left_signal = kwargs.get('light_bump_center_left_signal', int())
+        self.light_bump_center_right_signal = kwargs.get('light_bump_center_right_signal', int())
+        self.light_bump_front_left_signal = kwargs.get('light_bump_front_left_signal', int())
+        self.light_bump_front_right_signal = kwargs.get('light_bump_front_right_signal', int())
         self.dirt_detect = kwargs.get('dirt_detect', int())
 
     def __repr__(self):
@@ -242,6 +266,18 @@ class Security(metaclass=Metaclass_Security):
         if self.light_bumper_front_left != other.light_bumper_front_left:
             return False
         if self.light_bumper_front_right != other.light_bumper_front_right:
+            return False
+        if self.light_bump_left_signal != other.light_bump_left_signal:
+            return False
+        if self.light_bump_right_signal != other.light_bump_right_signal:
+            return False
+        if self.light_bump_center_left_signal != other.light_bump_center_left_signal:
+            return False
+        if self.light_bump_center_right_signal != other.light_bump_center_right_signal:
+            return False
+        if self.light_bump_front_left_signal != other.light_bump_front_left_signal:
+            return False
+        if self.light_bump_front_right_signal != other.light_bump_front_right_signal:
             return False
         if self.dirt_detect != other.dirt_detect:
             return False
@@ -534,6 +570,96 @@ class Security(metaclass=Metaclass_Security):
                 isinstance(value, bool), \
                 "The 'light_bumper_front_right' field must be of type 'bool'"
         self._light_bumper_front_right = value
+
+    @builtins.property
+    def light_bump_left_signal(self):
+        """Message field 'light_bump_left_signal'."""
+        return self._light_bump_left_signal
+
+    @light_bump_left_signal.setter
+    def light_bump_left_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_left_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_left_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_left_signal = value
+
+    @builtins.property
+    def light_bump_right_signal(self):
+        """Message field 'light_bump_right_signal'."""
+        return self._light_bump_right_signal
+
+    @light_bump_right_signal.setter
+    def light_bump_right_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_right_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_right_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_right_signal = value
+
+    @builtins.property
+    def light_bump_center_left_signal(self):
+        """Message field 'light_bump_center_left_signal'."""
+        return self._light_bump_center_left_signal
+
+    @light_bump_center_left_signal.setter
+    def light_bump_center_left_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_center_left_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_center_left_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_center_left_signal = value
+
+    @builtins.property
+    def light_bump_center_right_signal(self):
+        """Message field 'light_bump_center_right_signal'."""
+        return self._light_bump_center_right_signal
+
+    @light_bump_center_right_signal.setter
+    def light_bump_center_right_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_center_right_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_center_right_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_center_right_signal = value
+
+    @builtins.property
+    def light_bump_front_left_signal(self):
+        """Message field 'light_bump_front_left_signal'."""
+        return self._light_bump_front_left_signal
+
+    @light_bump_front_left_signal.setter
+    def light_bump_front_left_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_front_left_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_front_left_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_front_left_signal = value
+
+    @builtins.property
+    def light_bump_front_right_signal(self):
+        """Message field 'light_bump_front_right_signal'."""
+        return self._light_bump_front_right_signal
+
+    @light_bump_front_right_signal.setter
+    def light_bump_front_right_signal(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'light_bump_front_right_signal' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'light_bump_front_right_signal' field must be an unsigned integer in [0, 65535]"
+        self._light_bump_front_right_signal = value
 
     @builtins.property
     def dirt_detect(self):

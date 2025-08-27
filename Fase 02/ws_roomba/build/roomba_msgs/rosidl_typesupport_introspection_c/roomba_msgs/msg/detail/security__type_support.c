@@ -31,7 +31,7 @@ void roomba_msgs__msg__Security__rosidl_typesupport_introspection_c__Security_fi
   roomba_msgs__msg__Security__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Security__rosidl_typesupport_introspection_c__Security_message_member_array[22] = {
+static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Security__rosidl_typesupport_introspection_c__Security_message_member_array[28] = {
   {
     "bump_left",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -411,6 +411,114 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Secur
     NULL  // resize(index) function pointer
   },
   {
+    "light_bump_left_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_left_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "light_bump_right_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_right_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "light_bump_center_left_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_center_left_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "light_bump_center_right_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_center_right_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "light_bump_front_left_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_front_left_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "light_bump_front_right_signal",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roomba_msgs__msg__Security, light_bump_front_right_signal),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "dirt_detect",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
@@ -433,7 +541,7 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Secur
 static const rosidl_typesupport_introspection_c__MessageMembers roomba_msgs__msg__Security__rosidl_typesupport_introspection_c__Security_message_members = {
   "roomba_msgs__msg",  // message namespace
   "Security",  // message name
-  22,  // number of fields
+  28,  // number of fields
   sizeof(roomba_msgs__msg__Security),
   false,  // has_any_key_member_
   roomba_msgs__msg__Security__rosidl_typesupport_introspection_c__Security_message_member_array,  // message members

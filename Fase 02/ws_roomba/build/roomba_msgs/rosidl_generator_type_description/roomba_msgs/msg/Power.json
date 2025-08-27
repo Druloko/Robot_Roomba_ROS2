@@ -146,7 +146,7 @@
         {
           "name": "left_motor_current",
           "type": {
-            "type_id": 6,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -156,7 +156,7 @@
         {
           "name": "right_motor_current",
           "type": {
-            "type_id": 6,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -166,7 +166,7 @@
         {
           "name": "main_brush_motor_current",
           "type": {
-            "type_id": 6,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -176,7 +176,7 @@
         {
           "name": "side_brush_motor_current",
           "type": {
-            "type_id": 6,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -190,7 +190,7 @@
   "type_hashes": [
     {
       "type_name": "roomba_msgs/msg/Power",
-      "hash_string": "RIHS01_c9aff533e6b0b37197a32d299fb213aa50a6bf39d10a3c3d11fd460170bf91ce"
+      "hash_string": "RIHS01_5a93b9a58e8304f8f596be65fa52940da9eb74e8f0561edb5ff952d8668b44c7"
     }
   ]
 }

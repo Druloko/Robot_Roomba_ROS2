@@ -179,7 +179,7 @@ bool roomba_msgs__msg__power__convert_from_py(PyObject * _pymsg, void * _ros_mes
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->left_motor_current = (int32_t)PyLong_AsLong(field);
+    ros_message->left_motor_current = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // right_motor_current
@@ -188,7 +188,7 @@ bool roomba_msgs__msg__power__convert_from_py(PyObject * _pymsg, void * _ros_mes
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->right_motor_current = (int32_t)PyLong_AsLong(field);
+    ros_message->right_motor_current = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // main_brush_motor_current
@@ -197,7 +197,7 @@ bool roomba_msgs__msg__power__convert_from_py(PyObject * _pymsg, void * _ros_mes
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->main_brush_motor_current = (int32_t)PyLong_AsLong(field);
+    ros_message->main_brush_motor_current = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // side_brush_motor_current
@@ -206,7 +206,7 @@ bool roomba_msgs__msg__power__convert_from_py(PyObject * _pymsg, void * _ros_mes
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->side_brush_motor_current = (int32_t)PyLong_AsLong(field);
+    ros_message->side_brush_motor_current = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 

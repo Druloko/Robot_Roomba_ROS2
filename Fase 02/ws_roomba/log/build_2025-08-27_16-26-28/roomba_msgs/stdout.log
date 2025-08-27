@@ -1,0 +1,460 @@
+-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_default_generators: 1.8.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 5.0.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)
+-- Found geometry_msgs: 5.8.2 (/opt/ros/rolling/share/geometry_msgs/cmake)
+-- Found ament_cmake_ros_core: 0.15.2 (/opt/ros/rolling/share/ament_cmake_ros_core/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/druloko/ws_roomba/build/roomba_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_roomba_msgs
+running egg_info
+writing roomba_msgs.egg-info/PKG-INFO
+writing dependency_links to roomba_msgs.egg-info/dependency_links.txt
+writing top-level names to roomba_msgs.egg-info/top_level.txt
+reading manifest file 'roomba_msgs.egg-info/SOURCES.txt'
+writing manifest file 'roomba_msgs.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_roomba_msgs_egg
+[  1%] Built target roomba_msgs__rosidl_generator_type_description
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target roomba_msgs__cpp
+[  5%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__description.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__description.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__type_support.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/movement__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__type_support.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__description.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/security__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/power__type_support.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__description.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/misc__type_support.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__description.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/msg/detail/state__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/connect__type_support.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__description.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__functions.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/priority__type_support.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__description.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__functions.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_c.dir/rosidl_generator_c/roomba_msgs/srv/detail/reconfigure__type_support.c.o[0m
+[ 26%] [32m[1mLinking C shared library libroomba_msgs__rosidl_generator_c.so[0m
+[ 26%] Built target roomba_msgs__rosidl_generator_c
+[ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/movement__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/power__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/security__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/movement__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/misc__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/msg/state__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/security__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/power__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/connect__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/priority__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/movement__type_support.cpp.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/movement__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/security__type_support.c.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roomba_msgs/srv/reconfigure__type_support.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/power__type_support.c.o[0m
+[ 47%] [32m[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_c.so[0m
+[ 48%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/misc__type_support.c.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/msg/detail/state__type_support.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/connect__type_support.c.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/security__type_support.cpp.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/priority__type_support.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/power__type_support.cpp.o[0m
+[ 53%] Built target roomba_msgs__rosidl_typesupport_c
+[ 53%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/misc__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/movement__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/security__type_support.cpp.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roomba_msgs/srv/detail/reconfigure__type_support.c.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/movement__type_support_c.cpp.o[0m
+[ 58%] [32m[1mLinking C shared library libroomba_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/msg/state__type_support.cpp.o[0m
+[ 59%] Built target roomba_msgs__rosidl_typesupport_introspection_c
+[ 60%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/connect__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/priority__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/misc__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/power__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/msg/detail/state__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/security__type_support_c.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/connect__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/power__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/misc__type_support_c.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/priority__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roomba_msgs/srv/reconfigure__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/misc__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roomba_msgs/srv/detail/reconfigure__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/msg/detail/state__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/connect__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/priority__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/connect__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/priority__type_support.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_cpp.so[0m
+[ 80%] [32m[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roomba_msgs/srv/detail/reconfigure__type_support_c.cpp.o[0m
+[ 81%] Built target roomba_msgs__rosidl_typesupport_cpp
+[ 82%] [32mBuilding CXX object CMakeFiles/roomba_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roomba_msgs/srv/detail/dds_fastrtps/reconfigure__type_support.cpp.o[0m
+[ 82%] Built target roomba_msgs__rosidl_typesupport_introspection_cpp
+[ 83%] [32m[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 83%] Built target roomba_msgs__rosidl_typesupport_fastrtps_c
+[ 84%] [32m[1mLinking CXX shared library libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 84%] Built target roomba_msgs__rosidl_typesupport_fastrtps_cpp
+[ 84%] Built target roomba_msgs
+[ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 85%] Built target roomba_msgs__py
+[ 86%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_movement_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_misc_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_security_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_connect_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_state_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_priority_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/msg/_power_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/roomba_msgs__rosidl_generator_py.dir/rosidl_generator_py/roomba_msgs/srv/_reconfigure_s.c.o[0m
+[ 94%] [32m[1mLinking C shared library libroomba_msgs__rosidl_generator_py.so[0m
+[ 94%] Built target roomba_msgs__rosidl_generator_py
+[ 96%] [32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/roomba_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 98%] [32m[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so[0m
+[ 99%] [32m[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] Built target roomba_msgs_s__rosidl_typesupport_c
+[100%] Built target roomba_msgs_s__rosidl_typesupport_introspection_c
+[100%] Built target roomba_msgs_s__rosidl_typesupport_fastrtps_c
+-- Install configuration: ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/rosidl_interfaces/roomba_msgs
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.json
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.json
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/connect.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/reconfigure.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/priority.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/state.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/security.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__struct.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__functions.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__description.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__functions.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/movement.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/misc.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/power.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/library_path.sh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/library_path.dsv
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_introspection_c.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/priority.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/connect.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/reconfigure.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/movement.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/misc.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/security.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/power.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__builder.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__struct.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__traits.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/state.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/dds_fastrtps
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/dds_fastrtps
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/connect__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/priority__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/srv/detail/reconfigure__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/misc__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/power__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/security__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__type_support.cpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/include/roomba_msgs/roomba_msgs/msg/detail/movement__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/pythonpath.sh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/pythonpath.dsv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/_roomba_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/__init__.py
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/__init__.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect.py
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/__init__.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security.py
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement_s.c
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power.py
+Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/__init__.py'...
+Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/__init__.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_misc.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_movement.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_power.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_security.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/msg/_state.py'...
+Listing '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/__init__.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_connect.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_priority.py'...
+Compiling '/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/srv/_reconfigure.py'...
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages/roomba_msgs/roomba_msgs_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/druloko/ws_roomba/install/roomba_msgs/lib/libroomba_msgs__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.idl
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.idl
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.idl
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Movement.msg
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Security.msg
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Power.msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/Misc.msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/msg/State.msg
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Connect.srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Priority.srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/srv/Reconfigure.srv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/package_run_dependencies/roomba_msgs
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/parent_prefix_path/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/ament_prefix_path.sh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/path.sh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/environment/path.dsv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.bash
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.sh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.zsh
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/local_setup.dsv
+-- Installing: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.dsv
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/ament_index/resource_index/packages/roomba_msgs
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/export_roomba_msgs__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgsConfig.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/cmake/roomba_msgsConfig-version.cmake
+-- Up-to-date: /home/druloko/ws_roomba/install/roomba_msgs/share/roomba_msgs/package.xml

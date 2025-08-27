@@ -2,6 +2,47 @@ from robot_roomba.irobot.robots.create2 import Create2
 from robot_roomba.irobot.openinterface.constants import MODES
 import time
 
+# --- Helpers seguros de conversión ---
+def _b(x):
+    """bool seguro: True/False incluso si llega None/0/1."""
+    try:
+        return bool(x)
+    except Exception:
+        return False
+
+def _u16(x):
+    """uint16 seguro."""
+    try:
+        return int(x) & 0xFFFF
+    except Exception:
+        return 0
+
+def _i16(x):
+    """int16 seguro (si lo necesitas en otros campos)."""
+    try:
+        v = int(x)
+        if v < -32768 or v > 32767:
+            return 0
+        return v
+    except Exception:
+        return 0
+
+def _get(obj, name, default=None):
+    """getattr con default y llamado si es callable."""
+    try:
+        v = getattr(obj, name, default)
+        return v() if callable(v) else v
+    except Exception:
+        return default
+
+MODE_MAP = {0: 'OFF', 1: 'PASSIVE', 2: 'SAFE', 3: 'FULL'}
+
+def _mode_to_str(m):
+    try:
+        return MODE_MAP.get(int(m), 'UNKNOWN')
+    except Exception:
+        return 'UNKNOWN'
+
 class Robot:
     # 🛠️ Inicialización
     def __init__(self, node):
@@ -43,12 +84,12 @@ class Robot:
                 'wall_signal': {'value': 0, 'enabled': True},
                 'wall_sensor': {'value': False, 'enabled': True},
                 'virtual_wall': {'value': False, 'enabled': True},
-                'light_bumper_left': {'value': 0, 'enabled': True},
-                'light_bumper_right': {'value': 0, 'enabled': True},
-                'light_bumper_center_left': {'value': 0, 'enabled': True},
-                'light_bumper_center_right': {'value': 0, 'enabled': True},
-                'light_bumper_front_left': {'value': 0, 'enabled': True},
-                'light_bumper_front_right': {'value': 0, 'enabled': True},
+                'light_bumper_left': {'value': False, 'enabled': True},
+                'light_bumper_right': {'value': False, 'enabled': True},
+                'light_bumper_center_left': {'value': False, 'enabled': True},
+                'light_bumper_center_right': {'value': False, 'enabled': True},
+                'light_bumper_front_left': {'value': False, 'enabled': True},
+                'light_bumper_front_right': {'value': False, 'enabled': True},
                 'dirt_detect': {'value': 0, 'enabled': True},
                 'light_bump_left_signal': {'value': 0, 'enabled': True},
                 'light_bump_front_left_signal': {'value': 0, 'enabled': True},
@@ -93,12 +134,13 @@ class Robot:
                 },
             },
             'state': {
-                'oi_mode': {'value': 0, 'enabled': True},
-                'stasis_disabled': {'value': False, 'enabled': True},
-                'stasis_toggling': {'value': False, 'enabled': True},
-                'number_stream_packets': {'value': 0, 'enabled': True},
-                'auto_wake': {'value': False, 'enabled': True},
-            },   
+                'oi_mode':               {'value': 'OFF',     'enabled': True},  
+                'stasis_disabled':       {'value': False,     'enabled': True},
+                'stasis_toggling':       {'value': False,     'enabled': True},
+                'number_stream_packets': {'value': 0,         'enabled': True},
+                'auto_wake':             {'value': False,     'enabled': True},
+                'motion_state':          {'value': 'stopped', 'enabled': True},  
+            },
         }
         # Estado interno de actuadores
         self._actuators = {
@@ -132,6 +174,7 @@ class Robot:
             }
         }
         self._node.get_logger().debug("Robot inicializado correctamente")
+
     @property
     def oi_mode(self):
         """
@@ -228,70 +271,100 @@ class Robot:
                             data['value'] = robot.cliff_right_signal
                         elif sensor == 'wall_signal':
                             data['value'] = robot.wall_signal
+
                         elif sensor == 'light_bumper_left':
-                            data['value'] = robot.light_bumper_left
-                        elif sensor == 'light_bumper_right':
-                            data['value'] = robot.light_bumper_right
-                        elif sensor == 'light_bumper_center_left':
-                            data['value'] = robot.light_bumper_center_left
-                        elif sensor == 'light_bumper_center_right':
-                            data['value'] = robot.light_bumper_center_right
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'left', False)) if lb else False
                         elif sensor == 'light_bumper_front_left':
-                            data['value'] = robot.light_bumper_front_left
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'front_left', False)) if lb else False
+                        elif sensor == 'light_bumper_center_left':
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'center_left', False)) if lb else False
+                        elif sensor == 'light_bumper_center_right':
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'center_right', False)) if lb else False
                         elif sensor == 'light_bumper_front_right':
-                            data['value'] = robot.light_bumper_front_right
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'front_right', False)) if lb else False
+                        elif sensor == 'light_bumper_right':
+                            lb = _get(robot, 'light_bumper', None)
+                            data['value'] = _b(getattr(lb, 'right', False)) if lb else False
                         elif sensor == 'dirt_detect':
                             data['value'] = robot.dirt_detect
                         elif sensor == 'light_bump_left_signal':
-                            data['value'] = robot.light_bump_left_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_left_signal', 0))
                         elif sensor == 'light_bump_front_left_signal':
-                            data['value'] = robot.light_bump_front_left_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_front_left_signal', 0))
                         elif sensor == 'light_bump_center_left_signal':
-                            data['value'] = robot.light_bump_center_left_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_center_left_signal', 0))
                         elif sensor == 'light_bump_center_right_signal':
-                            data['value'] = robot.light_bump_center_right_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_center_right_signal', 0))
                         elif sensor == 'light_bump_front_right_signal':
-                            data['value'] = robot.light_bump_front_right_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_front_right_signal', 0))
                         elif sensor == 'light_bump_right_signal':
-                            data['value'] = robot.light_bump_right_signal
+                            data['value'] = _u16(_get(robot, 'light_bump_right_signal', 0))
 
                     elif category == 'power':
+                        # --- Magnitudes float32 ---
                         if sensor == 'voltage':
-                            data['value'] = robot.voltage
+                            # mV -> V
+                            raw = _get(robot, 'voltage', 0)
+                            data['value'] = float(raw) / 1000.0
                         elif sensor == 'current':
-                            data['value'] = robot.current
+                            # mA -> A (signed; negativo cuando carga)
+                            raw = _get(robot, 'current', 0)
+                            data['value'] = float(raw) / 1000.0
                         elif sensor == 'temperature':
-                            data['value'] = robot.temperature
-                        elif sensor == 'battery_charge':
-                            data['value'] = robot.battery_charge
-                        elif sensor == 'battery_capacity':
-                            data['value'] = robot.battery_capacity
+                            # °C (signed byte), publícalo como float
+                            data['value'] = float(_get(robot, 'temperature', 0))
+                        elif sensor == 'charge':
+                            # mapeo desde battery_charge (mAh) -> float mAh
+                            data['value'] = float(_get(robot, 'battery_charge', 0))
+                        elif sensor == 'capacity':
+                            # mapeo desde battery_capacity (mAh) -> float mAh
+                            data['value'] = float(_get(robot, 'battery_capacity', 0))
+
+                        # --- Fuentes de carga (bools) ---
                         elif sensor == 'home_base':
-                            data['value'] = robot.charging_sources.home_base
+                            src = _get(robot, 'charging_sources', None)
+                            data['value'] = bool(getattr(src, 'home_base', False)) if src else False
                         elif sensor == 'internal_charger':
-                            data['value'] = robot.charging_sources.internal_charger
+                            src = _get(robot, 'charging_sources', None)
+                            data['value'] = bool(getattr(src, 'internal_charger', False)) if src else False
+
+                        # --- IR characters (uint8) ---
                         elif sensor == 'ir_char_omni':
-                            data['value'] = robot.ir_character_omni
+                            data['value'] = int(_get(robot, 'ir_char_omni', 0)) & 0xFF
                         elif sensor == 'ir_char_left':
-                            data['value'] = robot.ir_character_left
+                            data['value'] = int(_get(robot, 'ir_char_left', 0)) & 0xFF
                         elif sensor == 'ir_char_right':
-                            data['value'] = robot.ir_character_right
+                            data['value'] = int(_get(robot, 'ir_char_right', 0)) & 0xFF
+
+                        # --- Overcurrents (bools) ---
                         elif sensor == 'left_wheel_overcurrent':
-                            data['value'] = robot.left_wheel_overcurrent
+                            w = _get(robot, 'wheel_overcurrents', None)
+                            data['value'] = bool(getattr(w, 'left_wheel', False)) if w else False
                         elif sensor == 'right_wheel_overcurrent':
-                            data['value'] = robot.right_wheel_overcurrent
+                            w = _get(robot, 'wheel_overcurrents', None)
+                            data['value'] = bool(getattr(w, 'right_wheel', False)) if w else False
                         elif sensor == 'main_brush_overcurrent':
-                            data['value'] = robot.main_brush_overcurrent
+                            w = _get(robot, 'wheel_overcurrents', None)
+                            data['value'] = bool(getattr(w, 'main_brush', False)) if w else False
                         elif sensor == 'side_brush_overcurrent':
-                            data['value'] = robot.side_brush_overcurrent
+                            w = _get(robot, 'wheel_overcurrents', None)
+                            data['value'] = bool(getattr(w, 'side_brush', False)) if w else False
+
+                        # --- Corrientes de motor (int16 mA) ---
                         elif sensor == 'left_motor_current':
-                            data['value'] = robot.left_motor_current
+                            data['value'] = int(_get(robot, 'left_motor_current', 0))
                         elif sensor == 'right_motor_current':
-                            data['value'] = robot.right_motor_current
+                            data['value'] = int(_get(robot, 'right_motor_current', 0))
                         elif sensor == 'main_brush_motor_current':
-                            data['value'] = robot.main_brush_motor_current
+                            data['value'] = int(_get(robot, 'main_brush_motor_current', 0))
                         elif sensor == 'side_brush_motor_current':
-                            data['value'] = robot.side_brush_motor_current
+                            data['value'] = int(_get(robot, 'side_brush_motor_current', 0))
+
 
                     elif category == 'misc':
                         if sensor == 'is_song_playing':
@@ -323,16 +396,19 @@ class Robot:
                                     )
 
                     elif category == 'state':
-                        if sensor == 'oi_mode':
-                            data['value'] = robot.oi_mode
-                        elif sensor == 'stasis_disabled':
-                            data['value'] = robot.stasis.disabled
-                        elif sensor == 'stasis_toggling':
-                            data['value'] = robot.stasis.toggling
-                        elif sensor == 'number_stream_packets':
-                            data['value'] = robot.number_stream_packets
-                        elif sensor == 'auto_wake':
-                            data['value'] = self._auto_wake
+                        if sensor == "oi_mode":
+                            raw = _get(robot, "mode", _get(robot, "oi_mode", None))
+                            data["value"] = _mode_to_str(raw)              # -> 'OFF'/'PASSIVE'/'SAFE'/'FULL'
+                        elif sensor == "stasis_disabled":
+                            data["value"] = bool(_get(robot, "stasis_disabled", False))
+                        elif sensor == "stasis_toggling":
+                            data["value"] = bool(_get(robot, "stasis_toggling", False))
+                        elif sensor == "number_stream_packets":
+                            data["value"] = int(_get(robot, "number_stream_packets", 0))
+                        elif sensor == "auto_wake":
+                            data["value"] = bool(_get(robot, "auto_wake", False))
+                        elif sensor == "motion_state":
+                            data["value"] = str(self._state.get("state", "stopped")) 
 
                 except Exception as sensor_err:
                     self._node.get_logger().error(

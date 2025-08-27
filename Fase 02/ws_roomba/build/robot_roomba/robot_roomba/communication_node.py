@@ -74,6 +74,8 @@ class CommunicationNode(Node):
         # Inicializar conexión
         self.initialize_connection()
 
+        self.publisher_state = self.create_publisher(State, '/roomba/communication/state', 10)
+
     def enqueue_message(self, priority, data):
         """Agregar un mensaje a la cola con su prioridad."""
         self.get_logger().debug(f"Encolando mensaje con prioridad {priority}: {data}")
@@ -268,20 +270,44 @@ class CommunicationNode(Node):
             self.misc_pub.publish(msg)
 
     def publish_state_data(self):
-        self.get_logger().debug("Publicando estado del robot")
-        if self.robot and self.robot.connected:
-            status = self.robot.get_status()
-            self.robot.update_sensors(categories=["power"])
-            sensors = self.robot.read_sensors()
-            power = sensors.get("power", {})
+        try:
+            self.get_logger().debug("Publicando estado del robot")
 
+            # Si no hay robot o no está conectado, publica estado mínimo y sal
+            if not self.robot or not getattr(self.robot, 'connected', False):
+                msg = State()
+                msg.oi_mode = "OFF"
+                msg.stasis_disabled = False
+                msg.stasis_toggling = False
+                msg.number_stream_packets = 0
+                msg.auto_wake = False
+                msg.motion_state = "stopped"
+                self.publisher_state.publish(msg)
+                return
+
+            # Actualiza y lee sensores necesarios
+            status = self.robot.get_status() or {}
+            # Si necesitas contadores para State (opcional):
+            # self.robot.update_sensors(categories=["state"])
+            sensors = self.robot.read_sensors() or {}
+            state_dict = sensors.get("state", {})
+
+            # Construye el mensaje alineado con State.msg
             msg = State()
-            msg.oi_mode = status.get("oi_mode", "UNKNOWN")
-            msg.is_charging = power.get("internal_charger", False)
-            msg.battery_charge = power.get("battery_charge", 0.0)
+            # strings
+            msg.oi_mode      = str(status.get("oi_mode", "UNKNOWN"))
+            msg.motion_state = str(state_dict.get("motion_state", "stopped"))
+            # bools
+            msg.stasis_disabled   = bool(state_dict.get("stasis_disabled", False))
+            msg.stasis_toggling   = bool(state_dict.get("stasis_toggling", False))
+            msg.auto_wake         = bool(state_dict.get("auto_wake", False))
+            # int
+            msg.number_stream_packets = int(state_dict.get("number_stream_packets", 0))
 
-            self.get_logger().debug(f"Estado del robot: {msg}")
-            self.state_pub.publish(msg)
+            self.publisher_state.publish(msg)
+
+        except Exception as e:
+            self.get_logger().error(f"Error publicando State: {e}")
 
     def motors_command_callback(self, msg):
         self.get_logger().debug(f"Comando de motores recibido: {msg.data}")

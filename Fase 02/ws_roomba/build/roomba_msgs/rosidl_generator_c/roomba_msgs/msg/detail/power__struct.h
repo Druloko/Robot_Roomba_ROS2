@@ -40,10 +40,10 @@ typedef struct roomba_msgs__msg__Power
   bool right_wheel_overcurrent;
   bool main_brush_overcurrent;
   bool side_brush_overcurrent;
-  int32_t left_motor_current;
-  int32_t right_motor_current;
-  int32_t main_brush_motor_current;
-  int32_t side_brush_motor_current;
+  int16_t left_motor_current;
+  int16_t right_motor_current;
+  int16_t main_brush_motor_current;
+  int16_t side_brush_motor_current;
 } roomba_msgs__msg__Power;
 
 // Struct for a sequence of roomba_msgs__msg__Power.

@@ -59,6 +59,20 @@ module roomba_msgs {
       boolean light_bumper_front_right;
 
       @verbatim (language="comment", text=
+        "light bumper signals (valores analógicos de 2 bytes, 0–4095)")
+      uint16 light_bump_left_signal;
+
+      uint16 light_bump_right_signal;
+
+      uint16 light_bump_center_left_signal;
+
+      uint16 light_bump_center_right_signal;
+
+      uint16 light_bump_front_left_signal;
+
+      uint16 light_bump_front_right_signal;
+
+      @verbatim (language="comment", text=
         "suciedad")
       uint8 dirt_detect;
     };

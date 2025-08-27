@@ -1,0 +1,24 @@
+[1.099s] Invoking command in '/home/druloko/ws_roomba/src/robot_roomba': PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data
+[1.390s] running egg_info
+[1.414s] writing ../../build/robot_roomba/robot_roomba.egg-info/PKG-INFO
+[1.415s] writing dependency_links to ../../build/robot_roomba/robot_roomba.egg-info/dependency_links.txt
+[1.415s] writing entry points to ../../build/robot_roomba/robot_roomba.egg-info/entry_points.txt
+[1.415s] writing requirements to ../../build/robot_roomba/robot_roomba.egg-info/requires.txt
+[1.416s] writing top-level names to ../../build/robot_roomba/robot_roomba.egg-info/top_level.txt
+[1.462s] reading manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'
+[1.463s] writing manifest file '../../build/robot_roomba/robot_roomba.egg-info/SOURCES.txt'
+[1.464s] running build
+[1.464s] running build_py
+[1.464s] copying robot_roomba/communication_node.py -> /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba
+[1.465s] running install
+[1.472s] running install_lib
+[1.494s] copying /home/druloko/ws_roomba/build/robot_roomba/build/lib/robot_roomba/communication_node.py -> /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba
+[1.495s] byte-compiling /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba/communication_node.py to communication_node.cpython-312.pyc
+[1.499s] running install_data
+[1.499s] running install_egg_info
+[1.523s] removing '/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba-0.0.0-py3.12.egg-info' (and everything under it)
+[1.524s] Copying ../../build/robot_roomba/robot_roomba.egg-info to /home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages/robot_roomba-0.0.0-py3.12.egg-info
+[1.527s] running install_scripts
+[1.668s] Installing communication_node script to /home/druloko/ws_roomba/install/robot_roomba/lib/robot_roomba
+[1.669s] writing list of installed files to '/home/druloko/ws_roomba/build/robot_roomba/install.log'
+[1.703s] Invoked command in '/home/druloko/ws_roomba/src/robot_roomba' returned '0': PYTHONPATH=/home/druloko/ws_roomba/build/robot_roomba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/roomba_msgs/lib/python3.12/site-packages:/home/druloko/ws_roomba/install/robot_roomba/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_roomba build --build-base /home/druloko/ws_roomba/build/robot_roomba/build install --record /home/druloko/ws_roomba/build/robot_roomba/install.log --single-version-externally-managed install_data

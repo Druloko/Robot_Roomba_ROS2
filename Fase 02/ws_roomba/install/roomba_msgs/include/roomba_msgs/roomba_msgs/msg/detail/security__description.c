@@ -11,10 +11,10 @@ roomba_msgs__msg__Security__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x31, 0x56, 0xdb, 0xc4, 0x58, 0x5e, 0x48, 0x6c,
-      0x02, 0xf9, 0x63, 0x64, 0x96, 0x11, 0x9e, 0x73,
-      0x14, 0xd8, 0x14, 0x3f, 0x56, 0xef, 0x98, 0x44,
-      0x84, 0xa0, 0x2a, 0x75, 0x7a, 0x8b, 0x0b, 0x4e,
+      0x11, 0x01, 0x18, 0xd3, 0x85, 0x9f, 0x20, 0x43,
+      0xe7, 0x18, 0xf8, 0x8c, 0xd3, 0x56, 0x9b, 0xac,
+      0x4f, 0x1b, 0x4c, 0x60, 0xb0, 0xfd, 0x40, 0x4d,
+      0x64, 0x7e, 0x03, 0xe1, 0x17, 0xb5, 0x93, 0x1a,
     }};
   return &hash;
 }
@@ -52,6 +52,12 @@ static char roomba_msgs__msg__Security__FIELD_NAME__light_bumper_center_left[] =
 static char roomba_msgs__msg__Security__FIELD_NAME__light_bumper_center_right[] = "light_bumper_center_right";
 static char roomba_msgs__msg__Security__FIELD_NAME__light_bumper_front_left[] = "light_bumper_front_left";
 static char roomba_msgs__msg__Security__FIELD_NAME__light_bumper_front_right[] = "light_bumper_front_right";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_left_signal[] = "light_bump_left_signal";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_right_signal[] = "light_bump_right_signal";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_center_left_signal[] = "light_bump_center_left_signal";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_center_right_signal[] = "light_bump_center_right_signal";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_front_left_signal[] = "light_bump_front_left_signal";
+static char roomba_msgs__msg__Security__FIELD_NAME__light_bump_front_right_signal[] = "light_bump_front_right_signal";
 static char roomba_msgs__msg__Security__FIELD_NAME__dirt_detect[] = "dirt_detect";
 
 static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Security__FIELDS[] = {
@@ -266,6 +272,66 @@ static rosidl_runtime_c__type_description__Field roomba_msgs__msg__Security__FIE
     {NULL, 0, 0},
   },
   {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_left_signal, 22, 22},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_right_signal, 23, 23},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_center_left_signal, 29, 29},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_center_right_signal, 30, 30},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_front_left_signal, 28, 28},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {roomba_msgs__msg__Security__FIELD_NAME__light_bump_front_right_signal, 29, 29},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT16,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
     {roomba_msgs__msg__Security__FIELD_NAME__dirt_detect, 11, 11},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT8,
@@ -286,7 +352,7 @@ roomba_msgs__msg__Security__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {roomba_msgs__msg__Security__TYPE_NAME, 24, 24},
-      {roomba_msgs__msg__Security__FIELDS, 22, 22},
+      {roomba_msgs__msg__Security__FIELDS, 28, 28},
     },
     {NULL, 0, 0},
   };
@@ -329,6 +395,14 @@ static char toplevel_type_raw_source[] =
   "bool   light_bumper_front_left\n"
   "bool   light_bumper_front_right\n"
   "\n"
+  "# light bumper signals (valores anal\\xc3\\xb3gicos de 2 bytes, 0\\xe2\\x80\\x934095)\n"
+  "uint16 light_bump_left_signal\n"
+  "uint16 light_bump_right_signal\n"
+  "uint16 light_bump_center_left_signal\n"
+  "uint16 light_bump_center_right_signal\n"
+  "uint16 light_bump_front_left_signal\n"
+  "uint16 light_bump_front_right_signal\n"
+  "\n"
   "# suciedad\n"
   "uint8  dirt_detect";
 
@@ -344,7 +418,7 @@ roomba_msgs__msg__Security__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {roomba_msgs__msg__Security__TYPE_NAME, 24, 24},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 757, 757},
+    {toplevel_type_raw_source, 1030, 1030},
   };
   return &source;
 }

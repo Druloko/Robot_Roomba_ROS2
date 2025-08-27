@@ -34,8 +34,14 @@ set(SRV_FILES
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${MSG_FILES}
-  ${SRV_FILES}
+  "msg/Movement.msg"
+  "msg/Security.msg"
+  "msg/Power.msg"
+  "msg/Misc.msg"
+  "msg/State.msg"
+  "srv/Connect.srv"
+  "srv/Priority.srv"
+  "srv/Reconfigure.srv"
   DEPENDENCIES geometry_msgs
 )
 

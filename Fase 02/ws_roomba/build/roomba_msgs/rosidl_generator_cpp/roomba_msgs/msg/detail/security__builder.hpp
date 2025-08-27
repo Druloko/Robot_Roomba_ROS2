@@ -40,16 +40,112 @@ private:
   ::roomba_msgs::msg::Security msg_;
 };
 
+class Init_Security_light_bump_front_right_signal
+{
+public:
+  explicit Init_Security_light_bump_front_right_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_dirt_detect light_bump_front_right_signal(::roomba_msgs::msg::Security::_light_bump_front_right_signal_type arg)
+  {
+    msg_.light_bump_front_right_signal = std::move(arg);
+    return Init_Security_dirt_detect(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
+class Init_Security_light_bump_front_left_signal
+{
+public:
+  explicit Init_Security_light_bump_front_left_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_light_bump_front_right_signal light_bump_front_left_signal(::roomba_msgs::msg::Security::_light_bump_front_left_signal_type arg)
+  {
+    msg_.light_bump_front_left_signal = std::move(arg);
+    return Init_Security_light_bump_front_right_signal(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
+class Init_Security_light_bump_center_right_signal
+{
+public:
+  explicit Init_Security_light_bump_center_right_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_light_bump_front_left_signal light_bump_center_right_signal(::roomba_msgs::msg::Security::_light_bump_center_right_signal_type arg)
+  {
+    msg_.light_bump_center_right_signal = std::move(arg);
+    return Init_Security_light_bump_front_left_signal(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
+class Init_Security_light_bump_center_left_signal
+{
+public:
+  explicit Init_Security_light_bump_center_left_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_light_bump_center_right_signal light_bump_center_left_signal(::roomba_msgs::msg::Security::_light_bump_center_left_signal_type arg)
+  {
+    msg_.light_bump_center_left_signal = std::move(arg);
+    return Init_Security_light_bump_center_right_signal(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
+class Init_Security_light_bump_right_signal
+{
+public:
+  explicit Init_Security_light_bump_right_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_light_bump_center_left_signal light_bump_right_signal(::roomba_msgs::msg::Security::_light_bump_right_signal_type arg)
+  {
+    msg_.light_bump_right_signal = std::move(arg);
+    return Init_Security_light_bump_center_left_signal(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
+class Init_Security_light_bump_left_signal
+{
+public:
+  explicit Init_Security_light_bump_left_signal(::roomba_msgs::msg::Security & msg)
+  : msg_(msg)
+  {}
+  Init_Security_light_bump_right_signal light_bump_left_signal(::roomba_msgs::msg::Security::_light_bump_left_signal_type arg)
+  {
+    msg_.light_bump_left_signal = std::move(arg);
+    return Init_Security_light_bump_right_signal(msg_);
+  }
+
+private:
+  ::roomba_msgs::msg::Security msg_;
+};
+
 class Init_Security_light_bumper_front_right
 {
 public:
   explicit Init_Security_light_bumper_front_right(::roomba_msgs::msg::Security & msg)
   : msg_(msg)
   {}
-  Init_Security_dirt_detect light_bumper_front_right(::roomba_msgs::msg::Security::_light_bumper_front_right_type arg)
+  Init_Security_light_bump_left_signal light_bumper_front_right(::roomba_msgs::msg::Security::_light_bumper_front_right_type arg)
   {
     msg_.light_bumper_front_right = std::move(arg);
-    return Init_Security_dirt_detect(msg_);
+    return Init_Security_light_bump_left_signal(msg_);
   }
 
 private:

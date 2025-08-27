@@ -100,10 +100,10 @@ class Power(metaclass=Metaclass_Power):
         'right_wheel_overcurrent': 'boolean',
         'main_brush_overcurrent': 'boolean',
         'side_brush_overcurrent': 'boolean',
-        'left_motor_current': 'int32',
-        'right_motor_current': 'int32',
-        'main_brush_motor_current': 'int32',
-        'side_brush_motor_current': 'int32',
+        'left_motor_current': 'int16',
+        'right_motor_current': 'int16',
+        'main_brush_motor_current': 'int16',
+        'side_brush_motor_current': 'int16',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -123,10 +123,10 @@ class Power(metaclass=Metaclass_Power):
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -439,8 +439,8 @@ class Power(metaclass=Metaclass_Power):
             assert \
                 isinstance(value, int), \
                 "The 'left_motor_current' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'left_motor_current' field must be an integer in [-2147483648, 2147483647]"
+            assert value >= -32768 and value < 32768, \
+                "The 'left_motor_current' field must be an integer in [-32768, 32767]"
         self._left_motor_current = value
 
     @builtins.property
@@ -454,8 +454,8 @@ class Power(metaclass=Metaclass_Power):
             assert \
                 isinstance(value, int), \
                 "The 'right_motor_current' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'right_motor_current' field must be an integer in [-2147483648, 2147483647]"
+            assert value >= -32768 and value < 32768, \
+                "The 'right_motor_current' field must be an integer in [-32768, 32767]"
         self._right_motor_current = value
 
     @builtins.property
@@ -469,8 +469,8 @@ class Power(metaclass=Metaclass_Power):
             assert \
                 isinstance(value, int), \
                 "The 'main_brush_motor_current' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'main_brush_motor_current' field must be an integer in [-2147483648, 2147483647]"
+            assert value >= -32768 and value < 32768, \
+                "The 'main_brush_motor_current' field must be an integer in [-32768, 32767]"
         self._main_brush_motor_current = value
 
     @builtins.property
@@ -484,6 +484,6 @@ class Power(metaclass=Metaclass_Power):
             assert \
                 isinstance(value, int), \
                 "The 'side_brush_motor_current' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'side_brush_motor_current' field must be an integer in [-2147483648, 2147483647]"
+            assert value >= -32768 and value < 32768, \
+                "The 'side_brush_motor_current' field must be an integer in [-32768, 32767]"
         self._side_brush_motor_current = value

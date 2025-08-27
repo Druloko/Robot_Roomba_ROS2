@@ -293,7 +293,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Power_message
   },
   {
     "left_motor_current",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -311,7 +311,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Power_message
   },
   {
     "right_motor_current",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -329,7 +329,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Power_message
   },
   {
     "main_brush_motor_current",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -347,7 +347,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Power_message
   },
   {
     "side_brush_motor_current",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key

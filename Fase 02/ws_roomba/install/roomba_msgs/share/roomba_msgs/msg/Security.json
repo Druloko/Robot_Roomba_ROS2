@@ -214,6 +214,66 @@
           "default_value": ""
         },
         {
+          "name": "light_bump_left_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "light_bump_right_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "light_bump_center_left_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "light_bump_center_right_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "light_bump_front_left_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "light_bump_front_right_signal",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
           "name": "dirt_detect",
           "type": {
             "type_id": 3,
@@ -230,7 +290,7 @@
   "type_hashes": [
     {
       "type_name": "roomba_msgs/msg/Security",
-      "hash_string": "RIHS01_3156dbc4585e486c02f9636496119e7314d8143f56ef984484a02a757a8b0b4e"
+      "hash_string": "RIHS01_110118d3859f2043e718f88cd3569bac4f1b4c60b0fd404d647e03e117b5931a"
     }
   ]
 }

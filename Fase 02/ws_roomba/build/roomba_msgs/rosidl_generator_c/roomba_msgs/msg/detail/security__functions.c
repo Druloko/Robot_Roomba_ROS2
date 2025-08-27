@@ -38,6 +38,12 @@ roomba_msgs__msg__Security__init(roomba_msgs__msg__Security * msg)
   // light_bumper_center_right
   // light_bumper_front_left
   // light_bumper_front_right
+  // light_bump_left_signal
+  // light_bump_right_signal
+  // light_bump_center_left_signal
+  // light_bump_center_right_signal
+  // light_bump_front_left_signal
+  // light_bump_front_right_signal
   // dirt_detect
   return true;
 }
@@ -69,6 +75,12 @@ roomba_msgs__msg__Security__fini(roomba_msgs__msg__Security * msg)
   // light_bumper_center_right
   // light_bumper_front_left
   // light_bumper_front_right
+  // light_bump_left_signal
+  // light_bump_right_signal
+  // light_bump_center_left_signal
+  // light_bump_center_right_signal
+  // light_bump_front_left_signal
+  // light_bump_front_right_signal
   // dirt_detect
 }
 
@@ -162,6 +174,30 @@ roomba_msgs__msg__Security__are_equal(const roomba_msgs__msg__Security * lhs, co
   if (lhs->light_bumper_front_right != rhs->light_bumper_front_right) {
     return false;
   }
+  // light_bump_left_signal
+  if (lhs->light_bump_left_signal != rhs->light_bump_left_signal) {
+    return false;
+  }
+  // light_bump_right_signal
+  if (lhs->light_bump_right_signal != rhs->light_bump_right_signal) {
+    return false;
+  }
+  // light_bump_center_left_signal
+  if (lhs->light_bump_center_left_signal != rhs->light_bump_center_left_signal) {
+    return false;
+  }
+  // light_bump_center_right_signal
+  if (lhs->light_bump_center_right_signal != rhs->light_bump_center_right_signal) {
+    return false;
+  }
+  // light_bump_front_left_signal
+  if (lhs->light_bump_front_left_signal != rhs->light_bump_front_left_signal) {
+    return false;
+  }
+  // light_bump_front_right_signal
+  if (lhs->light_bump_front_right_signal != rhs->light_bump_front_right_signal) {
+    return false;
+  }
   // dirt_detect
   if (lhs->dirt_detect != rhs->dirt_detect) {
     return false;
@@ -219,6 +255,18 @@ roomba_msgs__msg__Security__copy(
   output->light_bumper_front_left = input->light_bumper_front_left;
   // light_bumper_front_right
   output->light_bumper_front_right = input->light_bumper_front_right;
+  // light_bump_left_signal
+  output->light_bump_left_signal = input->light_bump_left_signal;
+  // light_bump_right_signal
+  output->light_bump_right_signal = input->light_bump_right_signal;
+  // light_bump_center_left_signal
+  output->light_bump_center_left_signal = input->light_bump_center_left_signal;
+  // light_bump_center_right_signal
+  output->light_bump_center_right_signal = input->light_bump_center_right_signal;
+  // light_bump_front_left_signal
+  output->light_bump_front_left_signal = input->light_bump_front_left_signal;
+  // light_bump_front_right_signal
+  output->light_bump_front_right_signal = input->light_bump_front_right_signal;
   // dirt_detect
   output->dirt_detect = input->dirt_detect;
   return true;

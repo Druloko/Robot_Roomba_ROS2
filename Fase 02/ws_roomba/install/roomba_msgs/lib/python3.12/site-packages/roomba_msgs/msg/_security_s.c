@@ -236,6 +236,60 @@ bool roomba_msgs__msg__security__convert_from_py(PyObject * _pymsg, void * _ros_
     ros_message->light_bumper_front_right = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // light_bump_left_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_left_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_left_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // light_bump_right_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_right_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_right_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // light_bump_center_left_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_center_left_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_center_left_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // light_bump_center_right_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_center_right_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_center_right_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // light_bump_front_left_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_front_left_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_front_left_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // light_bump_front_right_signal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "light_bump_front_right_signal");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->light_bump_front_right_signal = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
   {  // dirt_detect
     PyObject * field = PyObject_GetAttrString(_pymsg, "dirt_detect");
     if (!field) {
@@ -492,6 +546,72 @@ PyObject * roomba_msgs__msg__security__convert_to_py(void * raw_ros_message)
     field = PyBool_FromLong(ros_message->light_bumper_front_right ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "light_bumper_front_right", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_left_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_left_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_left_signal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_right_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_right_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_right_signal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_center_left_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_center_left_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_center_left_signal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_center_right_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_center_right_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_center_right_signal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_front_left_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_front_left_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_front_left_signal", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // light_bump_front_right_signal
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->light_bump_front_right_signal);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "light_bump_front_right_signal", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

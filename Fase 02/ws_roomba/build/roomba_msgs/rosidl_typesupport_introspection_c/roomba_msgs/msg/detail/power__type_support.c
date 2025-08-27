@@ -286,7 +286,7 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Power
   },
   {
     "left_motor_current",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -304,7 +304,7 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Power
   },
   {
     "right_motor_current",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -322,7 +322,7 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Power
   },
   {
     "main_brush_motor_current",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -340,7 +340,7 @@ static rosidl_typesupport_introspection_c__MessageMember roomba_msgs__msg__Power
   },
   {
     "side_brush_motor_current",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key

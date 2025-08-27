@@ -63,6 +63,12 @@ struct Security_
       this->light_bumper_center_right = false;
       this->light_bumper_front_left = false;
       this->light_bumper_front_right = false;
+      this->light_bump_left_signal = 0;
+      this->light_bump_right_signal = 0;
+      this->light_bump_center_left_signal = 0;
+      this->light_bump_center_right_signal = 0;
+      this->light_bump_front_left_signal = 0;
+      this->light_bump_front_right_signal = 0;
       this->dirt_detect = 0;
     }
   }
@@ -94,6 +100,12 @@ struct Security_
       this->light_bumper_center_right = false;
       this->light_bumper_front_left = false;
       this->light_bumper_front_right = false;
+      this->light_bump_left_signal = 0;
+      this->light_bump_right_signal = 0;
+      this->light_bump_center_left_signal = 0;
+      this->light_bump_center_right_signal = 0;
+      this->light_bump_front_left_signal = 0;
+      this->light_bump_front_right_signal = 0;
       this->dirt_detect = 0;
     }
   }
@@ -162,6 +174,24 @@ struct Security_
   using _light_bumper_front_right_type =
     bool;
   _light_bumper_front_right_type light_bumper_front_right;
+  using _light_bump_left_signal_type =
+    uint16_t;
+  _light_bump_left_signal_type light_bump_left_signal;
+  using _light_bump_right_signal_type =
+    uint16_t;
+  _light_bump_right_signal_type light_bump_right_signal;
+  using _light_bump_center_left_signal_type =
+    uint16_t;
+  _light_bump_center_left_signal_type light_bump_center_left_signal;
+  using _light_bump_center_right_signal_type =
+    uint16_t;
+  _light_bump_center_right_signal_type light_bump_center_right_signal;
+  using _light_bump_front_left_signal_type =
+    uint16_t;
+  _light_bump_front_left_signal_type light_bump_front_left_signal;
+  using _light_bump_front_right_signal_type =
+    uint16_t;
+  _light_bump_front_right_signal_type light_bump_front_right_signal;
   using _dirt_detect_type =
     uint8_t;
   _dirt_detect_type dirt_detect;
@@ -293,6 +323,42 @@ struct Security_
     this->light_bumper_front_right = _arg;
     return *this;
   }
+  Type & set__light_bump_left_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_left_signal = _arg;
+    return *this;
+  }
+  Type & set__light_bump_right_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_right_signal = _arg;
+    return *this;
+  }
+  Type & set__light_bump_center_left_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_center_left_signal = _arg;
+    return *this;
+  }
+  Type & set__light_bump_center_right_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_center_right_signal = _arg;
+    return *this;
+  }
+  Type & set__light_bump_front_left_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_front_left_signal = _arg;
+    return *this;
+  }
+  Type & set__light_bump_front_right_signal(
+    const uint16_t & _arg)
+  {
+    this->light_bump_front_right_signal = _arg;
+    return *this;
+  }
   Type & set__dirt_detect(
     const uint8_t & _arg)
   {
@@ -403,6 +469,24 @@ struct Security_
       return false;
     }
     if (this->light_bumper_front_right != other.light_bumper_front_right) {
+      return false;
+    }
+    if (this->light_bump_left_signal != other.light_bump_left_signal) {
+      return false;
+    }
+    if (this->light_bump_right_signal != other.light_bump_right_signal) {
+      return false;
+    }
+    if (this->light_bump_center_left_signal != other.light_bump_center_left_signal) {
+      return false;
+    }
+    if (this->light_bump_center_right_signal != other.light_bump_center_right_signal) {
+      return false;
+    }
+    if (this->light_bump_front_left_signal != other.light_bump_front_left_signal) {
+      return false;
+    }
+    if (this->light_bump_front_right_signal != other.light_bump_front_right_signal) {
       return false;
     }
     if (this->dirt_detect != other.dirt_detect) {

@@ -56,10 +56,10 @@ struct Power_
       this->right_wheel_overcurrent = false;
       this->main_brush_overcurrent = false;
       this->side_brush_overcurrent = false;
-      this->left_motor_current = 0l;
-      this->right_motor_current = 0l;
-      this->main_brush_motor_current = 0l;
-      this->side_brush_motor_current = 0l;
+      this->left_motor_current = 0;
+      this->right_motor_current = 0;
+      this->main_brush_motor_current = 0;
+      this->side_brush_motor_current = 0;
     }
   }
 
@@ -83,10 +83,10 @@ struct Power_
       this->right_wheel_overcurrent = false;
       this->main_brush_overcurrent = false;
       this->side_brush_overcurrent = false;
-      this->left_motor_current = 0l;
-      this->right_motor_current = 0l;
-      this->main_brush_motor_current = 0l;
-      this->side_brush_motor_current = 0l;
+      this->left_motor_current = 0;
+      this->right_motor_current = 0;
+      this->main_brush_motor_current = 0;
+      this->side_brush_motor_current = 0;
     }
   }
 
@@ -134,16 +134,16 @@ struct Power_
     bool;
   _side_brush_overcurrent_type side_brush_overcurrent;
   using _left_motor_current_type =
-    int32_t;
+    int16_t;
   _left_motor_current_type left_motor_current;
   using _right_motor_current_type =
-    int32_t;
+    int16_t;
   _right_motor_current_type right_motor_current;
   using _main_brush_motor_current_type =
-    int32_t;
+    int16_t;
   _main_brush_motor_current_type main_brush_motor_current;
   using _side_brush_motor_current_type =
-    int32_t;
+    int16_t;
   _side_brush_motor_current_type side_brush_motor_current;
 
   // setters for named parameter idiom
@@ -232,25 +232,25 @@ struct Power_
     return *this;
   }
   Type & set__left_motor_current(
-    const int32_t & _arg)
+    const int16_t & _arg)
   {
     this->left_motor_current = _arg;
     return *this;
   }
   Type & set__right_motor_current(
-    const int32_t & _arg)
+    const int16_t & _arg)
   {
     this->right_motor_current = _arg;
     return *this;
   }
   Type & set__main_brush_motor_current(
-    const int32_t & _arg)
+    const int16_t & _arg)
   {
     this->main_brush_motor_current = _arg;
     return *this;
   }
   Type & set__side_brush_motor_current(
-    const int32_t & _arg)
+    const int16_t & _arg)
   {
     this->side_brush_motor_current = _arg;
     return *this;

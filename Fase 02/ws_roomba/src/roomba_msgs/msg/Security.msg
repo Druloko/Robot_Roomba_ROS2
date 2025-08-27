@@ -30,5 +30,13 @@ bool   light_bumper_center_right
 bool   light_bumper_front_left
 bool   light_bumper_front_right
 
+# light bumper signals (valores analógicos de 2 bytes, 0–4095)
+uint16 light_bump_left_signal
+uint16 light_bump_right_signal
+uint16 light_bump_center_left_signal
+uint16 light_bump_center_right_signal
+uint16 light_bump_front_left_signal
+uint16 light_bump_front_right_signal
+
 # suciedad
 uint8  dirt_detect
